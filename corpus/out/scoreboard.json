@@ -16,7 +16,7 @@
     {
       "id": "G3",
       "name": "precision at confidence >= medium >= 0.95",
-      "value": 0.9613,
+      "value": 0.9969,
       "pass": true
     },
     {
@@ -28,7 +28,7 @@
     {
       "id": "G5",
       "name": "performance: 50k-row parse + detect < 2 s",
-      "value": 808.9838,
+      "value": 822.7459,
       "pass": true
     }
   ],
@@ -40,7 +40,7 @@
     "precision": 0.9584569732937686,
     "recall": 0.9728915662650602,
     "f1": 0.9656203288490284,
-    "precisionAtMedium": 0.9613095238095238,
+    "precisionAtMedium": 0.9969135802469136,
     "cadenceAccuracy": 1,
     "yearlyCostMaxErrorPct": 11.833333333333334,
     "perFormat": {
@@ -319,23 +319,23 @@
     {
       "name": "chase-card-9001",
       "lines": 50002,
-      "ms": 546.989375,
-      "parseMs": 360.9415829999999,
-      "detectMs": 186.04779200000007
+      "ms": 560.7172499999999,
+      "parseMs": 371.7648750000001,
+      "detectMs": 188.95237499999985
     },
     {
       "name": "boa-checking-9002",
       "lines": 50008,
-      "ms": 808.9837500000001,
-      "parseMs": 437.42779099999984,
-      "detectMs": 371.55595900000026
+      "ms": 822.7458749999998,
+      "parseMs": 440.765625,
+      "detectMs": 381.98024999999984
     },
     {
       "name": "amex-9003",
       "lines": 50002,
-      "ms": 382.50454200000013,
-      "parseMs": 93.60541699999976,
-      "detectMs": 288.89912500000037
+      "ms": 397.043083,
+      "parseMs": 94.5625,
+      "detectMs": 302.480583
     }
   ],
   "falsePositives": [

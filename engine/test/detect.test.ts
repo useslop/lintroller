@@ -183,6 +183,18 @@ describe('detectRecurring: confidence, evidence, coverage', () => {
     expect(f.confidenceLabel).toBe('medium');
     expect(f.reasons).toContain('few-occurrences');
   });
+  it('unknown merchant, varying amount: 2 charges stay below medium, a longer series is never high (F1)', () => {
+    const two = [...charges('GREEN BOWL SALADS', ['2025-10-03', '2026-04-05'], 2350), ...filler('2025-09-01'), ...filler('2026-09-20')];
+    two[1] = { ...two[1]!, amountCents: two[1]!.amountCents - 60 };
+    const f2 = run(two).findings.find((f) => f.merchantKey === 'raw:green bowl');
+    expect(f2?.confidenceLabel).toBe('low');
+    const long = charges('PIXEL PRINT CLUB', monthly('2026-01-12', 8), 1299).map((t, i) => ({ ...t, amountCents: t.amountCents - (i % 3) * 25 }));
+    const fl = run(long).findings[0]!;
+    expect(fl.amount.varies).toBe(true);
+    expect(fl.confidenceLabel).not.toBe('high');
+    // the same series at a stable amount is still high
+    expect(run(charges('PIXEL PRINT CLUB', monthly('2026-01-12', 8), 1299)).findings[0]!.confidenceLabel).toBe('high');
+  });
   it('unknown merchant with 2 monthly charges is not a finding', () => {
     expect(run([...charges('ACME WIDGETS', ['2026-07-02', '2026-08-02'], 1549), ...filler('2026-05-01')]).findings).toEqual([]);
   });

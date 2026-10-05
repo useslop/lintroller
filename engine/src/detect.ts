@@ -311,6 +311,10 @@ export function detectRecurring(rows: Txn[], opts: DetectOptions): DetectResult 
       let conf = w.reg * reg + w.amt * amt + w.cnt * cnt + w.prior * prior;
       if (n === 2) conf = Math.min(conf, 0.74);
       if (cadence === 'irregular') conf = Math.min(conf, 0.49);
+      // SPEC §5, precision over recall: an unknown merchant (no alias, not bill-like, not a fee) whose
+      // amount varies is as likely a place someone shops at as a subscription. Two such charges are one
+      // gap, which any two visits have, so they stay below medium; longer series are never 'high'.
+      if (!m.aliasId && !billish && !g.fee && varies) conf = Math.min(conf, n === 2 ? 0.49 : 0.74);
       conf = Math.round(conf * 100) / 100;
       if (conf < p.minConfidence) { belowConf = true; continue; }
 
