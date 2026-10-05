@@ -249,7 +249,9 @@ async function headerChecks(base) {
     const main = live.find((a) => a.endsWith('.js'));
     if (main) {
       const js = await (await fetch(`${base}${main}`)).text();
-      live.push(...[...js.matchAll(/assets\/engine\.worker-[\w-]+\.js/g)].map((m) => `/${m[0]}`));
+      // only the worker the bundle starts (new Worker(new URL(...))); the published result bundled for
+      // /privacy quotes the previous build's asset names, which no longer exist
+      live.push(...[...js.matchAll(/new Worker\(new URL\([`'"]\/?(assets\/engine\.worker-[\w-]+\.js)/g)].map((m) => `/${m[1]}`));
     }
     for (const a of [...new Set(live)]) {
       const res = await fetch(`${base}${a}`, { method: 'HEAD', redirect: 'manual' });

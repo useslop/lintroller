@@ -1,8 +1,8 @@
 {
   "status": "passed 32 of 32 checks on lintroller.vercel.app",
-  "ranAt": "2026-10-05T02:20:47.454Z",
+  "ranAt": "2026-10-05T02:39:47.454Z",
   "target": "https://lintroller.vercel.app",
-  "commit": "c3610bf",
+  "commit": "c4ef325",
   "canary": "QUOKKA STREAMING and ZEBRAFISH GYM 7781 at $77.77, 12 months, seeded generator (seed 7777); second file seed 2345",
   "passed": 32,
   "total": 32,
@@ -37,7 +37,7 @@
     },
     {
       "name": "request list to our origin is identical for a second, different file",
-      "result": "pass (4 requests: GET /, GET /assets/index-BEu6VVWH.js, GET /assets/index--UwEdMGh.css, GET /assets/engine.worker-DNBosWX8.js)"
+      "result": "pass (4 requests: GET /, GET /assets/index-ChpSMqBe.js, GET /assets/index--UwEdMGh.css, GET /assets/engine.worker-CSsh-f2n.js)"
     },
     {
       "name": "CSV and ICS are built in the browser and saved from blob: URLs",
@@ -124,7 +124,7 @@
       "result": "pass (HTTP 200)"
     },
     {
-      "name": "exact SPEC §10 headers on /assets/index-BEu6VVWH.js",
+      "name": "exact SPEC §10 headers on /assets/index-ChpSMqBe.js",
       "result": "pass (HTTP 200)"
     },
     {
@@ -132,15 +132,15 @@
       "result": "pass (HTTP 200)"
     },
     {
-      "name": "exact SPEC §10 headers on /assets/engine.worker-DNBosWX8.js",
+      "name": "exact SPEC §10 headers on /assets/engine.worker-CSsh-f2n.js",
       "result": "pass (HTTP 200)"
     }
   ],
   "requestsDuringLoad": [
     "GET /",
-    "GET /assets/index-BEu6VVWH.js",
+    "GET /assets/index-ChpSMqBe.js",
     "GET /assets/index--UwEdMGh.css",
-    "GET /assets/engine.worker-DNBosWX8.js"
+    "GET /assets/engine.worker-CSsh-f2n.js"
   ],
   "requestsAfterLoad": 2,
   "cancelLinksClicked": [
@@ -217,7 +217,7 @@
       "exact": true
     },
     {
-      "route": "/assets/index-BEu6VVWH.js",
+      "route": "/assets/index-ChpSMqBe.js",
       "status": 200,
       "exact": true
     },
@@ -227,7 +227,7 @@
       "exact": true
     },
     {
-      "route": "/assets/engine.worker-DNBosWX8.js",
+      "route": "/assets/engine.worker-CSsh-f2n.js",
       "status": 200,
       "exact": true
     }
