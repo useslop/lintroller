@@ -1,0 +1,223 @@
+[
+  {
+    "format": "boa-checking",
+    "institution": "Bank of America",
+    "product": "Checking and savings",
+    "steps": [
+      "Sign in to Online Banking and open the checking or savings account.",
+      "Open the transaction activity for the period you want.",
+      "Choose Download, then the CSV format.",
+      "Upload the file here. It stays in this browser."
+    ],
+    "helpUrl": null,
+    "verified": null
+  },
+  {
+    "format": "boa-card",
+    "institution": "Bank of America",
+    "product": "Credit card",
+    "steps": [
+      "Sign in to Online Banking and open the credit card account.",
+      "Open the transaction activity for the period you want.",
+      "Choose Download, then the CSV format.",
+      "Upload the file here. It stays in this browser."
+    ],
+    "helpUrl": null,
+    "verified": null
+  },
+  {
+    "format": "chase-checking",
+    "institution": "Chase",
+    "product": "Checking and savings",
+    "steps": [
+      "Sign in to chase.com and open the checking account.",
+      "Open Account activity.",
+      "Choose the download icon, then CSV.",
+      "Pick the date range, then upload the file here."
+    ],
+    "helpUrl": null,
+    "verified": null
+  },
+  {
+    "format": "chase-card",
+    "institution": "Chase",
+    "product": "Credit card",
+    "steps": [
+      "Sign in to chase.com and open the card account.",
+      "Go to Statements & Documents, or open the account activity.",
+      "Choose Download account activity, then CSV.",
+      "Upload the file here. Purchases may show as positive amounts."
+    ],
+    "helpUrl": null,
+    "verified": null
+  },
+  {
+    "format": "wells-fargo",
+    "institution": "Wells Fargo",
+    "product": "Checking and savings",
+    "steps": [
+      "Sign in and open the account.",
+      "Choose Download Account Activity.",
+      "Pick Comma Delimited Format (.csv), then download.",
+      "Upload the file here. Wells Fargo's CSV has no header row, so confirm the columns in the preview."
+    ],
+    "helpUrl": null,
+    "verified": null
+  },
+  {
+    "format": "citi-card",
+    "institution": "Citi",
+    "product": "Credit card",
+    "steps": [
+      "Sign in and open the card account.",
+      "Go to Transactions and set the date filter.",
+      "Choose the download icon, then CSV.",
+      "Upload the file here. Card downloads may cover only the current statement cycle."
+    ],
+    "helpUrl": null,
+    "verified": null
+  },
+  {
+    "format": "capitalone-card",
+    "institution": "Capital One",
+    "product": "Credit card",
+    "steps": [
+      "Sign in and open the card account.",
+      "Go to Statements & Documents and choose Download transaction.",
+      "Choose CSV.",
+      "Upload the file here. Check the columns in the preview."
+    ],
+    "helpUrl": null,
+    "verified": null
+  },
+  {
+    "format": "amex",
+    "institution": "American Express",
+    "product": "Card",
+    "steps": [
+      "Sign in and open the card's activity.",
+      "Choose Download and export transactions.",
+      "Pick CSV. This app does not read Quicken or QuickBooks files.",
+      "Upload the CSV here. The download covers recent activity and recent statements."
+    ],
+    "helpUrl": "https://www.americanexpress.com/us/customer-service/faq.download-export-transactions-software.html",
+    "verified": "2026-10-04"
+  },
+  {
+    "format": "discover",
+    "institution": "Discover",
+    "product": "Credit card",
+    "steps": [
+      "Sign in and open the card account.",
+      "Go to Activity & Statements.",
+      "Choose Download, then CSV.",
+      "Upload the file here. Check in the preview whether purchases show as positive amounts."
+    ],
+    "helpUrl": null,
+    "verified": null
+  },
+  {
+    "format": "usbank",
+    "institution": "U.S. Bank",
+    "product": "Checking, savings and cards",
+    "steps": [
+      "Sign in and open the account under My Accounts.",
+      "Go to the Activity tab, then Download.",
+      "Choose Spreadsheet (.CSV).",
+      "Upload the file here. U.S. Bank offers up to 18 months of history."
+    ],
+    "helpUrl": "https://usbank.com/customer-service/knowledge-base/KB0069323.html",
+    "verified": "2026-10-04"
+  },
+  {
+    "format": "apple-card",
+    "institution": "Apple Card",
+    "product": "Credit card",
+    "steps": [
+      "On card.apple.com, open Statements and choose Export Transactions.",
+      "Pick the start and end dates, then CSV.",
+      "Choose Export.",
+      "Upload the file here. On iPhone you can also export from the Wallet app, one statement at a time."
+    ],
+    "helpUrl": "https://support.apple.com/en-us/102284",
+    "verified": "2026-10-04"
+  },
+  {
+    "format": "paypal",
+    "institution": "PayPal",
+    "product": "Account activity",
+    "steps": [
+      "Sign in to paypal.com and open Activity.",
+      "Choose the download option for the activity report.",
+      "Pick the date range and CSV.",
+      "Upload the file here. Fees and refunds appear as their own rows."
+    ],
+    "helpUrl": "https://developer.paypal.com/docs/reports/online-reports/activity-download/",
+    "verified": "2026-10-04"
+  },
+  {
+    "format": "venmo",
+    "institution": "Venmo",
+    "product": "Personal account",
+    "steps": [
+      "Sign in to venmo.com and open Statements.",
+      "Pick the month and year.",
+      "Choose Download CSV. Each file covers one month.",
+      "Upload the files here. You can add several months at once."
+    ],
+    "helpUrl": "https://help.venmo.com/hc/en-us/articles/360016096974-Transaction-History",
+    "verified": "2026-10-04"
+  },
+  {
+    "format": "cashapp",
+    "institution": "Cash App",
+    "product": "Cash App account",
+    "steps": [
+      "On a desktop browser, sign in to Cash App at cash.app.",
+      "Open your account activity or statements.",
+      "Look for an export option and choose CSV.",
+      "Upload the file here. This export has not been checked against a real file, so confirm the preview."
+    ],
+    "helpUrl": null,
+    "verified": null
+  },
+  {
+    "format": "ynab",
+    "institution": "YNAB (You Need A Budget)",
+    "product": "Budget plan export",
+    "steps": [
+      "Export your plan data from YNAB. YNAB's help page explains the export.",
+      "Choose CSV. Use TSV if your budget uses a comma as the decimal separator.",
+      "Upload the file here.",
+      "YNAB writes money out and money in to separate Outflow and Inflow columns, and the app reads both."
+    ],
+    "helpUrl": "https://support.ynab.com/en_us/how-to-export-plan-data-Sy_CouWA9.md",
+    "verified": "2026-10-04"
+  },
+  {
+    "format": "monarch",
+    "institution": "Monarch Money",
+    "product": "Transactions export",
+    "steps": [
+      "In Monarch, find the transaction download for one account or for all accounts.",
+      "Choose CSV and download the file.",
+      "Upload the file here. Monarch's dates are year-month-day.",
+      "The export location is not confirmed, so check the preview before you continue."
+    ],
+    "helpUrl": null,
+    "verified": null
+  },
+  {
+    "format": "mint",
+    "institution": "Mint (closed by Intuit)",
+    "product": "Saved CSV exports",
+    "steps": [
+      "Mint has closed, so this format only reads CSV files you saved before it closed.",
+      "Upload the saved CSV here.",
+      "Mint lists amounts as positive numbers and marks the direction in a Transaction Type column.",
+      "Check the preview to confirm the columns."
+    ],
+    "helpUrl": null,
+    "verified": null
+  }
+]

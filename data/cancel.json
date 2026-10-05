@@ -1,0 +1,2865 @@
+[
+  {
+    "id": "netflix",
+    "name": "Netflix",
+    "category": "video",
+    "domains": [
+      "netflix.com"
+    ],
+    "manageUrl": "https://www.netflix.com/account",
+    "helpUrl": "https://help.netflix.com/en/node/407",
+    "stepsStated": true,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.netflix.com/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Faccount",
+        "checkedAt": "2026-10-05T01:27:11.353Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.netflix.com/en/node/407",
+        "checkedAt": "2026-10-05T01:27:13.285Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "hulu",
+    "name": "Hulu",
+    "category": "video",
+    "domains": [
+      "hulu.com"
+    ],
+    "manageUrl": "https://www.hulu.com/account",
+    "helpUrl": "https://help.hulu.com/",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://auth.hulu.com/web/login?next=%2F%2Fsecure.hulu.com%2Faccount",
+        "checkedAt": "2026-10-05T01:27:14.499Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.hulu.com/",
+        "checkedAt": "2026-10-05T01:27:16.296Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "disney-plus",
+    "name": "Disney+",
+    "category": "video",
+    "domains": [
+      "disneyplus.com",
+      "disney.com"
+    ],
+    "manageUrl": "https://www.disneyplus.com/account",
+    "helpUrl": "https://help.disneyplus.com/article/disneyplus-cancel-subscription",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.disneyplus.com/commerce/account",
+        "checkedAt": "2026-10-05T01:27:17.496Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.disneyplus.com/article/disneyplus-cancel-subscription",
+        "checkedAt": "2026-10-05T01:27:19.033Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "hbo-max",
+    "name": "HBO Max",
+    "category": "video",
+    "domains": [
+      "max.com",
+      "hbomax.com"
+    ],
+    "manageUrl": "https://play.max.com/settings/subscription",
+    "helpUrl": "https://help.max.com/us",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play",
+      "amazon",
+      "roku"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://auth.hbomax.com/login?returnUrl=https%3A%2F%2Fplay.hbomax.com%2Fsettings%2Fsubscription",
+        "checkedAt": "2026-10-05T01:27:20.320Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.hbomax.com/us",
+        "checkedAt": "2026-10-05T01:27:21.969Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "paramount-plus",
+    "name": "Paramount+",
+    "category": "video",
+    "domains": [
+      "paramountplus.com"
+    ],
+    "manageUrl": "https://www.paramountplus.com/account",
+    "helpUrl": "https://help.paramountplus.com/",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play",
+      "amazon",
+      "roku"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.paramountplus.com/account/signin/",
+        "checkedAt": "2026-10-05T01:27:23.420Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.paramountplus.com/s/",
+        "checkedAt": "2026-10-05T01:27:25.709Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "peacock",
+    "name": "Peacock",
+    "category": "video",
+    "domains": [
+      "peacocktv.com"
+    ],
+    "manageUrl": "https://www.peacocktv.com/account",
+    "helpUrl": "https://www.peacocktv.com/help",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play",
+      "roku"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.peacocktv.com/signin?return=%2faccount%2fplans",
+        "checkedAt": "2026-10-05T01:27:27.346Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.peacocktv.com/help",
+        "checkedAt": "2026-10-05T01:27:28.862Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "apple-tv",
+    "name": "Apple TV",
+    "category": "video",
+    "domains": [
+      "apple.com"
+    ],
+    "manageUrl": "https://tv.apple.com/account",
+    "helpUrl": "https://support.apple.com/en-us/118428",
+    "stepsStated": true,
+    "notes": [
+      "Billed by Apple. The Apple article covers cancelling subscriptions bought through Apple."
+    ],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://finance-app.itunes.apple.com/account",
+        "checkedAt": "2026-10-05T01:27:29.939Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.apple.com/en-us/118428",
+        "checkedAt": "2026-10-05T01:27:31.729Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "youtube-premium",
+    "name": "YouTube Premium",
+    "category": "video",
+    "domains": [
+      "youtube.com",
+      "google.com"
+    ],
+    "manageUrl": "https://www.youtube.com/paid_memberships",
+    "helpUrl": "https://support.google.com/youtube/answer/6308278",
+    "stepsStated": true,
+    "via": [
+      "google-play"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://accounts.google.com/v3/signin/identifier?continue=https://www.youtube.com/signin?action_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fpaid_memberships%26feature%3Dredirect_login&hl=en&passive=true&service=youtube&uilel=3&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-217556445:1791163653411342",
+        "checkedAt": "2026-10-05T01:27:32.946Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.google.com/youtube/answer/6308278",
+        "checkedAt": "2026-10-05T01:27:34.480Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "youtube-tv",
+    "name": "YouTube TV",
+    "category": "video",
+    "domains": [
+      "youtube.com",
+      "google.com"
+    ],
+    "manageUrl": "https://tv.youtube.com/manage/",
+    "helpUrl": "https://support.google.com/youtubetv/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://tv.youtube.com/manage/",
+        "checkedAt": "2026-10-05T01:27:36.088Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.google.com/youtubetv/",
+        "checkedAt": "2026-10-05T01:27:37.350Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "sling-tv",
+    "name": "Sling TV",
+    "category": "video",
+    "domains": [
+      "sling.com"
+    ],
+    "manageUrl": "https://www.sling.com/myaccount",
+    "helpUrl": "https://www.sling.com/help/en/s/article/how-do-i-cancel-my-sling-tv-subscription",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.sling.com/account",
+        "checkedAt": "2026-10-05T01:27:38.780Z",
+        "ok": true
+      },
+      "help": {
+        "status": 404,
+        "finalUrl": "https://www.sling.com/help/en/s/article/how-do-i-cancel-my-sling-tv-subscription",
+        "checkedAt": "2026-10-05T01:27:40.308Z",
+        "ok": false,
+        "note": "404 not found"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "fubo",
+    "name": "Fubo",
+    "category": "video",
+    "domains": [
+      "fubo.tv"
+    ],
+    "manageUrl": "https://www.fubo.tv/account",
+    "helpUrl": "https://support.fubo.tv/hc/en-us/articles/115014115988",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.fubo.tv/account",
+        "checkedAt": "2026-10-05T01:27:41.409Z",
+        "ok": true
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://support.fubo.tv/hc/en-us/articles/115014115988",
+        "checkedAt": "2026-10-05T01:27:42.647Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "philo",
+    "name": "Philo",
+    "category": "video",
+    "domains": [
+      "philo.com"
+    ],
+    "manageUrl": "https://www.philo.com/account",
+    "helpUrl": "https://help.philo.com/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.philo.com/login/authenticate?redirect_uri=https%3A%2F%2Fwww.philo.com%2Fplayer%2Fuser%2Faccount",
+        "checkedAt": "2026-10-05T01:27:43.828Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.philo.com/",
+        "checkedAt": "2026-10-05T01:27:45.427Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "crunchyroll",
+    "name": "Crunchyroll",
+    "category": "video",
+    "domains": [
+      "crunchyroll.com"
+    ],
+    "manageUrl": "https://www.crunchyroll.com/acct/membership",
+    "helpUrl": "https://help.crunchyroll.com/hc/en-us",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://www.crunchyroll.com/acct/membership",
+        "checkedAt": "2026-10-05T01:27:47.863Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.crunchyroll.com/",
+        "checkedAt": "2026-10-05T01:27:48.997Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "starz",
+    "name": "Starz",
+    "category": "video",
+    "domains": [
+      "starz.com"
+    ],
+    "manageUrl": "https://www.starz.com/account/subscription",
+    "helpUrl": "https://faqs.starz.com/",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play",
+      "amazon",
+      "roku"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.starz.com/us/en/account/subscription",
+        "checkedAt": "2026-10-05T01:27:50.256Z",
+        "ok": true
+      },
+      "help": {
+        "status": 0,
+        "finalUrl": "https://faqs.starz.com/",
+        "checkedAt": "2026-10-05T01:27:52.015Z",
+        "ok": false,
+        "note": "no response: UND_ERR_CONNECT_TIMEOUT"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "mgm-plus",
+    "name": "MGM+",
+    "category": "video",
+    "domains": [
+      "mgmplus.com"
+    ],
+    "manageUrl": "https://www.mgmplus.com/my-account",
+    "helpUrl": "https://www.mgmplus.com/help",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 404,
+        "finalUrl": "https://www.mgmplus.com/my-account",
+        "checkedAt": "2026-10-05T01:28:03.531Z",
+        "ok": false,
+        "note": "404 not found"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.mgmplus.com/help",
+        "checkedAt": "2026-10-05T01:28:04.691Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "amc-plus",
+    "name": "AMC+",
+    "category": "video",
+    "domains": [
+      "amcplus.com"
+    ],
+    "manageUrl": "https://www.amcplus.com/account",
+    "helpUrl": "https://support.amcplus.com/kb/en",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.amcplus.com/account",
+        "checkedAt": "2026-10-05T01:28:05.800Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.amcplus.com/kb/en",
+        "checkedAt": "2026-10-05T01:28:07.189Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "britbox",
+    "name": "BritBox",
+    "category": "video",
+    "domains": [
+      "britbox.com"
+    ],
+    "manageUrl": "https://www.britbox.com/account",
+    "helpUrl": "https://help.britbox.com/hc/en-us",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://account.britbox.com/signin?callback=https%3a%2f%2fwww.britbox.com%2fus%2faccount%2flogincallback%3freturnURL%3d%252faccount&country=us&geo=us&deviceName=other&deviceType=desktop_web&modelNo=other_version...&serialNo=56bdc832-22fc-44f8-b564-3dc6909d936b&exp=1791250089&key=a212bdfbde1936952f13d78c322078a24abe21b3340e46ebe886013763d8ee2f45bd6c19c3069c5ef9c87b4209d553e8c40171991b9912e9aed05af43ed6bba6",
+        "checkedAt": "2026-10-05T01:28:08.580Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://help.britbox.com/hc/en-us",
+        "checkedAt": "2026-10-05T01:28:10.722Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "dazn",
+    "name": "DAZN",
+    "category": "video",
+    "domains": [
+      "dazn.com"
+    ],
+    "manageUrl": "https://www.dazn.com/en-US/account",
+    "helpUrl": "https://support.dazn.com/hc/en-us",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.dazn.com/en-US/account",
+        "checkedAt": "2026-10-05T01:28:12.019Z",
+        "ok": true
+      },
+      "help": {
+        "status": 0,
+        "finalUrl": "https://support.dazn.com/hc/en-us",
+        "checkedAt": "2026-10-05T01:28:13.645Z",
+        "ok": false,
+        "note": "no response: ENOTFOUND"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "discovery-plus",
+    "name": "discovery+",
+    "category": "video",
+    "domains": [
+      "discoveryplus.com"
+    ],
+    "manageUrl": "https://www.discoveryplus.com/account",
+    "helpUrl": "https://help.discoveryplus.com/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://auth.discoveryplus.com/my-account",
+        "checkedAt": "2026-10-05T01:28:14.700Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.discoveryplus.com/hc/en-us",
+        "checkedAt": "2026-10-05T01:28:16.753Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "spotify",
+    "name": "Spotify",
+    "category": "music",
+    "domains": [
+      "spotify.com"
+    ],
+    "manageUrl": "https://www.spotify.com/account/subscription/",
+    "helpUrl": "https://support.spotify.com/us/article/cancel-premium/",
+    "stepsStated": true,
+    "via": [
+      "apple",
+      "google-play",
+      "paypal"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F",
+        "checkedAt": "2026-10-05T01:28:18.289Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.spotify.com/us/article/cancel-premium/",
+        "checkedAt": "2026-10-05T01:28:20.259Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "apple-music",
+    "name": "Apple Music",
+    "category": "music",
+    "domains": [
+      "apple.com"
+    ],
+    "manageUrl": "https://music.apple.com/account",
+    "helpUrl": "https://support.apple.com/en-us/118428",
+    "stepsStated": true,
+    "notes": [
+      "Billed by Apple. The Apple article covers cancelling subscriptions bought through Apple."
+    ],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://finance-app.itunes.apple.com/account",
+        "checkedAt": "2026-10-05T01:28:21.637Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.apple.com/en-us/118428",
+        "checkedAt": "2026-10-05T01:27:31.729Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "youtube-music",
+    "name": "YouTube Music",
+    "category": "music",
+    "domains": [
+      "youtube.com",
+      "google.com"
+    ],
+    "manageUrl": "https://www.youtube.com/paid_memberships",
+    "helpUrl": "https://support.google.com/youtubemusic/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://accounts.google.com/v3/signin/identifier?continue=https://www.youtube.com/signin?action_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fpaid_memberships%26feature%3Dredirect_login&hl=en&passive=true&service=youtube&uilel=3&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-217556445:1791163653411342",
+        "checkedAt": "2026-10-05T01:27:32.946Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.google.com/youtubemusic/",
+        "checkedAt": "2026-10-05T01:28:23.034Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "amazon-music",
+    "name": "Amazon Music Unlimited",
+    "category": "music",
+    "domains": [
+      "amazon.com"
+    ],
+    "manageUrl": "https://www.amazon.com/music/unlimited",
+    "helpUrl": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GLQP8385T78LUERA",
+    "stepsStated": true,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.amazon.com/music/unlimited",
+        "checkedAt": "2026-10-05T01:28:24.490Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GLQP8385T78LUERA",
+        "checkedAt": "2026-10-05T01:28:26.189Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "pandora",
+    "name": "Pandora",
+    "category": "music",
+    "domains": [
+      "pandora.com"
+    ],
+    "manageUrl": "https://www.pandora.com/account/subscription",
+    "helpUrl": "https://help.pandora.com/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.pandora.com/account/subscription",
+        "checkedAt": "2026-10-05T01:28:27.516Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.pandora.com/s/?language=en_US",
+        "checkedAt": "2026-10-05T01:28:28.764Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "siriusxm",
+    "name": "SiriusXM",
+    "category": "music",
+    "domains": [
+      "siriusxm.com"
+    ],
+    "manageUrl": "https://www.siriusxm.com/manage/",
+    "helpUrl": "https://www.siriusxm.com/help/manage-or-cancel-service",
+    "stepsStated": true,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.siriusxm.com/help/manage-or-cancel-service",
+        "checkedAt": "2026-10-05T01:28:30.316Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.siriusxm.com/help/manage-or-cancel-service",
+        "checkedAt": "2026-10-05T01:28:31.728Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "tidal",
+    "name": "TIDAL",
+    "category": "music",
+    "domains": [
+      "tidal.com"
+    ],
+    "manageUrl": "https://tidal.com/account",
+    "helpUrl": "https://support.tidal.com/hc/en-us",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://tidal.com/account",
+        "checkedAt": "2026-10-05T01:28:32.795Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://support.tidal.com/hc/en-us",
+        "checkedAt": "2026-10-05T01:28:34.004Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "audible",
+    "name": "Audible",
+    "category": "audio-books",
+    "domains": [
+      "audible.com"
+    ],
+    "manageUrl": "https://www.audible.com/account/membership",
+    "helpUrl": "https://www.audible.com/help",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 404,
+        "finalUrl": "https://www.audible.com/account/membership",
+        "checkedAt": "2026-10-05T01:28:35.145Z",
+        "ok": false,
+        "note": "404 not found"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.audible.com/s/?language=en_US",
+        "checkedAt": "2026-10-05T01:28:36.646Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "kindle-unlimited",
+    "name": "Kindle Unlimited",
+    "category": "other",
+    "domains": [
+      "amazon.com"
+    ],
+    "manageUrl": "https://www.amazon.com/kindle-dbs/subscribe/kuhome",
+    "helpUrl": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201974040",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 404,
+        "finalUrl": "https://www.amazon.com/kindle-dbs/subscribe/kuhome",
+        "checkedAt": "2026-10-05T01:28:38.453Z",
+        "ok": false,
+        "note": "404 not found"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201974040",
+        "checkedAt": "2026-10-05T01:28:39.673Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "nytimes",
+    "name": "The New York Times",
+    "category": "news",
+    "domains": [
+      "nytimes.com"
+    ],
+    "manageUrl": "https://myaccount.nytimes.com/seg/subscription",
+    "helpUrl": "https://help.nytimes.com/hc/en-us/articles/115014925468",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.nytimes.com/account/subscription",
+        "checkedAt": "2026-10-05T01:28:40.968Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.nytimes.com/",
+        "checkedAt": "2026-10-05T01:28:42.619Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "wsj",
+    "name": "Wall Street Journal",
+    "category": "news",
+    "domains": [
+      "wsj.com"
+    ],
+    "manageUrl": "https://customercenter.wsj.com/",
+    "helpUrl": "https://customercenter.wsj.com/view/help-center",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://customercenter.wsj.com/public",
+        "checkedAt": "2026-10-05T01:28:44.468Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://customercenter.wsj.com/view/help-center",
+        "checkedAt": "2026-10-05T01:28:46.351Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "washington-post",
+    "name": "Washington Post",
+    "category": "news",
+    "domains": [
+      "washingtonpost.com"
+    ],
+    "manageUrl": "https://subscribe.washingtonpost.com/profile/",
+    "helpUrl": "https://helpcenter.washingtonpost.com/hc/en-us",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 0,
+        "finalUrl": "https://subscribe.washingtonpost.com/profile/",
+        "checkedAt": "2026-10-05T01:28:47.576Z",
+        "ok": false,
+        "note": "no response: ERR_HTTP2_STREAM_ERROR"
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://helpcenter.washingtonpost.com/hc/en-us",
+        "checkedAt": "2026-10-05T01:28:48.889Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "the-atlantic",
+    "name": "The Atlantic",
+    "category": "news",
+    "domains": [
+      "theatlantic.com"
+    ],
+    "manageUrl": "https://www.theatlantic.com/membership/",
+    "helpUrl": "https://www.theatlantic.com/help/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://www.theatlantic.com/membership/",
+        "checkedAt": "2026-10-05T01:28:50.019Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://www.theatlantic.com/help/",
+        "checkedAt": "2026-10-05T01:28:51.285Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "medium",
+    "name": "Medium",
+    "category": "news",
+    "domains": [
+      "medium.com"
+    ],
+    "manageUrl": "https://medium.com/me/settings/membership",
+    "helpUrl": "https://help.medium.com/hc/en-us",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://medium.com/me/settings/membership",
+        "checkedAt": "2026-10-05T01:28:52.404Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://help.medium.com/hc/en-us",
+        "checkedAt": "2026-10-05T01:28:53.595Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "tinder",
+    "name": "Tinder",
+    "category": "dating",
+    "domains": [
+      "tinder.com"
+    ],
+    "manageUrl": "https://tinder.com/app/account",
+    "helpUrl": "https://www.help.tinder.com/hc/en-us/articles/115003479523",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://tinder.com/app/account",
+        "checkedAt": "2026-10-05T01:28:54.762Z",
+        "ok": true
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://www.help.tinder.com/hc/en-us/articles/115003479523",
+        "checkedAt": "2026-10-05T01:28:56.069Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "bumble",
+    "name": "Bumble",
+    "category": "dating",
+    "domains": [
+      "bumble.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://bumble.com/web-not-available/",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play"
+    ],
+    "notes": [
+      "Bumble's own page says web account management is not available. Manage the subscription in the Bumble app or the store you paid through."
+    ],
+    "check": {
+      "help": {
+        "status": 200,
+        "finalUrl": "https://bumble.com/web-not-available/",
+        "checkedAt": "2026-10-05T01:28:57.202Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "hinge",
+    "name": "Hinge",
+    "category": "dating",
+    "domains": [
+      "hinge.co"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://help.hinge.co/hc/en-us",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play"
+    ],
+    "notes": [
+      "No web account page was found on the official site. Manage the subscription in the Hinge app or in the App Store or Google Play where you paid."
+    ],
+    "check": {
+      "help": {
+        "status": 403,
+        "finalUrl": "https://help.hinge.co/hc/en-us",
+        "checkedAt": "2026-10-05T01:28:58.956Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "match",
+    "name": "Match",
+    "category": "dating",
+    "domains": [
+      "match.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://www.match.com/help",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "help": {
+        "status": 403,
+        "finalUrl": "https://www.match.com/help",
+        "checkedAt": "2026-10-05T01:29:00.135Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "xbox-game-pass",
+    "name": "Xbox Game Pass",
+    "category": "gaming",
+    "domains": [
+      "microsoft.com",
+      "xbox.com"
+    ],
+    "manageUrl": "https://account.microsoft.com/services",
+    "helpUrl": "https://support.xbox.com/en-US/help/subscriptions-billing/manage-payment-subscriptions/cancel-xbox-subscription",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=https:%2F%2Faccount.microsoft.com%2FMBI%20openid%20profile%20offline_access&response_type=code&client_id=81feaced-5ddd-41e7-8bef-3e20a2689bb7&redirect_uri=https:%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin-oauth&client-request-id=47c9f825-fd11-44a4-a399-534c3a2e247b&x-client-SKU=MSAL.Desktop&x-client-Ver=4.83.1.0&prompt=login&client_info=1&state=H4sIAAAAAAAEAAXByYJDMAAA0H_p1cFSQ3qkpktIBUH1RqwtOrQi8vXz3s4SdQsuiaSP8XiKzTuofKa1ZEkhUs_MrvJljReFJtsf0V1pa3NLfDhcs96TVA2n_GgL4QLj_HYzrh9cSvAh7X5ZVCcOC62uEhjmEmr8J5zNr_MU_Bv5orKk7NZ4Ay7N2Nv0V_tHOTx5CKSZgZXjrBbCzN0fN4KJvqQBOBeGen-XWYTuYoyk5DyST_TrxoTWsqyFe2O4tfPAooLQi39bt_Y1GCiur_1qvhsMAPhasrSYt3J6zqdr8XD6x8G212CQebvgeLS8uHHtqV3XwiMBSMC3M9H7NCzqTwfYIaz9kOa0DPCFkyZFk8-qMZq3YYbEoQxpphj32BuT_gU9LviEyyHt1r1UzLVWKhN_BDIAyjilFkaho5QfmLmsJ6io6O4fZlxM3IIBAAA&msaoauth2=true&instance_aware=true&lc=1033",
+        "checkedAt": "2026-10-05T01:29:01.456Z",
+        "ok": true,
+        "note": "ends on login.microsoftonline.com, not an entry domain"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.xbox.com/en-US/help/subscriptions-billing/manage-payment-subscriptions/cancel-xbox-subscription",
+        "checkedAt": "2026-10-05T01:29:04.768Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "playstation-plus",
+    "name": "PlayStation Plus",
+    "category": "gaming",
+    "domains": [
+      "playstation.com"
+    ],
+    "manageUrl": "https://www.playstation.com/en-us/support/subscriptions/",
+    "helpUrl": null,
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.playstation.com/en-us/support/subscriptions/",
+        "checkedAt": "2026-10-05T01:29:06.243Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "nintendo-switch-online",
+    "name": "Nintendo Switch Online",
+    "category": "gaming",
+    "domains": [
+      "nintendo.com"
+    ],
+    "manageUrl": "https://accounts.nintendo.com/",
+    "helpUrl": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/27745",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 0,
+        "finalUrl": "https://accounts.nintendo.com/",
+        "checkedAt": "2026-10-05T01:29:08.360Z",
+        "ok": false,
+        "note": "no response: timed out after 20 s"
+      },
+      "help": {
+        "status": 406,
+        "finalUrl": "https://en-americas-support.nintendo.com/app/utils/login_form/redirect/answers%252Fdetail%252Fa_id%252F27745/session/L2F2LzEvdGltZS8xNzkxMTYzNzcwL2dlbi8xNzkxMTYzNzcwL3NpZC9mVW9iREZWUUZyUEtwUE1sTFpyZ1R6QWhBdjZ1ck85bkJCbG5nZWEweDgxaDNDT254VTIlN0VwR0RRVjY4YWtsZ0E0X29CeU5HYUExelJyMUE1eWVkRDFlVV9VakptZXJyOEh0RFdBX25XQjN0ZmhIUzRDTFVheUtpZyUyMSUyMQ==?p_ptaid=fUxbnqwwjciorbgrcLkFTmo_e8Q2ulFAEjAop3dZIPLMMEJonk%7ENf2ORztBzmJms3Gyayds7oTCTafNffErftXiHhOFt0nqpA81Z%7EeqIamnxuDR2JLjlPJYA%21%21",
+        "checkedAt": "2026-10-05T01:29:29.367Z",
+        "ok": false,
+        "note": "406 not acceptable to this agent; not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "discord-nitro",
+    "name": "Discord Nitro",
+    "category": "software",
+    "domains": [
+      "discord.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://support.discord.com/hc/en-us/articles/115001177731",
+    "stepsStated": false,
+    "notes": [
+      "Nitro is managed inside the Discord app. No standalone web billing page was found on the official site."
+    ],
+    "check": {
+      "help": {
+        "status": 403,
+        "finalUrl": "https://support.discord.com/hc/en-us/articles/115001177731",
+        "checkedAt": "2026-10-05T01:29:31.897Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "twitch",
+    "name": "Twitch",
+    "category": "gaming",
+    "domains": [
+      "twitch.tv"
+    ],
+    "manageUrl": "https://www.twitch.tv/subscriptions",
+    "helpUrl": "https://help.twitch.tv/s/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.twitch.tv/subscriptions",
+        "checkedAt": "2026-10-05T01:29:33.411Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.twitch.tv/s/?language=en_US",
+        "checkedAt": "2026-10-05T01:29:34.599Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "ea-play",
+    "name": "EA Play",
+    "category": "gaming",
+    "domains": [
+      "ea.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://help.ea.com/en/help/account/cancel-ea-play/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "help": {
+        "status": 0,
+        "finalUrl": "https://help.ea.com/en/help/account/cancel-ea-play/",
+        "checkedAt": "2026-10-05T01:29:35.992Z",
+        "ok": false,
+        "note": "no response: ERR_HTTP2_STREAM_ERROR"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "roblox",
+    "name": "Roblox",
+    "category": "gaming",
+    "domains": [
+      "roblox.com"
+    ],
+    "manageUrl": "https://www.roblox.com/my/account#!/subscriptions",
+    "helpUrl": "https://en.help.roblox.com/hc/en-us/articles/203312800",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.roblox.com/NewLogin?ReturnUrl=%2Fmy%2Faccount",
+        "checkedAt": "2026-10-05T01:29:37.186Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://en.help.roblox.com/hc/en-us/articles/203312800",
+        "checkedAt": "2026-10-05T01:29:38.908Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "apple",
+    "name": "Apple (App Store subscriptions)",
+    "category": "platform-biller",
+    "domains": [
+      "apple.com"
+    ],
+    "manageUrl": "https://apps.apple.com/account/subscriptions",
+    "helpUrl": "https://support.apple.com/en-us/118428",
+    "stepsStated": true,
+    "notes": [
+      "Apps and services billed by Apple are cancelled under your Apple account subscriptions."
+    ],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://account.apple.com/account/manage/section/subscriptions",
+        "checkedAt": "2026-10-05T01:29:40.574Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.apple.com/en-us/118428",
+        "checkedAt": "2026-10-05T01:27:31.729Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "google-play",
+    "name": "Google Play subscriptions",
+    "category": "platform-biller",
+    "domains": [
+      "google.com"
+    ],
+    "manageUrl": "https://play.google.com/store/account/subscriptions",
+    "helpUrl": "https://support.google.com/googleplay/answer/7018481",
+    "stepsStated": true,
+    "notes": [
+      "Apps and services billed by Google Play are cancelled under Google Play subscriptions."
+    ],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://accounts.google.com/v3/signin/identifier?continue=https://play.google.com/store/account/subscriptions&followup=https://play.google.com/store/account/subscriptions&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S840146775:1791163784194459",
+        "checkedAt": "2026-10-05T01:29:43.808Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.google.com/googleplay/answer/7018481",
+        "checkedAt": "2026-10-05T01:29:45.273Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "paypal",
+    "name": "PayPal (automatic payments)",
+    "category": "platform-biller",
+    "domains": [
+      "paypal.com"
+    ],
+    "manageUrl": "https://www.paypal.com/myaccount/autopay/",
+    "helpUrl": null,
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.paypal.com/signin?returnUri=https%3A%2F%2Fwww.paypal.com%2Fmyaccount%2Fautopay&state=%2F",
+        "checkedAt": "2026-10-05T01:29:47.484Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "roku",
+    "name": "Roku (billed by Roku)",
+    "category": "platform-biller",
+    "domains": [
+      "roku.com"
+    ],
+    "manageUrl": "https://my.roku.com/account/subscriptions",
+    "helpUrl": "https://support.roku.com/en-us",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://my.roku.com/account/subscriptions",
+        "checkedAt": "2026-10-05T01:29:49.596Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.roku.com/en-us",
+        "checkedAt": "2026-10-05T01:29:51.695Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "amazon-channels",
+    "name": "Amazon and Prime Video Channels",
+    "category": "platform-biller",
+    "domains": [
+      "amazon.com"
+    ],
+    "manageUrl": "https://www.amazon.com/mn/dcw/myx.html",
+    "helpUrl": "https://www.amazon.com/gp/help/customer/display.html?nodeId=202095260",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.amazon.com/ax/claim?arb=0ed48d4c-768b-4554-813c-882abd05c40b",
+        "checkedAt": "2026-10-05T01:29:54.576Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.amazon.com/gp/help/customer/display.html?nodeId=202095260",
+        "checkedAt": "2026-10-05T01:29:56.776Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "icloud",
+    "name": "iCloud+",
+    "category": "cloud",
+    "domains": [
+      "apple.com"
+    ],
+    "manageUrl": "https://account.apple.com/account/manage/section/subscriptions",
+    "helpUrl": "https://support.apple.com/en-us/118428",
+    "stepsStated": true,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://account.apple.com/account/manage/section/subscriptions",
+        "checkedAt": "2026-10-05T01:29:58.245Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.apple.com/en-us/118428",
+        "checkedAt": "2026-10-05T01:27:31.729Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "google-one",
+    "name": "Google One",
+    "category": "cloud",
+    "domains": [
+      "google.com"
+    ],
+    "manageUrl": "https://one.google.com/storage",
+    "helpUrl": "https://support.google.com/googleone/answer/9004133",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://accounts.google.com/v3/signin/identifier?continue=https://one.google.com/storage&followup=https://one.google.com/storage&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-1761012842:1791163802004929",
+        "checkedAt": "2026-10-05T01:30:01.544Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 404,
+        "finalUrl": "https://support.google.com/googleone/answer/9004133",
+        "checkedAt": "2026-10-05T01:30:03.052Z",
+        "ok": false,
+        "note": "404 not found"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "dropbox",
+    "name": "Dropbox",
+    "category": "cloud",
+    "domains": [
+      "dropbox.com"
+    ],
+    "manageUrl": "https://www.dropbox.com/account/plan",
+    "helpUrl": "https://help.dropbox.com/billing/cancel-plan",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.dropbox.com/login?cont=%2Faccount%2Fplan",
+        "checkedAt": "2026-10-05T01:30:04.461Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 404,
+        "finalUrl": "https://help.dropbox.com/billing/cancel-plan",
+        "checkedAt": "2026-10-05T01:30:06.716Z",
+        "ok": false,
+        "note": "404 not found"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "microsoft-365",
+    "name": "Microsoft 365",
+    "category": "software",
+    "domains": [
+      "microsoft.com"
+    ],
+    "manageUrl": "https://account.microsoft.com/services/microsoft365",
+    "helpUrl": "https://support.microsoft.com/en-us/accounts-billing/subscriptions/cancel-a-microsoft-365-subscription",
+    "stepsStated": true,
+    "via": [
+      "apple",
+      "google-play"
+    ],
+    "notes": [
+      "If you bought it through Apple, Google or a reseller, Microsoft's article says to cancel there instead."
+    ],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=https:%2F%2Faccount.microsoft.com%2FMBI%20openid%20profile%20offline_access&response_type=code&client_id=81feaced-5ddd-41e7-8bef-3e20a2689bb7&redirect_uri=https:%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin-oauth&client-request-id=cea2291d-25fa-447f-9301-dcecaeffa520&x-client-SKU=MSAL.Desktop&x-client-Ver=4.83.1.0&prompt=login&client_info=1&state=H4sIAAAAAAAEAAXBSWKCMAAAwL_0ysGAKOSIbEIpQsGw3BKWsISWRIyW13fmAyFcP14ZCb1Oc4HaQ98NxzB3Jy-1LuPhkIwwM_eEGxYD7CJY1LpiqsN2fdf0Ve_-kW2pctpUNeis9QRWGktG8zqr57wj2y9B5uj5I8AZEtXB4Z4nU714UF0zYHKgw4U3INUK_BMqc7nYe-M2-3QWzJ5ukSwvuOuCaAK9ooBAs9OdwABDzs-NRZquBbG9JJ_LggPDz5iIviW60na-F6g86aqDmrV_7q4UKaz0oenzja7BlYwO5pXG2t92Xe_kWzizkVWFjEcLYbvPuSi3ocrM48KzGzz_fba3XTvfHPyYY1IwqBxb0-9cNjR3403j1xJtZQLk8_neua-eiGt-fW1mfvyBeARPfpWirxYPeoDOSj6gxwbFRN6O1KGiSwV__APJirtHggEAAA&msaoauth2=true&instance_aware=true&lc=1033",
+        "checkedAt": "2026-10-05T01:30:08.077Z",
+        "ok": true,
+        "note": "ends on login.microsoftonline.com, not an entry domain"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.microsoft.com/en-us/accounts-billing/subscriptions/cancel-a-microsoft-365-subscription",
+        "checkedAt": "2026-10-05T01:30:10.733Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "adobe",
+    "name": "Adobe Creative Cloud",
+    "category": "software",
+    "domains": [
+      "adobe.com"
+    ],
+    "manageUrl": "https://account.adobe.com/plans",
+    "helpUrl": "https://helpx.adobe.com/manage-account/using/cancel-subscription-online.html",
+    "stepsStated": false,
+    "notes": [
+      "Annual plans paid monthly can carry an early-termination fee after the first 14 days. Check Adobe's terms before you cancel."
+    ],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://account.adobe.com/plans",
+        "checkedAt": "2026-10-05T01:30:12.056Z",
+        "ok": true
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://helpx.adobe.com/manage-account/using/cancel-subscription-online.html",
+        "checkedAt": "2026-10-05T01:30:13.278Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "canva",
+    "name": "Canva",
+    "category": "software",
+    "domains": [
+      "canva.com"
+    ],
+    "manageUrl": "https://www.canva.com/settings/billing",
+    "helpUrl": "https://www.canva.com/help/cancel-subscription/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://www.canva.com/settings/billing",
+        "checkedAt": "2026-10-05T01:30:14.437Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://www.canva.com/help/cancel-subscription/",
+        "checkedAt": "2026-10-05T01:30:15.650Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "one-password",
+    "name": "1Password",
+    "category": "security",
+    "domains": [
+      "1password.com"
+    ],
+    "manageUrl": "https://my.1password.com/",
+    "helpUrl": "https://support.1password.com/cancel-account/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://my.1password.com/",
+        "checkedAt": "2026-10-05T01:30:16.737Z",
+        "ok": true
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://support.1password.com/cancel-account/",
+        "checkedAt": "2026-10-05T01:30:17.947Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "lastpass",
+    "name": "LastPass",
+    "category": "security",
+    "domains": [
+      "lastpass.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://support.lastpass.com/s/document-item?language=en_US&bundleId=lastpass&topicId=LastPass%2Fcancel-premium-plan.html",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "help": {
+        "status": 0,
+        "finalUrl": "https://support.lastpass.com/s/document-item?language=en_US&bundleId=lastpass&topicId=LastPass%2Fcancel-premium-plan.html",
+        "checkedAt": "2026-10-05T01:30:19.284Z",
+        "ok": false,
+        "note": "no response: UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "nordvpn",
+    "name": "NordVPN",
+    "category": "security",
+    "domains": [
+      "nordvpn.com",
+      "nordaccount.com"
+    ],
+    "manageUrl": "https://my.nordaccount.com/billing/",
+    "helpUrl": "https://nordvpn.com/blog/nordvpn-cancellation-and-refund-process/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://my.nordaccount.com/billing/",
+        "checkedAt": "2026-10-05T01:30:20.443Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://nordvpn.com/blog/nordvpn-cancellation-and-refund-process/",
+        "checkedAt": "2026-10-05T01:30:21.595Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "expressvpn",
+    "name": "ExpressVPN",
+    "category": "security",
+    "domains": [
+      "expressvpn.com"
+    ],
+    "manageUrl": "https://www.expressvpn.com/subscriptions",
+    "helpUrl": "https://www.expressvpn.com/support/manage-account/cancel-expressvpn-subscription/",
+    "stepsStated": true,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://portal.expressvpn.com/api/auth/login/init?returnUrl=b64.L215LXN1YnNjcmlwdGlvbg",
+        "checkedAt": "2026-10-05T01:30:22.727Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.expressvpn.com/support/manage-account/cancel-expressvpn-subscription/",
+        "checkedAt": "2026-10-05T01:30:24.447Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "norton",
+    "name": "Norton",
+    "category": "security",
+    "domains": [
+      "norton.com"
+    ],
+    "manageUrl": "https://login.norton.com/",
+    "helpUrl": "https://support.norton.com/sp/en/us/home/current/solutions/v3672523",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://login.norton.com/",
+        "checkedAt": "2026-10-05T01:30:25.632Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 404,
+        "finalUrl": "https://support.norton.com/sp/en/us/home/current/solutions/v3672523",
+        "checkedAt": "2026-10-05T01:30:27.280Z",
+        "ok": false,
+        "note": "404 not found"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "mcafee",
+    "name": "McAfee",
+    "category": "security",
+    "domains": [
+      "mcafee.com"
+    ],
+    "manageUrl": "https://www.mcafee.com/myaccount/",
+    "helpUrl": "https://www.mcafee.com/support/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 0,
+        "finalUrl": "https://www.mcafee.com/myaccount/",
+        "checkedAt": "2026-10-05T01:30:29.704Z",
+        "ok": false,
+        "note": "no response: ERR_HTTP2_STREAM_ERROR"
+      },
+      "help": {
+        "status": 0,
+        "finalUrl": "https://www.mcafee.com/support/",
+        "checkedAt": "2026-10-05T01:30:30.887Z",
+        "ok": false,
+        "note": "no response: ERR_HTTP2_STREAM_ERROR"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT Plus and Pro",
+    "category": "ai",
+    "domains": [
+      "chatgpt.com",
+      "openai.com"
+    ],
+    "manageUrl": "https://chatgpt.com/settings",
+    "helpUrl": "https://help.openai.com/en/articles/7232927-how-do-i-cancel-my-chatgpt-plus-subscription",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://chatgpt.com/settings",
+        "checkedAt": "2026-10-05T01:30:31.932Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 0,
+        "finalUrl": "https://help.openai.com/en/articles/7232927-how-do-i-cancel-my-chatgpt-plus-subscription",
+        "checkedAt": "2026-10-05T01:30:33.074Z",
+        "ok": false,
+        "note": "no response: ENOTFOUND"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "claude",
+    "name": "Claude Pro and Max",
+    "category": "ai",
+    "domains": [
+      "claude.ai",
+      "claude.com",
+      "anthropic.com"
+    ],
+    "manageUrl": "https://claude.ai/settings/billing",
+    "helpUrl": "https://support.claude.com/en/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://claude.ai/settings/billing",
+        "checkedAt": "2026-10-05T01:30:39.249Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.claude.com/en/",
+        "checkedAt": "2026-10-05T01:30:40.551Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "category": "software",
+    "domains": [
+      "notion.so",
+      "notion.com"
+    ],
+    "manageUrl": "https://www.notion.so/my-account",
+    "helpUrl": "https://www.notion.com/help/cancel-your-subscription",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://app.notion.com/space/my-account",
+        "checkedAt": "2026-10-05T01:30:42.296Z",
+        "ok": true
+      },
+      "help": {
+        "status": 404,
+        "finalUrl": "https://www.notion.com/help/cancel-your-subscription",
+        "checkedAt": "2026-10-05T01:30:44.008Z",
+        "ok": false,
+        "note": "404 not found"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "zoom",
+    "name": "Zoom",
+    "category": "software",
+    "domains": [
+      "zoom.us",
+      "zoom.com"
+    ],
+    "manageUrl": "https://zoom.us/account/billing",
+    "helpUrl": "https://support.zoom.us/hc/en-us/articles/4405333397261-Zoom-billing-support",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://zoom.us/signin",
+        "checkedAt": "2026-10-05T01:30:45.574Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066832",
+        "checkedAt": "2026-10-05T01:30:48.198Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "category": "software",
+    "domains": [
+      "github.com"
+    ],
+    "manageUrl": "https://github.com/settings/billing/summary",
+    "helpUrl": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-plan/cancel",
+    "stepsStated": false,
+    "notes": [
+      "That guide covers Copilot for an organization. Personal plans are managed in your billing settings."
+    ],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsettings%2Fbilling%2Fsummary",
+        "checkedAt": "2026-10-05T01:30:50.895Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-plan/cancel",
+        "checkedAt": "2026-10-05T01:30:52.273Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "duolingo",
+    "name": "Duolingo Super",
+    "category": "other",
+    "domains": [
+      "duolingo.com"
+    ],
+    "manageUrl": "https://www.duolingo.com/settings/super",
+    "helpUrl": "https://www.duolingo.com/help",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.duolingo.com/settings/super",
+        "checkedAt": "2026-10-05T01:30:53.594Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.duolingo.com/help",
+        "checkedAt": "2026-10-05T01:30:54.815Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "linkedin-premium",
+    "name": "LinkedIn Premium",
+    "category": "software",
+    "domains": [
+      "linkedin.com"
+    ],
+    "manageUrl": "https://www.linkedin.com/premium/manage/",
+    "helpUrl": "https://www.linkedin.com/help/linkedin/answer/a545578",
+    "stepsStated": true,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fmanage%2F",
+        "checkedAt": "2026-10-05T01:30:55.872Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.linkedin.com/help/linkedin/answer/a545578",
+        "checkedAt": "2026-10-05T01:30:57.261Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "patreon",
+    "name": "Patreon",
+    "category": "platform-biller",
+    "domains": [
+      "patreon.com"
+    ],
+    "manageUrl": "https://www.patreon.com/settings/memberships",
+    "helpUrl": "https://support.patreon.com/hc/en-us/articles/27204042141837-Canceling-a-free-membership",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://www.patreon.com/login?ru=https%3A%2F%2Fwww.patreon.com%2Fsettings%2Fmemberships",
+        "checkedAt": "2026-10-05T01:30:58.599Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://support.patreon.com/hc/en-us/articles/27204042141837-Canceling-a-free-membership",
+        "checkedAt": "2026-10-05T01:31:00.062Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "peloton",
+    "name": "Peloton",
+    "category": "fitness",
+    "domains": [
+      "onepeloton.com"
+    ],
+    "manageUrl": "https://members.onepeloton.com/",
+    "helpUrl": "https://support.onepeloton.com/hc/en-us",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://members.onepeloton.com/home/",
+        "checkedAt": "2026-10-05T01:31:01.241Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.onepeloton.com/s/?language=en_US",
+        "checkedAt": "2026-10-05T01:31:02.470Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "planet-fitness",
+    "name": "Planet Fitness",
+    "category": "fitness",
+    "domains": [
+      "planetfitness.com"
+    ],
+    "manageUrl": "https://www.planetfitness.com/my-account",
+    "helpUrl": "https://www.planetfitness.com/faq",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://www.planetfitness.com/my-account",
+        "checkedAt": "2026-10-05T01:31:04.092Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://www.planetfitness.com/faq",
+        "checkedAt": "2026-10-05T01:31:05.234Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "strava",
+    "name": "Strava",
+    "category": "fitness",
+    "domains": [
+      "strava.com"
+    ],
+    "manageUrl": "https://www.strava.com/settings",
+    "helpUrl": "https://support.strava.com/hc/en-us",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.strava.com/login",
+        "checkedAt": "2026-10-05T01:31:06.291Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.strava.com/en-us/collections/19657601-getting-started",
+        "checkedAt": "2026-10-05T01:31:07.649Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "headspace",
+    "name": "Headspace",
+    "category": "wellness",
+    "domains": [
+      "headspace.com"
+    ],
+    "manageUrl": "https://www.headspace.com/subscription/manage",
+    "helpUrl": "https://help.headspace.com/hc/en-us/articles/115008364988-How-do-I-cancel-my-subscription",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://my.headspace.com/profile/subscription/manage",
+        "checkedAt": "2026-10-05T01:31:09.601Z",
+        "ok": true
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://help.headspace.com/hc/en-us/articles/115008364988-How-do-I-cancel-my-subscription",
+        "checkedAt": "2026-10-05T01:31:11.471Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "calm",
+    "name": "Calm",
+    "category": "wellness",
+    "domains": [
+      "calm.com"
+    ],
+    "manageUrl": "https://www.calm.com/profile",
+    "helpUrl": "https://support.calm.com/hc/en-us/articles/115002473607-How-to-cancel-my-subscription",
+    "stepsStated": false,
+    "via": [
+      "apple",
+      "google-play"
+    ],
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.calm.com/app/profile",
+        "checkedAt": "2026-10-05T01:31:13.442Z",
+        "ok": true
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://support.calm.com/hc/en-us/articles/115002473607-How-to-cancel-my-subscription",
+        "checkedAt": "2026-10-05T01:31:15.578Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "noom",
+    "name": "Noom",
+    "category": "wellness",
+    "domains": [
+      "noom.com"
+    ],
+    "manageUrl": "https://web.noom.com/",
+    "helpUrl": "https://web.noom.com/support",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://www.noom.com/",
+        "checkedAt": "2026-10-05T01:31:16.753Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://www.noom.com/support",
+        "checkedAt": "2026-10-05T01:31:18.166Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "myfitnesspal",
+    "name": "MyFitnessPal Premium",
+    "category": "fitness",
+    "domains": [
+      "myfitnesspal.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://support.myfitnesspal.com/hc/en-us",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "help": {
+        "status": 403,
+        "finalUrl": "https://support.myfitnesspal.com/hc/en-us",
+        "checkedAt": "2026-10-05T01:31:19.263Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "classpass",
+    "name": "ClassPass",
+    "category": "fitness",
+    "domains": [
+      "classpass.com"
+    ],
+    "manageUrl": "https://classpass.com/account/settings",
+    "helpUrl": "https://help.classpass.com/hc/en-us/articles/204578119",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://classpass.com/account/settings",
+        "checkedAt": "2026-10-05T01:31:20.401Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://help.classpass.com/hc/en-us/articles/204578119",
+        "checkedAt": "2026-10-05T01:31:21.595Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "whoop",
+    "name": "Whoop",
+    "category": "fitness",
+    "domains": [
+      "whoop.com"
+    ],
+    "manageUrl": "https://app.whoop.com/membership",
+    "helpUrl": "https://www.community.whoop.com/t/how-do-i-cancel-membership/13635",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://app.whoop.com/membership",
+        "checkedAt": "2026-10-05T01:31:22.760Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.community.whoop.com/t/how-do-i-cancel-membership/13635",
+        "checkedAt": "2026-10-05T01:31:23.931Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "fitbit-premium",
+    "name": "Fitbit Premium",
+    "category": "fitness",
+    "domains": [
+      "fitbit.com",
+      "google.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://support.google.com/store/answer/14237941",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.google.com/store/answer/14237941",
+        "checkedAt": "2026-10-05T01:31:25.290Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "amazon-prime",
+    "name": "Amazon Prime",
+    "category": "shopping-membership",
+    "domains": [
+      "amazon.com"
+    ],
+    "manageUrl": "https://www.amazon.com/gp/primecentral",
+    "helpUrl": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GTS2W2WH9STCUUMK",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.amazon.com/ax/claim?arb=cbcd80b2-5e3c-4bd8-8b07-d61dd481c3fc",
+        "checkedAt": "2026-10-05T01:31:26.831Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GTS2W2WH9STCUUMK",
+        "checkedAt": "2026-10-05T01:31:29.569Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "walmart-plus",
+    "name": "Walmart+",
+    "category": "shopping-membership",
+    "domains": [
+      "walmart.com"
+    ],
+    "manageUrl": "https://www.walmart.com/plus/manage",
+    "helpUrl": "https://www.walmart.com/help",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.walmart.com/plus/manage",
+        "checkedAt": "2026-10-05T01:31:31.079Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.walmart.com/help",
+        "checkedAt": "2026-10-05T01:31:33.793Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "doordash-dashpass",
+    "name": "DoorDash DashPass",
+    "category": "delivery",
+    "domains": [
+      "doordash.com"
+    ],
+    "manageUrl": "https://www.doordash.com/dashpass/",
+    "helpUrl": "https://help.doordash.com/en-us/consumers/article/how-do-i-cancel-my-dashpass-subscription",
+    "stepsStated": true,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://www.doordash.com/dashpass/",
+        "checkedAt": "2026-10-05T01:31:35.762Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.doordash.com/en-us/consumers/article/how-do-i-cancel-my-dashpass-subscription",
+        "checkedAt": "2026-10-05T01:31:36.881Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "uber-one",
+    "name": "Uber One",
+    "category": "delivery",
+    "domains": [
+      "uber.com"
+    ],
+    "manageUrl": "https://www.uber.com/us/en/member/uber-one/",
+    "helpUrl": "https://help.uber.com/riders",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 404,
+        "finalUrl": "https://www.uber.com/us/en/member/uber-one/",
+        "checkedAt": "2026-10-05T01:31:38.133Z",
+        "ok": false,
+        "note": "404 not found"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.uber.com/riders",
+        "checkedAt": "2026-10-05T01:31:40.309Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "instacart-plus",
+    "name": "Instacart+",
+    "category": "delivery",
+    "domains": [
+      "instacart.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://www.instacart.com/help",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.instacart.com/help",
+        "checkedAt": "2026-10-05T01:31:43.345Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "grubhub-plus",
+    "name": "Grubhub+",
+    "category": "delivery",
+    "domains": [
+      "grubhub.com"
+    ],
+    "manageUrl": "https://www.grubhub.com/account/subscription",
+    "helpUrl": null,
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.grubhub.com/account/subscription",
+        "checkedAt": "2026-10-05T01:31:44.760Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "costco",
+    "name": "Costco membership",
+    "category": "shopping-membership",
+    "domains": [
+      "costco.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://customerservice.costco.com/app/answers/detail/a_id/1085",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "help": {
+        "status": 200,
+        "finalUrl": "https://customerservice.costco.com/app/error/error_id/1",
+        "checkedAt": "2026-10-05T01:31:45.976Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "sams-club",
+    "name": "Sam's Club membership",
+    "category": "shopping-membership",
+    "domains": [
+      "samsclub.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://help.samsclub.com/?xid=vanity:help",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.samsclub.com/?xid=vanity:help",
+        "checkedAt": "2026-10-05T01:31:48.343Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "hellofresh",
+    "name": "HelloFresh",
+    "category": "delivery",
+    "domains": [
+      "hellofresh.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://support.hellofresh.com/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "help": {
+        "status": 0,
+        "finalUrl": "https://support.hellofresh.com/",
+        "checkedAt": "2026-10-05T01:31:51.406Z",
+        "ok": false,
+        "note": "no response: ENOTFOUND"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "factor",
+    "name": "Factor",
+    "category": "delivery",
+    "domains": [
+      "factor75.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://support.factor75.com/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "help": {
+        "status": 0,
+        "finalUrl": "https://support.factor75.com/",
+        "checkedAt": "2026-10-05T01:31:52.504Z",
+        "ok": false,
+        "note": "no response: ENOTFOUND"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "target-circle-360",
+    "name": "Target Circle 360",
+    "category": "shopping-membership",
+    "domains": [
+      "target.com"
+    ],
+    "manageUrl": "https://www.target.com/account/memberships",
+    "helpUrl": "https://help.target.com/",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.target.com/account/memberships",
+        "checkedAt": "2026-10-05T01:31:53.881Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.target.com/help",
+        "checkedAt": "2026-10-05T01:31:55.693Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "chewy",
+    "name": "Chewy Autoship",
+    "category": "delivery",
+    "domains": [
+      "chewy.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://www.chewy.com/help",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.chewy.com/customer-care",
+        "checkedAt": "2026-10-05T01:31:57.731Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "ring",
+    "name": "Ring Protect",
+    "category": "home-security",
+    "domains": [
+      "ring.com"
+    ],
+    "manageUrl": "https://account.ring.com/account/protect-plans",
+    "helpUrl": "https://ring.com/support/articles/468y0/Canceling-your-Ring-plan",
+    "stepsStated": true,
+    "notes": [
+      "Ring's help article says cancelling deletes recorded video, and that cancellations are no longer refunded."
+    ],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://ring.com/users/sign_in?return=account&path=%2Faccount%2Fprotect-plans",
+        "checkedAt": "2026-10-05T01:31:59.933Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://ring.com/support/articles/468y0/Canceling-your-Ring-plan",
+        "checkedAt": "2026-10-05T01:32:01.423Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "simplisafe",
+    "name": "SimpliSafe",
+    "category": "home-security",
+    "domains": [
+      "simplisafe.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://support.simplisafe.com/",
+    "stepsStated": false,
+    "notes": [
+      "SimpliSafe's support content says cancelling is by phone only."
+    ],
+    "check": {
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.simplisafe.com/",
+        "checkedAt": "2026-10-05T01:32:02.802Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "adt",
+    "name": "ADT",
+    "category": "home-security",
+    "domains": [
+      "adt.com"
+    ],
+    "manageUrl": "https://www.adt.com/myadt",
+    "helpUrl": "https://www.adt.com/help",
+    "stepsStated": false,
+    "notes": [
+      "Cancelling is by phone only, and an early-termination fee can apply under the contract."
+    ],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://www.adt.com/myadt",
+        "checkedAt": "2026-10-05T01:32:04.307Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://www.adt.com/help",
+        "checkedAt": "2026-10-05T01:32:05.595Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "applecare",
+    "name": "AppleCare+",
+    "category": "protection",
+    "domains": [
+      "apple.com"
+    ],
+    "manageUrl": "https://account.apple.com/account/manage/section/subscriptions",
+    "helpUrl": "https://support.apple.com/en-us/101726",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://account.apple.com/account/manage/section/subscriptions",
+        "checkedAt": "2026-10-05T01:29:58.245Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://support.apple.com/en-us/101726",
+        "checkedAt": "2026-10-05T01:32:06.639Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "aura",
+    "name": "Aura",
+    "category": "protection",
+    "domains": [
+      "aura.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://help.aura.com/s/article/cancel-subscription-online",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.aura.com/s/article/cancel-subscription-online",
+        "checkedAt": "2026-10-05T01:32:08.446Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "lifelock",
+    "name": "LifeLock",
+    "category": "protection",
+    "domains": [
+      "lifelock.com",
+      "norton.com"
+    ],
+    "manageUrl": "https://my.norton.com/",
+    "helpUrl": null,
+    "stepsStated": false,
+    "notes": [
+      "LifeLock is managed through Norton's account system. No separate LifeLock cancel page was found."
+    ],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://my.norton.com/",
+        "checkedAt": "2026-10-05T01:32:09.941Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "experian",
+    "name": "Experian CreditWorks Premium",
+    "category": "protection",
+    "domains": [
+      "experian.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://www.experian.com/consumer/membership.html",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "help": {
+        "status": 404,
+        "finalUrl": "https://www.experian.com/consumer/membership.html",
+        "checkedAt": "2026-10-05T01:32:11.089Z",
+        "ok": false,
+        "note": "404 not found"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "life360",
+    "name": "Life360",
+    "category": "other",
+    "domains": [
+      "life360.com"
+    ],
+    "manageUrl": null,
+    "helpUrl": "https://support.life360.com/hc/en-us/articles/23053539274135",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "help": {
+        "status": 403,
+        "finalUrl": "https://support.life360.com/hc/en-us/articles/23053539274135",
+        "checkedAt": "2026-10-05T01:32:12.458Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "ancestry",
+    "name": "Ancestry",
+    "category": "other",
+    "domains": [
+      "ancestry.com"
+    ],
+    "manageUrl": "https://www.ancestry.com/account/",
+    "helpUrl": "https://support.ancestry.com/s/article/Canceling-Your-Subscription",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://www.ancestry.com/account/signin?returnUrl=https%3A%2F%2Fwww.ancestry.com%2Faccount",
+        "checkedAt": "2026-10-05T01:32:13.625Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://help.ancestry.com/hc/en-us",
+        "checkedAt": "2026-10-05T01:32:15.052Z",
+        "ok": true
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "verizon",
+    "name": "Verizon (add-ons and features)",
+    "category": "telecom",
+    "domains": [
+      "verizon.com"
+    ],
+    "manageUrl": "https://www.verizon.com/myverizon/",
+    "helpUrl": "https://www.verizon.com/support/",
+    "stepsStated": false,
+    "notes": [
+      "No single page removes one add-on. My Verizon is the account entry point."
+    ],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://secure.verizon.com/signin",
+        "checkedAt": "2026-10-05T01:32:16.887Z",
+        "ok": true,
+        "note": "redirects to sign-in"
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.verizon.com/support/",
+        "checkedAt": "2026-10-05T01:32:18.590Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  },
+  {
+    "id": "t-mobile",
+    "name": "T-Mobile (add-ons and services)",
+    "category": "telecom",
+    "domains": [
+      "t-mobile.com"
+    ],
+    "manageUrl": "https://www.t-mobile.com/my-t-mobile",
+    "helpUrl": "https://www.t-mobile.com/support/account/cancel-service",
+    "stepsStated": false,
+    "notes": [],
+    "check": {
+      "manage": {
+        "status": 403,
+        "finalUrl": "https://www.t-mobile.com/my-t-mobile",
+        "checkedAt": "2026-10-05T01:32:19.727Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      },
+      "help": {
+        "status": 403,
+        "finalUrl": "https://www.t-mobile.com/support/account/cancel-service",
+        "checkedAt": "2026-10-05T01:32:20.902Z",
+        "ok": false,
+        "note": "403 refused (possible bot wall); not retried"
+      }
+    },
+    "verified": null
+  },
+  {
+    "id": "att",
+    "name": "AT&T (add-ons)",
+    "category": "telecom",
+    "domains": [
+      "att.com"
+    ],
+    "manageUrl": "https://www.att.com/my/",
+    "helpUrl": "https://www.att.com/support/article/wireless/KM1031426/",
+    "stepsStated": false,
+    "notes": [
+      "The linked help article covers prepaid add-ons."
+    ],
+    "check": {
+      "manage": {
+        "status": 200,
+        "finalUrl": "https://www.att.com/my/",
+        "checkedAt": "2026-10-05T01:32:21.968Z",
+        "ok": true
+      },
+      "help": {
+        "status": 200,
+        "finalUrl": "https://www.att.com/support/article/wireless/KM1031426/",
+        "checkedAt": "2026-10-05T01:32:23.164Z",
+        "ok": true
+      }
+    },
+    "verified": "2026-10-04"
+  }
+]
