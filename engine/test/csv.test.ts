@@ -37,3 +37,15 @@ describe('readCsv (RFC 4180)', () => {
     expect(detectDelimiter(firstLines('Date,Description,Amount\n09/01/2026,"A; B",-1.00\n', 30))).toBe(',');
   });
 });
+
+import { parseRows, sniffFormat } from '../src/index';
+describe('hostile input never throws', () => {
+  it('empty, header-only, binary-ish and huge-field files', () => {
+    for (const text of ['', 'Date,Description,Amount\n', '\u0000\u0001��PK\u0003\u0004', '"unterminated,quote\n1,2', 'a'.repeat(100000)]) {
+      const s = sniffFormat(text);
+      expect(s.format).toBeTypeOf('string');
+      const r = parseRows(text, s);
+      expect(r.rows.length).toBe(0);
+    }
+  });
+});
