@@ -17,6 +17,7 @@
     }
   ],
   "rewrites": [
-    { "source": "/((?!assets/|sample/|privacy-results\\.json|robots\\.txt|favicon\\.svg|og\\.png).*)", "destination": "/index.html" }
+    { "source": "/", "destination": "/index" },
+    { "source": "/((?!assets/|sample/|privacy-results\\.json|robots\\.txt|favicon\\.svg|og\\.png).*)", "destination": "/shell" }
   ]
 }
