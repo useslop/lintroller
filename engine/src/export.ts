@@ -1,7 +1,31 @@
 // Exports: findings CSV (RFC 4180, CRLF, formula-injection escape) and ICS reminders (RFC 5545).
 import { PERIODS_PER_YEAR, yearlyCost } from './money';
-import type { Cadence, Finding, IcsOptions, StatusMap } from './types';
-import { dayNum, formatUsd, fromDayNum } from './values';
+import type { Cadence, Finding, FixedCadence, IcsOptions, StatusMap } from './types';
+import { dayNum, formatUsd, fromDayNum, gridDay, monthIndexOf } from './values';
+
+const MONTHS_PER_STEP: Partial<Record<FixedCadence, number>> = {
+  semimonthly: 1, monthly: 1, bimonthly: 2, quarterly: 3, semiannual: 6, yearly: 12,
+};
+
+/**
+ * The first expected date on or after `from`, stepping from `next` by the cadence (Q1 F1b #9: a next date
+ * computed from the file's last row can already be past). Month cadences keep the day of month, clamped to
+ * the month's end; twice-a-month series step a month, landing on the same one of their two days.
+ */
+export function rollForward(next: string, cadence: Cadence, from: string): string {
+  const target = dayNum(from);
+  let d = dayNum(next);
+  if (d >= target || cadence === 'irregular') return next;
+  const months = MONTHS_PER_STEP[cadence];
+  if (months) {
+    const anchor = Number(next.slice(8, 10));
+    let mi = monthIndexOf(next);
+    while (d < target) { mi += months; d = gridDay(mi, anchor); }
+    return fromDayNum(d);
+  }
+  const step = cadence === 'weekly' ? 7 : 14;
+  return fromDayNum(d + Math.ceil((target - d) / step) * step);
+}
 
 export const CADENCE_WORDS: Record<Cadence, string> = {
   weekly: 'once a week', biweekly: 'once per 2 weeks', semimonthly: 'twice a month', monthly: 'once a month',
@@ -96,16 +120,18 @@ export function buildIcs(findings: Finding[], opts: IcsOptions): string {
   const dtstamp = stamp(opts.now);
   for (const f of findings) {
     if (f.activity !== 'active' || !f.nextExpected || (f.status as string) === 'dismissed') continue;
-    const day = dayNum(f.nextExpected) - daysBefore;
+    // a reminder never starts before the real date: roll the next date forward by the cadence
+    const next = opts.today ? rollForward(f.nextExpected, f.cadence, fromDayNum(dayNum(opts.today) + daysBefore)) : f.nextExpected;
+    const day = dayNum(next) - daysBefore;
     const start = fromDayNum(day);
     const amount = formatUsd(f.amount.lastCents);
-    const summary = opts.includeAmounts ? `${f.display}: ${amount} expected ${humanDate(f.nextExpected)}` : f.display;
+    const summary = opts.includeAmounts ? `${f.display}: ${amount} expected ${humanDate(next)}` : f.display;
     const desc = [
       `Looks like a repeating charge (${CADENCE_WORDS[f.cadence]}), based on the rows in your file.`,
       opts.includeAmounts
         ? `Last charge ${amount} on ${humanDate(f.lastDate)}. About ${formatUsd(f.amount.lastCents * (f.cadence === 'irregular' ? 0 : PERIODS_PER_YEAR[f.cadence]))} a year if it keeps going.`
         : `Last charge on ${humanDate(f.lastDate)}.`,
-      `Next one expected around ${humanDate(f.nextExpected)}.`,
+      `Next one expected around ${humanDate(next)}.`,
       `Made with ${opts.productUrl}`,
     ].join('\n');
     const lines = [

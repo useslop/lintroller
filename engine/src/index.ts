@@ -8,7 +8,7 @@ export { buildAliasIndex, cleanDescriptor, normalizeMerchant, classifyRow } from
 export { detectRecurring } from './detect';
 export { yearlyCost, totals } from './money';
 export { lookupCancel } from './cancel';
-export { findingsToCsv, buildIcs } from './export';
+export { findingsToCsv, buildIcs, rollForward } from './export';
 export { lintCopy, NEVER_SAY } from './copy-lint';
 // Extras (not in CONTRACT §3; additive): format labels, SPEC §4 cadence words, periods per year, the CSV reader.
 export { FORMATS } from './sniff';

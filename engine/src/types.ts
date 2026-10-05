@@ -306,6 +306,8 @@ export interface Score {
 
 // ---------- export (CONTRACT §3) ----------
 export interface IcsOptions {
+  /** F1b: the real date (ISO). Reminders that would fall before it roll forward by the cadence; omitted = as before. */
+  today?: string;
   daysBefore: number;          // 1..30, default 3
   includeAmounts: boolean;     // default true; off = the event title is only the merchant name
   productUrl: string;

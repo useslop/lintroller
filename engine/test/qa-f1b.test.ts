@@ -1,6 +1,6 @@
 // Regressions for Q1's F1b fix list (reports/subscription-sweep-2026-10-04/lanes/Q1-qa/REVIEW.md "Fix list").
 import { describe, expect, it } from 'vitest';
-import { detectRecurring, parseRows, type ParseSpec } from '../src/index';
+import { buildIcs, detectRecurring, parseRows, rollForward, type ParseSpec } from '../src/index';
 import { parseAmountCents } from '../src/values';
 import { INDEX, charges } from './helpers';
 
@@ -69,5 +69,28 @@ describe('F1b #4: a price change is not also "same amount each time"', () => {
     const r = detectRecurring(charges('NETFLIX.COM', dates, 1549), { aliasIndex: INDEX });
     expect(r.findings[0]!.reasons).toContain('stable-amount');
     expect(r.findings[0]!.reasons).not.toContain('price-change');
+  });
+});
+
+describe('F1b #9: next dates and reminders are never in the past', () => {
+  it('rollForward steps by the cadence and keeps the day of month', () => {
+    expect(rollForward('2026-10-03', 'monthly', '2026-10-04')).toBe('2026-11-03');
+    expect(rollForward('2026-01-31', 'monthly', '2026-02-10')).toBe('2026-02-28');
+    expect(rollForward('2026-10-03', 'monthly', '2026-10-03')).toBe('2026-10-03');
+    expect(rollForward('2026-09-30', 'weekly', '2026-10-04')).toBe('2026-10-07');
+    expect(rollForward('2026-09-30', 'biweekly', '2026-10-04')).toBe('2026-10-14');
+    expect(rollForward('2025-10-01', 'yearly', '2026-10-04')).toBe('2027-10-01');
+    expect(rollForward('2026-10-01', 'quarterly', '2026-10-04')).toBe('2027-01-01');
+  });
+
+  it('buildIcs with today: no reminder starts before today; without it, unchanged', () => {
+    const dates = ['2026-06-03', '2026-07-03', '2026-08-03', '2026-09-03'];
+    const f = detectRecurring(charges('SPOTIFY USA', dates, 1199), { aliasIndex: INDEX, today: '2026-09-30' }).findings[0]!;
+    expect(f.nextExpected).toBe('2026-10-03');
+    const base = { daysBefore: 3, includeAmounts: true, productUrl: 'https://lintroller.vercel.app', now: '2026-10-04T12:00:00Z' };
+    expect(buildIcs([f], base)).toContain('DTSTART;VALUE=DATE:20260930');
+    const ics = buildIcs([f], { ...base, today: '2026-10-04' });
+    expect(ics).toContain('DTSTART;VALUE=DATE:20261031');
+    expect(ics).toContain('expected Nov 3\\, 2026');
   });
 });

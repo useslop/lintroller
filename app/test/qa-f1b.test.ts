@@ -169,3 +169,13 @@ describe('F1b #15: the mapper names the real cause', () => {
     expect(previewProblem(t, spec)).toBe('amount');
   });
 });
+
+describe('F1b #9: a past next date says so on the summary card', () => {
+  it('honesty-life.csv Spotify (due Oct 3, file ends Sep 30) on Oct 4', async () => {
+    const { nextLine } = await import('../src/pages/Summary');
+    const spotify = run('honesty-life.csv').detect.findings.find((f) => f.aliasId === 'spotify')!;
+    expect(spotify.nextExpected).toBe('2026-10-03');
+    expect(nextLine(spotify, '2026-10-04')).toBe('Due Oct 3, 2026, after your file ends; the next one around Nov 3, 2026');
+    expect(nextLine(spotify, '2026-10-02')).toBe('Next expected Oct 3, 2026');
+  });
+});

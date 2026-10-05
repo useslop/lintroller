@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { cancelDirectory } from '../data';
-import { yearlyCost, findingsToCsv, buildIcs, lookupCancel, totals, type Finding, type CancelLink } from '../engine';
+import { yearlyCost, findingsToCsv, buildIcs, lookupCancel, rollForward, totals, type Finding, type CancelLink } from '../engine';
+import { localToday } from '../pipeline';
 import { CATEGORY_LABEL, LAW_LINES, LAW_NOTE, PLATFORM_NAME, formatDate, formatMoney, plural } from '../copy';
 import { PRODUCT_URL } from '../product';
 import { downloadText } from '../files';
@@ -73,7 +74,7 @@ export function Summary() {
         <ul className="cards">
           {listed.map((f) => (
             <li key={f.id}>
-              <ChargeCard finding={f} confirmed={statuses[f.id] === 'confirmed'} today={today} />
+              <ChargeCard finding={f} confirmed={statuses[f.id] === 'confirmed'} />
             </li>
           ))}
         </ul>
@@ -126,7 +127,7 @@ export function Summary() {
             className="button"
             onClick={() => downloadText(
               'subsweep-reminders.ics',
-              buildIcs(reminders, { daysBefore: days, includeAmounts: amounts, productUrl: PRODUCT_URL, now: new Date().toISOString() }),
+              buildIcs(reminders, { daysBefore: days, includeAmounts: amounts, productUrl: PRODUCT_URL, now: new Date().toISOString(), today: localToday() }),
               'text/calendar;charset=utf-8',
             )}
           >
@@ -153,9 +154,11 @@ export function Summary() {
   );
 }
 
-function ChargeCard({ finding: f, confirmed, today }: { finding: Finding; confirmed: boolean; today: string }) {
+function ChargeCard({ finding: f, confirmed }: { finding: Finding; confirmed: boolean }) {
   const y = yearlyCost(f);
-  const links = lookupCancel(f, cancelDirectory, today);
+  // the real date: link freshness and "next expected" are about now, not the file's last row (Q1 F1b #9)
+  const now = localToday();
+  const links = lookupCancel(f, cancelDirectory, now);
   return (
     <article className="card">
       <h3>{f.display}</h3>
@@ -164,7 +167,7 @@ function ChargeCard({ finding: f, confirmed, today }: { finding: Finding; confir
         {y.periodsPerYear === null ? `${formatMoney(y.cents)}, total of the last 12 months in your file` : `${formatMoney(y.cents)} a year`}
       </p>
       <p className="muted">{y.formula}</p>
-      <p>{f.nextExpected ? `Next expected ${formatDate(f.nextExpected)}` : 'Next date unknown: the dates vary.'}</p>
+      <p>{nextLine(f, now)}</p>
       {links.length === 0 ? (
         <p className="muted">No checked link yet. Look for 'Membership' or 'Subscription' in your account settings on the company's own site.</p>
       ) : (
@@ -172,6 +175,13 @@ function ChargeCard({ finding: f, confirmed, today }: { finding: Finding; confir
       )}
     </article>
   );
+}
+
+/** A next date already past (the file ended before it) says so, then gives the following one. */
+export function nextLine(f: Finding, now: string): string {
+  if (!f.nextExpected) return 'Next date unknown: the dates vary.';
+  if (f.nextExpected >= now) return `Next expected ${formatDate(f.nextExpected)}`;
+  return `Due ${formatDate(f.nextExpected)}, after your file ends; the next one around ${formatDate(rollForward(f.nextExpected, f.cadence, now))}`;
 }
 
 function CancelLinkLine({ link }: { link: CancelLink }) {
