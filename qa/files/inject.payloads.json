@@ -1,0 +1,15 @@
+[
+  "<img src=x onerror=alert(1)>",
+  "<script>alert(1)</script>",
+  "javascript:alert(1)",
+  "=HYPERLINK(\"http://example.com\",\"click\")",
+  "+cmd|' /C calc'!A0",
+  "@SUM(1+1)",
+  "-2+3+cmd|' /C calc'!A0",
+  "\tTABLEAD=1+1",
+  "EVIL‮GNP.EXE MOVIES",
+  "SP‍OTI​FY ZWJ PLUS",
+  "☕ COFFEE CLUB 🍩👨‍👩‍👧",
+  "LINEBREAK CLUB\r\nBEGIN:VEVENT\r\nSUMMARY:pwned",
+  "ACME, \"QUOTED\" INC; DROP TABLE"
+]

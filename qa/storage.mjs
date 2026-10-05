@@ -1,0 +1,36 @@
+// Q1: opt-in storage: import, summary, "Remember on this device" -> what is stored; reload -> restored?;
+// "Delete everything" -> storage and screen cleared; then a new import on the same page still works.
+import { chromium } from 'playwright-core';
+import os from 'node:os';
+import path from 'node:path';
+const exe = path.join(os.homedir(), 'Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell');
+const b = await chromium.launch({ executablePath: exe, headless: true });
+const ctx = await b.newContext();
+const page = await ctx.newPage();
+const after = []; let loaded = false;
+ctx.on('request', (r) => { if (loaded) after.push(r.url().slice(0, 90)); });
+const st = () => page.evaluate(() => { const k = Object.keys(localStorage); const v = k.map((x) => localStorage.getItem(x) || '').join(''); return { keys: k, bytes: v.length, hasRawDescriptor: /NETFLIX\.COM|866-712-7753|QUINN MARLOWE/.test(v), session: sessionStorage.length }; });
+await page.goto('https://lintroller.vercel.app/sweep'); loaded = true;
+await page.setInputFiles('input[type=file]', 'qa/files/honesty-life.csv');
+await page.getByRole('button', { name: /Next: review/ }).first().click();
+await page.getByRole('button', { name: /Yes, it repeats/ }).first().click();
+await page.getByRole('link', { name: /yearly summary/i }).first().click();
+await page.waitForTimeout(400);
+console.log('before opt-in:', JSON.stringify(await st()));
+await page.getByLabel(/Remember on this device/).check();
+await page.waitForTimeout(400);
+console.log('after opt-in:', JSON.stringify(await st()));
+await page.reload(); await page.waitForTimeout(800);
+const restored = await page.evaluate(() => /Confirmed: \$[\d,.]+ a year/.exec(document.body.innerText)?.[0] ?? 'nothing restored: ' + document.body.innerText.slice(0, 80).replace(/\n/g, ' '));
+console.log('after reload on /sweep/summary:', restored);
+const del = page.getByRole('button', { name: /Delete everything/ });
+if (await del.count()) {
+  page.once('dialog', async (d) => { console.log('confirm dialog:', d.message().slice(0, 100)); await d.accept(); });
+  await del.first().click(); await page.waitForTimeout(600);
+  console.log('after Delete everything:', JSON.stringify(await st()), '| screen:', (await page.evaluate(() => document.body.innerText.slice(0, 120))).replace(/\n/g, ' '), '| url', new URL(page.url()).pathname);
+} else console.log('Delete everything button not found on this screen');
+await page.goto('https://lintroller.vercel.app/sweep');
+await page.setInputFiles('input[type=file]', 'qa/files/short-94days.csv');
+await page.waitForTimeout(1200);
+console.log('new import after delete:', (await page.evaluate(() => (document.body.innerText.match(/Read \d+ rows? from[^\n]*/) || ['none'])[0])), '| storage', JSON.stringify(await st()), '| requests after load', after.length, '(reload/goto count as loads: ' + after.filter((u) => !/\/assets\//.test(u)).join(' ; ').slice(0, 200) + ')');
+await b.close();

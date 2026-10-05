@@ -1,0 +1,62 @@
+{
+  "subscriptions": {
+    "NETFLIX.COM": {
+      "cadence": "monthly",
+      "last": 17.99,
+      "yearly": 215.88,
+      "note": "price change 15.49 -> 17.99 on Mar 12 2026"
+    },
+    "SPOTIFY USA": {
+      "cadence": "monthly",
+      "last": 11.99,
+      "yearly": 143.88
+    },
+    "APPLE.COM/BILL a": {
+      "cadence": "monthly",
+      "last": 2.99,
+      "yearly": 35.88
+    },
+    "APPLE.COM/BILL b": {
+      "cadence": "monthly",
+      "last": 10.99,
+      "yearly": 131.88
+    },
+    "PLANET FITNESS": {
+      "cadence": "monthly",
+      "last": 24.99,
+      "yearly": 299.88
+    },
+    "AMAZON PRIME": {
+      "cadence": "yearly",
+      "last": 139,
+      "yearly": 139
+    },
+    "DISNEY PLUS": {
+      "cadence": "monthly",
+      "last": 13.99,
+      "yearly": 167.88,
+      "note": "only 2 charges"
+    }
+  },
+  "possiblyStopped": {
+    "HULU": {
+      "last": 7.99,
+      "lastDate": "2026-03-22"
+    }
+  },
+  "bills": [
+    "DUKE ENERGY",
+    "MONTHLY SERVICE FEE"
+  ],
+  "people": [
+    "Zelle QUINN MARLOWE"
+  ],
+  "noFinding": [
+    "SHELL",
+    "KROGER",
+    "UBER *TRIP",
+    "AMZN MKTP",
+    "CHASE CREDIT CRD AUTOPAY",
+    "PAYROLL"
+  ]
+}
