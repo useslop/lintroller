@@ -17,6 +17,8 @@ const MONTHS: Partial<Record<FixedCadence, number>> = { monthly: 1, bimonthly: 2
 const IGNORED: RowClass[] = ['transfer', 'card-payment', 'income', 'atm', 'interest'];
 /** Ours (not in SPEC): an irregular series needs a median gap of at least 20 days, so daily coffee never qualifies. */
 const IRREGULAR_MIN_MEDIAN_GAP = 20;
+/** Ours: and it must hold at least 75% of the merchant's charges (a shop with varied baskets is not a series). */
+const IRREGULAR_MIN_SHARE = 0.75;
 const BILL_HINT = /\b(?:mortgage|mtg|loan|ln pmt|rent|hoa|insurance|ins prem|insur|utilit(?:y|ies)|electric|water|sewer|power|energy|gas & electric|wireless|cable|internet|phone bill|student ln|tuition|daycare)\b/;
 
 function mergeParams(p?: Partial<DetectParams>): DetectParams {
@@ -300,7 +302,7 @@ export function detectRecurring(rows: Txn[], opts: DetectOptions): DetectResult 
       } else {
         const gaps = ch.slice(1).map((c, i) => c.day - ch[i]!.day);
         if (n >= p.irregularMin && cv(amounts) <= p.irregularMaxCv && span(ch) >= p.irregularMinSpanDays &&
-            median(gaps) >= IRREGULAR_MIN_MEDIAN_GAP) {
+            median(gaps) >= IRREGULAR_MIN_MEDIAN_GAP && n / g.out.length >= IRREGULAR_MIN_SHARE) {
           cadence = 'irregular';
         } else continue;
       }

@@ -137,7 +137,7 @@ function cleanFull(desc: string): CleanFull {
     if (tail.length <= 3 && tail.every((t) => /^[A-Z]+$/.test(t))) toks = toks.slice(0, numAt);
   }
   // numbers left over (store numbers, '1 RIDE 09 14') go, except a leading one ('24 HOUR FITNESS')
-  toks = toks.filter((t, i) => t !== '#NUM' && (i === 0 || !/^\d+$/.test(t)));
+  toks = toks.filter((t, i) => t !== '#NUM' && ((i === 0 && kept.length === 0) || !/^\d+$/.test(t)));
   if (toks.length > 1 && (toks[toks.length - 1] === 'US' || toks[toks.length - 1] === 'USA')) toks.pop();
   let body = toks.join(' ');
   if (kept.length) {
