@@ -1,0 +1,23 @@
+{
+  "name": "@subsweep/engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Subscription Sweep engine: CSV sniffing and parsing, merchant normalisation, recurrence detection, yearly cost, cancel lookup, exports. Pure TypeScript, no I/O.",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p . --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3"
+  }
+}
