@@ -359,7 +359,9 @@ export function detectRecurring(rows: Txn[], opts: DetectOptions): DetectResult 
       const reasons: ReasonCode[] = [];
       if (cadence !== 'irregular') reasons.push('regular-interval');
       if (medErr >= 2 || (fit && fit.fit < 1 && missed === 0)) reasons.push('interval-drifts');
-      reasons.push(varies ? 'amount-varies' : 'stable-amount');
+      // "Same amount each time" next to "Price changed" contradicts itself (Q1 F1b #4): a step change is reported alone
+      if (varies) reasons.push('amount-varies');
+      else if (!k.steps.length) reasons.push('stable-amount');
       if (k.steps.length) reasons.push('price-change');
       if (m.kind === 'subscription' || m.kind === 'membership') reasons.push('known-merchant');
       if (m.billedThrough) reasons.push('platform-biller');

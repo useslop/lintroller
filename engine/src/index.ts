@@ -3,7 +3,7 @@ export * from './types';
 export * from './schema';
 export { DEFAULT_PARAMS } from './params';
 export { sniffFormat, suggestMapping } from './sniff';
-export { parseRows, mergeRows, checkSign, flipSigns } from './parse';
+export { parseRows, mergeRows, checkSign, flipSigns, FUTURE_GRACE_DAYS, EARLIEST_DATE, type ParseOptions } from './parse';
 export { buildAliasIndex, cleanDescriptor, normalizeMerchant, classifyRow } from './normalize';
 export { detectRecurring } from './detect';
 export { yearlyCost, totals } from './money';

@@ -33,7 +33,7 @@ export interface ImportReport {
   detect: DetectResult;
 }
 
-export type WorkerRequest = { id: number; inputs: InputFile[]; aliases: AliasEntry[] };
+export type WorkerRequest = { id: number; inputs: InputFile[]; aliases: AliasEntry[]; today?: string };
 export type WorkerResponse = { id: number; ok: true; report: ImportReport } | { id: number; ok: false; message: string };
 
 export function specFromSniff(s: SniffResult): ParseSpec {
@@ -43,7 +43,17 @@ export function specFromSniff(s: SniffResult): ParseSpec {
   };
 }
 
-export function runImport(inputs: InputFile[], index: AliasIndex): ImportReport {
+/** The device's calendar date (ISO). The engine never reads the clock; the app passes this in. */
+export function localToday(now = new Date()): string {
+  const pad = (n: number) => String(n).padStart(2, '0');
+  return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+}
+
+/**
+ * today: the real date. Rows dated after it (plus a short grace) or before 1990 are skipped and counted, and the
+ * as-of date for "still active" is the file's last date or today, whichever is earlier (Q1 F1b #2).
+ */
+export function runImport(inputs: InputFile[], index: AliasIndex, today?: string): ImportReport {
   const results: ParseResult[] = [];
   const files: FileReport[] = [];
   inputs.forEach((input, source) => {
@@ -60,7 +70,7 @@ export function runImport(inputs: InputFile[], index: AliasIndex): ImportReport 
       });
       return;
     }
-    const parsed = parseRows(input.text, spec, source);
+    const parsed = parseRows(input.text, spec, source, { today });
     const check = checkSign(parsed.rows, index);
     const flipApplied = input.override?.flip ?? check.flip;
     results.push({ ...parsed, rows: flipApplied ? flipSigns(parsed.rows) : parsed.rows });
@@ -75,12 +85,14 @@ export function runImport(inputs: InputFile[], index: AliasIndex): ImportReport 
   if (txns.length > MAX_ROWS) {
     throw new Error(`More than ${MAX_ROWS.toLocaleString('en-US')} rows in total. Split the files by date range and try again.`);
   }
-  const detect = detectRecurring(txns, { aliasIndex: index, includeInflows: false });
+  const lastDate = txns.length > 0 ? txns[txns.length - 1]!.date : undefined;
+  const asOf = today && lastDate && lastDate > today ? today : undefined;
+  const detect = detectRecurring(txns, { aliasIndex: index, includeInflows: false, today: asOf });
   return { files, txnCount: txns.length, detect };
 }
 
-export function runImportWithAliases(inputs: InputFile[], aliases: AliasEntry[]): ImportReport {
-  return runImport(inputs, buildAliasIndex(aliases));
+export function runImportWithAliases(inputs: InputFile[], aliases: AliasEntry[], today?: string): ImportReport {
+  return runImport(inputs, buildAliasIndex(aliases), today);
 }
 
 /** The first `lines` lines of the text, so the mapper preview never parses a 25 MB file on the main thread. */

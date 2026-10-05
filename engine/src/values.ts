@@ -3,7 +3,24 @@
 import type { DateOrder } from './types';
 
 /**
- * '$1,234.56' '(12.34)' '- $12.34' '-$12.34' '+ $50.00' '12.34-' → signed integer cents.
+ * Thousands marks out, decimal mark as '.'. With both marks present the later one is the decimal
+ * mark ('1.234,56' and '1,234.56' both mean 1234.56), so a euro-style value is never cut to 1.23.
+ * A lone comma before one or two final digits ('15,49') is a decimal comma; before three ('1,234') it groups thousands.
+ */
+function decimalPoint(s: string, decimalComma: boolean): string {
+  const dot = s.lastIndexOf('.');
+  const comma = s.lastIndexOf(',');
+  if (dot !== -1 && comma !== -1) {
+    return comma > dot ? s.replace(/\./g, '').replace(',', '.') : s.replace(/,/g, '');
+  }
+  if (decimalComma || (comma !== -1 && comma === s.indexOf(',') && /,\d{1,2}$/.test(s))) {
+    return s.replace(/\./g, '').replace(',', '.');
+  }
+  return s.replace(/,/g, '');
+}
+
+/**
+ * '$1,234.56' '(12.34)' '- $12.34' '-$12.34' '+ $50.00' '12.34-' '1.234,56' → signed integer cents.
  * decimalComma: '1.234,56' style (semicolon files). Returns null when it isn't money.
  */
 export function parseAmountCents(raw: string | undefined, decimalComma = false): number | null {
@@ -20,9 +37,8 @@ export function parseAmountCents(raw: string | undefined, decimalComma = false):
   else if (s.startsWith('+')) s = s.slice(1);
   if (s.endsWith('-')) { neg = !neg; s = s.slice(0, -1); }
   if (/^\(.*\)$/.test(s)) { neg = !neg; s = s.slice(1, -1); }
-  if (decimalComma) s = s.replace(/\./g, '').replace(',', '.');
-  else s = s.replace(/,/g, '');
-  const m = /^(\d{0,12})(?:\.(\d*))?$/.exec(s);
+  s = decimalPoint(s, decimalComma);
+  const m =/^(\d{0,12})(?:\.(\d*))?$/.exec(s);
   if (!m || (m[1] === '' && (m[2] === undefined || m[2] === ''))) return null;
   const whole = m[1] === '' ? 0 : Number(m[1]);
   const frac = m[2] ?? '';

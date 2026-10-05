@@ -4,7 +4,7 @@ import { useSession } from '../session';
 import { SAMPLE_NAME, SAMPLE_TEXT } from '../sample';
 import { runImportAsync } from '../run-import';
 import { MAX_FILE_BYTES, type FileOverride, type FileReport, type ImportReport, type InputFile } from '../pipeline';
-import { FORMAT_LABEL, SKIP_LABEL, formatDate } from '../copy';
+import { FORMAT_LABEL, SKIP_LABEL, formatDate, signFlipNote } from '../copy';
 import { readTextFile } from '../files';
 import type { ParseSpec } from '../engine';
 import { Mapper } from './Mapper';
@@ -207,7 +207,7 @@ function FileCard({ file, text, open, onToggle, onFlip, onApply, onRemove }: {
       )}
       {file.flipSuggested && file.flipApplied ? (
         <p className="note">
-          Purchases look positive in this file, so we flipped the signs. Wrong?{' '}
+          {signFlipNote(file.spec)} Wrong?{' '}
           <button type="button" className="link" onClick={onFlip}>Flip back</button>
         </p>
       ) : !file.needsMapping && (

@@ -1,5 +1,5 @@
 // Product copy and formatting. Wording follows SPEC §4; lintCopy in the tests checks every literal in src/.
-import type { Cadence, Finding, FormatId, PlatformId, ReasonCode } from './engine';
+import type { Cadence, Finding, FormatId, ParseSpec, PlatformId, ReasonCode } from './engine';
 
 export const CADENCE_WORDS: Record<Cadence, string> = {
   weekly: 'once a week', biweekly: 'once per 2 weeks', semimonthly: 'twice a month', monthly: 'once a month',
@@ -29,7 +29,21 @@ export const SKIP_LABEL: Record<string, [one: string, many: string]> = {
   'zero-amount': ['zero-amount row', 'zero-amount rows'], pending: ['pending row', 'pending rows'],
   'non-usd': ['row in another currency', 'rows in another currency'],
   'duplicate-across-files': ['row also in another file', 'rows also in another file'],
+  'future-date': ['row dated after today', 'rows dated after today'],
+  'before-1990': ['row dated before 1990', 'rows dated before 1990'],
 };
+
+/**
+ * Shown when the sign self-check flipped a file (Q1 F1b #1): says what this file holds, read from the
+ * convention the format expected, never the format's assumed default.
+ */
+export function signFlipNote(spec: ParseSpec | null): string {
+  switch (spec?.signConvention) {
+    case 'charge-positive': return 'Charges in this file are negative numbers, so we read them that way.';
+    case 'debit-negative': return 'Charges in this file are positive numbers, so we read them that way.';
+    default: return 'We read the signs the other way round for this file.';
+  }
+}
 
 const usd = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
 

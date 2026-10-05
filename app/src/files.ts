@@ -9,12 +9,21 @@ function replacementRatio(text: string): number {
   return count / text.length;
 }
 
-/** UTF-8 first; if more than 1% of characters are U+FFFD, re-read the same bytes as windows-1252. */
-export async function readTextFile(file: File): Promise<string> {
-  const bytes = await file.arrayBuffer();
+/**
+ * A UTF-16 byte-order mark decides first (Excel's "Unicode Text" saves UTF-16LE with FF FE). Otherwise UTF-8;
+ * if more than 1% of characters are U+FFFD, re-read the same bytes as windows-1252.
+ */
+export function decodeBytes(buffer: ArrayBuffer | Uint8Array): string {
+  const bytes = buffer instanceof Uint8Array ? buffer : new Uint8Array(buffer);
+  if (bytes.length >= 2 && bytes[0] === 0xff && bytes[1] === 0xfe) return new TextDecoder('utf-16le').decode(bytes);
+  if (bytes.length >= 2 && bytes[0] === 0xfe && bytes[1] === 0xff) return new TextDecoder('utf-16be').decode(bytes);
   const utf8 = new TextDecoder('utf-8').decode(bytes);
   if (replacementRatio(utf8) <= MAX_REPLACEMENT_RATIO) return utf8;
   return new TextDecoder('windows-1252').decode(bytes);
+}
+
+export async function readTextFile(file: File): Promise<string> {
+  return decodeBytes(await file.arrayBuffer());
 }
 
 export function downloadText(filename: string, text: string, type: string): void {

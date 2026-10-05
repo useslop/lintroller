@@ -3,7 +3,16 @@
 import { readCsv } from './csv';
 import { normalizeMerchant, isCardPaymentText } from './normalize';
 import type { AliasIndex, ParseResult, ParseSpec, SkipReason, Txn } from './types';
-import { parseAmountCents, parseDateIso } from './values';
+import { dayNum, fromDayNum, parseAmountCents, parseDateIso } from './values';
+
+/** Rows dated more than this many days after the real date are skipped ('future-date'); scheduled payments a few days out stay. */
+export const FUTURE_GRACE_DAYS = 7;
+export const EARLIEST_DATE = '1990-01-01';
+
+export interface ParseOptions {
+  /** The real date (ISO), passed in by the app; the engine never reads the clock. Without it no row counts as future. */
+  today?: string;
+}
 
 const SUMMARY_RE = /^(beginning|ending|opening|closing|starting|current|available|ledger)\s+balance|^total\b|^totals?\s|^summary\b|^statement period|^in case of errors|^balance\b|^description$|^disclaimer/i;
 const PENDING_RE = /pending|processing|authori[sz]ation|^held$|denied|declined|failed|cancel+ed|^canceled$/i;
@@ -12,7 +21,8 @@ function cell(cells: string[], i: number | undefined): string | undefined {
   return i === undefined ? undefined : cells[i];
 }
 
-export function parseRows(text: string, spec: ParseSpec, source = 0): ParseResult {
+export function parseRows(text: string, spec: ParseSpec, source = 0, opts: ParseOptions = {}): ParseResult {
+  const latest = opts.today ? fromDayNum(dayNum(opts.today) + FUTURE_GRACE_DAYS) : null;
   const records = readCsv(text, spec.delimiter);
   while (records.length > 0 && records[records.length - 1]!.cells.every((c) => c.trim() === '')) records.pop();
   const rows: Txn[] = [];
@@ -41,6 +51,8 @@ export function parseRows(text: string, spec: ParseSpec, source = 0): ParseResul
     const posted = parseDateIso(cell(cells, m.postedDate), spec.dateOrder);
     if (!date) date = posted;
     if (!date) { skipped.push({ line: rec.line, reason: 'unparseable-date' }); continue; }
+    if (date < EARLIEST_DATE) { skipped.push({ line: rec.line, reason: 'before-1990' }); continue; }
+    if (latest && date > latest) { skipped.push({ line: rec.line, reason: 'future-date' }); continue; }
 
     const status = cell(cells, m.status)?.trim();
     if (status && PENDING_RE.test(status) && !/complete|cleared|posted/i.test(status)) {

@@ -66,7 +66,8 @@ export interface Txn {
 
 export type SkipReason =
   | 'blank' | 'preamble' | 'summary-row' | 'unparseable-date' | 'unparseable-amount'
-  | 'zero-amount' | 'pending' | 'non-usd' | 'duplicate-across-files';
+  | 'zero-amount' | 'pending' | 'non-usd' | 'duplicate-across-files'
+  | 'future-date' | 'before-1990';   // F1b: only when parseRows gets the real date (ParseOptions.today); before-1990 always
 
 export interface ParseResult {
   rows: Txn[];

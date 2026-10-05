@@ -2,7 +2,7 @@
 // One long-lived worker, started with the page (main.tsx): its script loads with the rest of the page, so
 // importing a file makes no request at all and still works offline after the first load (SPEC §10 steps 2, 7).
 import { aliases } from './data';
-import { runImportWithAliases, type ImportReport, type InputFile, type WorkerRequest, type WorkerResponse } from './pipeline';
+import { localToday, runImportWithAliases, type ImportReport, type InputFile, type WorkerRequest, type WorkerResponse } from './pipeline';
 
 let nextId = 1;
 let worker: Worker | null = null;
@@ -33,7 +33,7 @@ export function runImportAsync(inputs: InputFile[]): Promise<ImportReport> {
   const w = startEngineWorker();
   if (!w) {
     try {
-      return Promise.resolve(runImportWithAliases(inputs, aliases));
+      return Promise.resolve(runImportWithAliases(inputs, aliases, localToday()));
     } catch (err) {
       return Promise.reject(err);
     }
@@ -41,7 +41,7 @@ export function runImportAsync(inputs: InputFile[]): Promise<ImportReport> {
   return new Promise((resolve, reject) => {
     const id = nextId++;
     waiting.set(id, { resolve, reject });
-    const request: WorkerRequest = { id, inputs, aliases };
+    const request: WorkerRequest = { id, inputs, aliases, today: localToday() };
     w.postMessage(request);
   });
 }
