@@ -1,5 +1,5 @@
-import { Link, usePath } from './router';
 import { SessionProvider } from './session';
+import { FixedPathProvider, Link, usePath } from './router';
 import { PRODUCT_NAME } from './product';
 import { Landing } from './pages/Landing';
 import { Import } from './pages/Import';
@@ -42,10 +42,12 @@ function Shell() {
   );
 }
 
-export function App() {
+export function App({ path = null }: { path?: string | null }) {
   return (
-    <SessionProvider>
-      <Shell />
-    </SessionProvider>
+    <FixedPathProvider path={path}>
+      <SessionProvider>
+        <Shell />
+      </SessionProvider>
+    </FixedPathProvider>
   );
 }

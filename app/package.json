@@ -9,6 +9,7 @@
     "dev": "vite",
     "prebuild": "node scripts/sync-static.mjs",
     "build": "tsc --noEmit && vite build",
+    "postbuild": "node scripts/prerender.mjs",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },

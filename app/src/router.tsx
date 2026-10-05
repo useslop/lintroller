@@ -1,5 +1,12 @@
 // A few lines of History API routing. No library, no server: the static shell serves every route.
-import { useSyncExternalStore, type AnchorHTMLAttributes, type MouseEvent } from 'react';
+import { createContext, useContext, useSyncExternalStore, type AnchorHTMLAttributes, type MouseEvent, type ReactNode } from 'react';
+
+// Set only when rendering a fixed path on the server (prerender). In the browser the live location is used.
+const FixedPath = createContext<string | null>(null);
+
+export function FixedPathProvider({ path, children }: { path: string | null; children: ReactNode }) {
+  return <FixedPath.Provider value={path}>{children}</FixedPath.Provider>;
+}
 
 const NAV_EVENT = 'subsweep:navigate';
 
@@ -13,7 +20,9 @@ function subscribe(onChange: () => void): () => void {
 }
 
 export function usePath(): string {
-  return useSyncExternalStore(subscribe, () => window.location.pathname, () => '/');
+  const fixed = useContext(FixedPath);
+  const live = useSyncExternalStore(subscribe, () => window.location.pathname, () => fixed ?? '/');
+  return fixed ?? live;
 }
 
 export function navigate(to: string, options: { replace?: boolean } = {}): void {
