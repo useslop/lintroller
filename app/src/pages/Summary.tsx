@@ -4,7 +4,7 @@ import { yearlyCost, findingsToCsv, buildIcs, lookupCancel, totals, type Finding
 import { LAW_LINES, LAW_NOTE, PLATFORM_NAME, formatDate, formatMoney } from '../copy';
 import { PRODUCT_URL } from '../product';
 import { downloadText } from '../files';
-import { navigate } from '../router';
+import { Link, navigate } from '../router';
 import { useSession } from '../session';
 import { groupOf } from './Review';
 
@@ -46,6 +46,7 @@ export function Summary() {
   return (
     <section className="page">
       <h1 tabIndex={-1} ref={headingRef}>Your yearly summary</h1>
+      <p><Link to="/sweep/review">Back to review</Link></p>
       <p className="headline">
         Confirmed: {formatMoney(t.confirmedYearlyCents)} a year. Not yet reviewed: {formatMoney(t.unreviewedYearlyCents)} a year.
       </p>
