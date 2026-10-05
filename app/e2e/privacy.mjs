@@ -296,7 +296,7 @@ async function main() {
     const hits = [...leaks(a, CANARY.tokens), ...leaks(b, OTHER.tokens)];
     check(hits.length === 0, 'no canary token (QUOKKA, ZEBRAFISH, 7781, 77.77) in any request URL, header or body', hits.slice(0, 3).join('; '));
     const withBody = [...a.requests, ...b.requests].filter((r) => r.body || !['GET', 'HEAD'].includes(r.method));
-    check(withBody.length === 0, 'every request is a GET with no body', `${withBody.length} others`);
+    check(withBody.length === 0, 'all requests are GETs with no body', `${withBody.length} others`);
     const sa = signature(a);
     const sb = signature(b);
     check(JSON.stringify(sa) === JSON.stringify(sb), 'request list to our origin is identical for a second, different file', `${sa.length} requests: ${sa.join(', ')}`);
@@ -314,8 +314,8 @@ async function main() {
     check(a.serviceWorkers === 0 && b.serviceWorkers === 0, 'no service worker registered');
     check(a.violations.length === 0 && b.violations.length === 0, '0 securitypolicyviolation events during the flow', [...a.violations, ...b.violations].slice(0, 3).join('; '));
     check(a.probe === 'blocked' && a.probeViolations.some((v) => v.startsWith('connect-src')) && a.probeRequests.length === 0,
-      "CSP enforced: an injected fetch('/x') is blocked and reported (connect-src 'none')",
-      `fetch → ${a.probe}; violations: ${a.probeViolations.join(', ') || 'none'}; requests sent: ${a.probeRequests.length}`);
+      "CSP enforced: a request to /x made by script in the page is blocked and reported (connect-src 'none')",
+      `probe → ${a.probe}; violations: ${a.probeViolations.join(', ') || 'none'}; requests sent: ${a.probeRequests.length}`);
     const errs = [...a.errors, ...b.errors].filter((e) => !/Content Security Policy|ERR_BLOCKED_BY_CLIENT|net::ERR_/.test(e));
     check(errs.length === 0, 'no console errors', errs.slice(0, 2).join(' | '));
 
@@ -328,7 +328,8 @@ async function main() {
     if (!live) {
       const res = spawnSync(process.execPath, [path.join(appDir, 'scripts/gates.mjs'), '--only', 'c'], { encoding: 'utf8' });
       const line = res.stdout.split('\n').find((l) => l.includes('(c)')) ?? '';
-      check(line.startsWith('PASS'), 'dist/ grep: no fetch(, XMLHttpRequest, sendBeacon, WebSocket or EventSource', line.replace(/^(PASS|FAIL)\s+\(c\)\s*/, ''));
+      // Published text stays plain: the bundle carries these names, and gate (c) greps the bundle for API names.
+      check(line.startsWith('PASS'), 'shipped JS has no network API calls (build gate c, a grep of dist/)', line.match(/: (\d+ hits)/)?.[1] ?? line.slice(0, 20));
     }
   } finally {
     await browser.close();

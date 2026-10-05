@@ -1,8 +1,8 @@
 {
   "status": "passed 32 of 32 checks on lintroller.vercel.app",
-  "ranAt": "2026-10-05T02:15:58.664Z",
+  "ranAt": "2026-10-05T02:20:47.454Z",
   "target": "https://lintroller.vercel.app",
-  "commit": "6eb8f7a",
+  "commit": "c3610bf",
   "canary": "QUOKKA STREAMING and ZEBRAFISH GYM 7781 at $77.77, 12 months, seeded generator (seed 7777); second file seed 2345",
   "passed": 32,
   "total": 32,
@@ -32,7 +32,7 @@
       "result": "pass"
     },
     {
-      "name": "every request is a GET with no body",
+      "name": "all requests are GETs with no body",
       "result": "pass (0 others)"
     },
     {
@@ -64,8 +64,8 @@
       "result": "pass"
     },
     {
-      "name": "CSP enforced: an injected fetch('/x') is blocked and reported (connect-src 'none')",
-      "result": "pass (fetch → blocked; violations: connect-src https://lintroller.vercel.app/x; requests sent: 0)"
+      "name": "CSP enforced: a request to /x made by script in the page is blocked and reported (connect-src 'none')",
+      "result": "pass (probe → blocked; violations: connect-src https://lintroller.vercel.app/x; requests sent: 0)"
     },
     {
       "name": "no console errors",

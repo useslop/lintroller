@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "test": "npm run test --workspaces --if-present",
-    "build": "npm run typecheck -w data && npm run typecheck -w engine && npm run build -w app"
+    "build": "npm run typecheck -w data && npm run typecheck -w engine && npm run generate -w corpus && npm run build -w app"
   },
   "engines": {
     "node": ">=22"
