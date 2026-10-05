@@ -67,7 +67,7 @@ export function Summary() {
       </section>
 
       <section aria-labelledby="by-charge">
-        <h2 id="by-charge">Charges, largest first</h2>
+        <h2 id="by-charge">Charges: confirmed first, then not yet reviewed</h2>
         {listed.length === 0 && <p>Nothing to total yet. Confirm a charge on the review page.</p>}
         <ul className="cards">
           {listed.map((f) => (
