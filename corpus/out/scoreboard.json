@@ -4,19 +4,19 @@
     {
       "id": "G1",
       "name": "corpus precision >= 0.90",
-      "value": 0.9174,
+      "value": 0.9202,
       "pass": true
     },
     {
       "id": "G2",
       "name": "corpus recall >= 0.90",
-      "value": 0.9699,
+      "value": 0.9729,
       "pass": true
     },
     {
       "id": "G3",
       "name": "precision at confidence >= medium >= 0.95",
-      "value": 0.9306,
+      "value": 0.9335,
       "pass": false
     },
     {
@@ -28,19 +28,19 @@
     {
       "id": "G5",
       "name": "performance: 50k-row parse + detect < 2 s",
-      "value": 811.5849,
+      "value": 795.5909,
       "pass": true
     }
   ],
   "corpus": {
     "cases": 40,
-    "tp": 322,
-    "fp": 29,
-    "fn": 10,
-    "precision": 0.9173789173789174,
-    "recall": 0.9698795180722891,
-    "f1": 0.9428989751098097,
-    "precisionAtMedium": 0.930635838150289,
+    "tp": 323,
+    "fp": 28,
+    "fn": 9,
+    "precision": 0.9202279202279202,
+    "recall": 0.9728915662650602,
+    "f1": 0.9458272327964861,
+    "precisionAtMedium": 0.9335260115606936,
     "cadenceAccuracy": 1,
     "yearlyCostMaxErrorPct": 11.833333333333334,
     "perFormat": {
@@ -75,9 +75,9 @@
         "fn": 2
       },
       "chase-card": {
-        "tp": 24,
-        "fp": 3,
-        "fn": 1
+        "tp": 25,
+        "fp": 2,
+        "fn": 0
       },
       "chase-checking": {
         "tp": 10,
@@ -150,17 +150,13 @@
       ],
       [
         "partial-overlap",
-        2
+        1
       ]
     ],
     "worstFnCadences": [
       [
         "semimonthly",
         9
-      ],
-      [
-        "monthly",
-        1
       ]
     ]
   },
@@ -331,23 +327,23 @@
     {
       "name": "chase-card-9001",
       "lines": 50002,
-      "ms": 547.4125829999999,
-      "parseMs": 348.510583,
-      "detectMs": 198.90199999999993
+      "ms": 530.8418750000001,
+      "parseMs": 337.84275,
+      "detectMs": 192.99912500000005
     },
     {
       "name": "boa-checking-9002",
       "lines": 50008,
-      "ms": 811.5849170000001,
-      "parseMs": 432.74520899999993,
-      "detectMs": 378.8397080000002
+      "ms": 795.5909159999999,
+      "parseMs": 427.431333,
+      "detectMs": 368.1595829999999
     },
     {
       "name": "amex-9003",
       "lines": 50002,
-      "ms": 358.24145799999997,
-      "parseMs": 87.3767499999999,
-      "detectMs": 270.86470800000006
+      "ms": 360.43020799999977,
+      "parseMs": 85.68320799999992,
+      "detectMs": 274.74699999999984
     }
   ],
   "falsePositives": [
@@ -449,12 +445,6 @@
     },
     {
       "caseId": "chase-card-4936",
-      "findingId": "43cca778",
-      "display": "Verizon",
-      "why": "partial-overlap"
-    },
-    {
-      "caseId": "chase-card-4936",
       "findingId": "13067d2f",
       "display": "Chipotle",
       "why": "restaurant"
@@ -551,11 +541,6 @@
       "caseId": "cashapp-4130",
       "merchantKey": "raw:harbor swim",
       "cadence": "semimonthly"
-    },
-    {
-      "caseId": "chase-card-4936",
-      "merchantKey": "verizon",
-      "cadence": "monthly"
     },
     {
       "caseId": "discover-4080",
