@@ -22,13 +22,13 @@
     {
       "id": "G4",
       "name": "fixtures exact (at least 15)",
-      "value": 0,
-      "pass": false
+      "value": 23,
+      "pass": true
     },
     {
       "id": "G5",
       "name": "performance: 50k-row parse + detect < 2 s",
-      "value": 823.022,
+      "value": 831.4054,
       "pass": true
     }
   ],
@@ -164,28 +164,190 @@
       ]
     ]
   },
-  "fixtures": [],
+  "fixtures": [
+    {
+      "name": "amazon-retail-noise",
+      "format": "capitalone-card",
+      "sniffed": "capitalone-card",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "card-payment",
+      "format": "chase-card",
+      "sniffed": "chase-card",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "csv-injection",
+      "format": "chase-checking",
+      "sniffed": "chase-checking",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "duplicate-rows",
+      "format": "ynab",
+      "sniffed": "ynab",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "ended-subscription",
+      "format": "usbank",
+      "sniffed": "usbank",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "missed-one",
+      "format": "citi-card",
+      "sniffed": "citi-card",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "month-end-feb",
+      "format": "amex",
+      "sniffed": "amex",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "payroll",
+      "format": "boa-checking",
+      "sniffed": "boa-checking",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "price-rise",
+      "format": "paypal",
+      "sniffed": "paypal",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "rtl-merchant",
+      "format": "usbank",
+      "sniffed": "usbank",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "same-merchant-two-plans",
+      "format": "chase-card",
+      "sniffed": "chase-card",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "semicolon-file",
+      "format": "generic",
+      "sniffed": "generic",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "tax-drift",
+      "format": "monarch",
+      "sniffed": "monarch",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "trial",
+      "format": "discover",
+      "sniffed": "discover",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "two-apple-plans",
+      "format": "apple-card",
+      "sniffed": "apple-card",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "unicode-merchant",
+      "format": "monarch",
+      "sniffed": "monarch",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "utf8-bom",
+      "format": "chase-checking",
+      "sniffed": "chase-checking",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "weekend-drift",
+      "format": "boa-checking",
+      "sniffed": "boa-checking",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "weekly-gas",
+      "format": "wells-fargo",
+      "sniffed": "wells-fargo",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "windows-1252",
+      "format": "generic",
+      "sniffed": "generic",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "xss-merchant",
+      "format": "boa-card",
+      "sniffed": "boa-card",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "yearly-13-months",
+      "format": "mint",
+      "sniffed": "mint",
+      "pass": true,
+      "problems": []
+    },
+    {
+      "name": "zelle-rent",
+      "format": "chase-checking",
+      "sniffed": "chase-checking",
+      "pass": true,
+      "problems": []
+    }
+  ],
   "performance": [
     {
       "name": "chase-card-9001",
       "lines": 50002,
-      "ms": 518.9163749999999,
-      "parseMs": 329.0056669999999,
-      "detectMs": 189.910708
+      "ms": 531.7468749999999,
+      "parseMs": 341.53754100000003,
+      "detectMs": 190.2093339999999
     },
     {
       "name": "boa-checking-9002",
       "lines": 50008,
-      "ms": 823.0220419999998,
-      "parseMs": 440.8157920000001,
-      "detectMs": 382.2062499999997
+      "ms": 831.405375,
+      "parseMs": 439.07375,
+      "detectMs": 392.33162500000003
     },
     {
       "name": "amex-9003",
       "lines": 50002,
-      "ms": 406.11987499999987,
-      "parseMs": 93.8425830000001,
-      "detectMs": 312.27729199999976
+      "ms": 365.25054100000034,
+      "parseMs": 88.03491600000007,
+      "detectMs": 277.2156250000003
     }
   ],
   "falsePositives": [

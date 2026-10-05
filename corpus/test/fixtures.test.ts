@@ -3,6 +3,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
 import { CaseLabelsSchema, FORMATS } from '@subsweep/engine';
+import { decodeCsv } from '../src/run';
 
 const FIXTURES = join(dirname(fileURLToPath(import.meta.url)), '..', 'fixtures');
 const files = existsSync(FIXTURES) ? readdirSync(FIXTURES).filter((f) => f.endsWith('.expected.json')).sort() : [];
@@ -17,7 +18,7 @@ describe('hand fixtures', () => {
     const labels = CaseLabelsSchema.parse(JSON.parse(readFileSync(join(FIXTURES, file), 'utf8')));
     expect(labels.caseId).toBe(file.replace(/\.expected\.json$/, ''));
     expect(Object.keys(FORMATS)).toContain(labels.format);
-    const text = readFileSync(join(FIXTURES, `${labels.caseId}.csv`), 'utf8').replace(/^﻿/, '');
+    const text = decodeCsv(readFileSync(join(FIXTURES, `${labels.caseId}.csv`)));
     const lines = text.split(/\r?\n/);
     const check = (ln: number, name: string) => {
       expect(ln, `${name} line ${ln} exists`).toBeLessThanOrEqual(lines.length);
