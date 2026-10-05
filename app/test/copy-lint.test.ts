@@ -16,10 +16,7 @@ function copyStrings(text: string): string[] {
 
 describe('copy lint (SPEC §4)', () => {
   it('finds no never-say terms in any string or JSX text under src/', () => {
-    // dev-fixtures/ holds the temporary engine stand-in, which carries the list itself; it is deleted with the fake.
-    const hits = sourceFiles()
-      .filter((file) => !file.path.startsWith("dev-fixtures/"))
-      .flatMap((file) =>
+    const hits = sourceFiles().flatMap((file) =>
       copyStrings(file.text).flatMap((s) => lintCopy(s).map((h) => ({ file: file.path, term: h.term, text: s }))),
     );
     expect(hits).toEqual([]);
