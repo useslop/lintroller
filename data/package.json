@@ -1,0 +1,22 @@
+{
+  "name": "@subsweep/data",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Subscription Sweep bundled data: cancel directory, merchant aliases and export help. Official sources only; re-checked by scripts/check-links.mjs.",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p . --noEmit",
+    "check-links": "node scripts/check-links.mjs"
+  },
+  "devDependencies": {
+    "@subsweep/engine": "*",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3",
+    "zod": "^3.25.76"
+  }
+}
