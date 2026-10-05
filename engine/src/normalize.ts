@@ -128,8 +128,7 @@ function cleanFull(desc: string): CleanFull {
     const stem = t.slice(4);
     return toks.includes(stem) || kept.some((k) => k.split(' ').includes(stem)) ? [] : [stem];
   });
-  // state code (and a country code) at the end, then city words after a store/phone number
-  if (toks.length > 1 && (toks[toks.length - 1] === 'US' || toks[toks.length - 1] === 'USA')) toks.pop();
+  // state code at the end, then city words after a store/phone number, then a country code
   let hadState = false;
   if (toks.length > 1 && STATES.has(toks[toks.length - 1]!)) { toks.pop(); hadState = true; }
   const numAt = toks.indexOf('#NUM');
@@ -137,7 +136,9 @@ function cleanFull(desc: string): CleanFull {
     const tail = toks.slice(numAt + 1);
     if (tail.length <= 3 && tail.every((t) => /^[A-Z]+$/.test(t))) toks = toks.slice(0, numAt);
   }
-  toks = toks.filter((t) => t !== '#NUM');
+  // numbers left over (store numbers, '1 RIDE 09 14') go, except a leading one ('24 HOUR FITNESS')
+  toks = toks.filter((t, i) => t !== '#NUM' && (i === 0 || !/^\d+$/.test(t)));
+  if (toks.length > 1 && (toks[toks.length - 1] === 'US' || toks[toks.length - 1] === 'USA')) toks.pop();
   let body = toks.join(' ');
   if (kept.length) {
     const brand = kept[kept.length - 1]!;

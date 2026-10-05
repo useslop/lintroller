@@ -1,0 +1,3 @@
+ID,Datetime,Type,Status,Note,From,To,Amount (total),Amount (fee),Funding Source,Destination
+302991884,2026-09-15T10:32:00,Payment,Complete,Netflix split,Sample User,Jane Roommate,- $7.75,$0.00,Venmo balance,Jane Roommate
+303104471,2026-09-30T09:14:00,Payment,Complete,Spotify family,Sample User,Jane Roommate,- $6.00,$0.00,Venmo balance,Jane Roommate
