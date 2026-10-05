@@ -4,10 +4,17 @@
   "type": "module",
   "description": "Subscription Sweep (working name subsweep): a free, private finder for repeating charges. A bank or card CSV is read in your browser; nothing is uploaded.",
   "license": "MIT",
-  "workspaces": ["engine", "app", "data", "corpus"],
+  "workspaces": [
+    "engine",
+    "app",
+    "data",
+    "corpus"
+  ],
   "scripts": {
     "test": "npm run test --workspaces --if-present",
-    "build": "npm run build -w app"
+    "build": "npm run typecheck -w data && npm run typecheck -w engine && npm run build -w app"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  }
 }

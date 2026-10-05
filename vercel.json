@@ -1,6 +1,6 @@
 {
   "framework": null,
-  "buildCommand": "npm run build -w app",
+  "buildCommand": "npm run build",
   "outputDirectory": "app/dist",
   "cleanUrls": true,
   "headers": [
