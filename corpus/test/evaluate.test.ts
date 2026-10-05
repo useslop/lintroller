@@ -85,8 +85,8 @@ describe('evaluate on toy inputs', () => {
     const r = result([finding('a', [1, 2, 3], 'weekly')]);
     const s = evaluate(r, labels([series([1, 2, 3])]));
     expect(s.cadenceAccuracy).toBe(0);
-    // lastCents 1000 x 4 weekly periods? no: yearlyCost uses the finding's cadence (weekly = 52), nominal 1000 x monthly 12 = 12000.
-    expect(s.yearlyCostMaxErrorPct).toBeGreaterThan(0);
+    // The finding is weekly (1000 x 52 = 52000 a year) against a labelled monthly nominal (1000 x 12 = 12000).
+    expect(s.yearlyCostMaxErrorPct).toBeGreaterThan(300);
   });
 
   it('applies the medium filter by dropping low-confidence findings', () => {

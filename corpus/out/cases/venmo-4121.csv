@@ -5,112 +5,105 @@ ID,Datetime,Type,Status,Note,From,To,Amount (total),Amount (fee),Funding Source,
 301034849,2026-05-30T09:07:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345,"- $16.50",$0.00,Venmo balance,LYFT *RIDE 12345
 300097006,2026-05-28T10:33:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3 #6519,- $119.84,$0.00,Venmo balance,AMAZON.COM*1A2B3 #6519
 300044950,2026-05-27T12:32:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 #7333,- $25.72,$0.00,Venmo balance,EXXONMOBIL 4421 #7333
-378780747,2026-05-26T11:57:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,"- $28.99",$0.00,Venmo balance,FRESH FARM BOX CO
-392289815,2026-05-24T16:16:00,Payment,Complete,Subscription,Sample User,ROOFTOP STORAGE UNIT AUSTIN TX,- $50.99,$0.00,Venmo balance,ROOFTOP STORAGE UNIT AUSTIN TX
-343129333,2026-05-21T21:36:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345,- $22.28,$0.00,Venmo balance,LYFT *RIDE 12345
-368790718,2026-05-20T22:20:00,Payment,Complete,Subscription,Sample User,"AMZN MKTP US*2K4AB 800-914-1818 NY","- $7.03",$0.00,Venmo balance,"AMZN MKTP US*2K4AB 800-914-1818 NY"
-350161302,2026-05-19T20:21:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 DENVER CO,- $61.91,$0.00,Venmo balance,SPEEDWAY 0412 DENVER CO
-386969382,2026-05-19T13:05:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO
-313692315,2026-05-18T10:30:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,"- $11.48",$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
-360267289,2026-05-17T09:49:00,Payment,Complete,Subscription,RETURN CREDIT SUNRISE HARDWARE 800-567-8569 NY,Sample User,+ $11.83,$0.00,Venmo balance,
-324428196,2026-05-16T11:21:00,Payment,Complete,Subscription,Sample User,MOUNTAIN OUTFITTERS #9275,- $28.17,$0.00,Venmo balance,MOUNTAIN OUTFITTERS #9275
-389561568,2026-05-12T15:26:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO 800-816-1471 TX,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO 800-816-1471 TX
-338715985,2026-05-12T11:25:00,Payment,Complete,Subscription,Sample User,HBO MAX 800-312-6012 TX,- $16.99,$0.00,Venmo balance,HBO MAX 800-312-6012 TX
-329936100,2026-05-10T20:29:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 #2803,- $37.83,$0.00,Venmo balance,SPEEDWAY 0412 #2803
-380329976,2026-05-10T09:29:00,Payment,Complete,Subscription,Sample User,ROOFTOP STORAGE UNIT 800-505-3018 CA,- $50.99,$0.00,Venmo balance,ROOFTOP STORAGE UNIT 800-505-3018 CA
-302241173,2026-05-05T07:41:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO
-375937694,2026-05-03T10:02:00,Payment,Complete,Subscription,Sample User,"AMAZON.COM*1A2B3",- $86.64,$0.00,Venmo balance,"AMAZON.COM*1A2B3"
-351199009,2026-05-01T13:36:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 AUSTIN TX,- $61.06,$0.00,Venmo balance,EXXONMOBIL 4421 AUSTIN TX
-326235751,2026-04-29T07:52:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 #7966,- $7.50,$0.00,Venmo balance,LYFT *RIDE 12345 #7966
-338380499,2026-04-28T20:08:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO SAN JOSE CA",- $28.99,$0.00,Venmo balance,"FRESH FARM BOX CO SAN JOSE CA"
-395989763,2026-04-27T19:46:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB,- $69.08,$0.00,Venmo balance,AMZN MKTP US*2K4AB
-332049242,2026-04-26T09:57:00,Payment,Complete,Subscription,Sample User,SHELL OIL 57444,- $37.17,$0.00,Venmo balance,SHELL OIL 57444
-318644656,2026-04-26T16:55:00,Payment,Complete,Subscription,Sample User,ROOFTOP STORAGE UNIT 800-790-7244 TX,- $50.99,$0.00,Venmo balance,ROOFTOP STORAGE UNIT 800-790-7244 TX
-319412148,2026-04-25T17:14:00,Payment,Complete,Subscription,Sample User,GREEN LEAF LAWN CARE,- $31.99,$0.00,Venmo balance,GREEN LEAF LAWN CARE
-347787069,2026-04-22T19:28:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345,- $10.27,$0.00,Venmo balance,LYFT *RIDE 12345
-375382842,2026-04-21T07:35:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB,- $57.44,$0.00,Venmo balance,AMZN MKTP US*2K4AB
-318605353,2026-04-21T08:27:00,Payment,Complete,Subscription,Sample User,SHELL OIL 57444 800-706-7101 NY,"- $60.55",$0.00,Venmo balance,SHELL OIL 57444 800-706-7101 NY
-330020807,2026-04-21T18:54:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO #3448,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO #3448
-379194197,2026-04-14T21:04:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456,- $58.05,$0.00,Venmo balance,CHEVRON 00123456
-394312491,2026-04-14T16:02:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO 800-781-7573 TX,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO 800-781-7573 TX
-378285930,2026-04-13T15:39:00,Payment,Complete,Subscription,Sample User,"HBO MAX #7194",- $16.99,$0.00,Venmo balance,"HBO MAX #7194"
-392205981,2026-04-12T13:01:00,Payment,Complete,Subscription,Sample User,ROOFTOP STORAGE UNIT #7411,- $50.99,$0.00,Venmo balance,ROOFTOP STORAGE UNIT #7411
-343521188,2026-04-11T22:30:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 PORTLAND OR,- $30.68,$0.00,Venmo balance,LYFT *RIDE 12345 PORTLAND OR
-358958240,2026-04-07T20:18:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO NEW YORK NY,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO NEW YORK NY
-326909051,2026-04-06T15:02:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 800-265-1831 NY,- $50.97,$0.00,Venmo balance,EXXONMOBIL 4421 800-265-1831 NY
-386780371,2026-04-02T15:07:00,Payment,Complete,Subscription,Sample User,"AMAZON.COM*1A2B3 LOS GATOS CA",- $72.60,$0.00,Venmo balance,"AMAZON.COM*1A2B3 LOS GATOS CA"
-342151588,2026-03-31T21:26:00,Payment,Complete,Subscription,Sample User,"LYFT *RIDE 12345 LOS GATOS CA",- $16.86,$0.00,Venmo balance,"LYFT *RIDE 12345 LOS GATOS CA"
-393591944,2026-03-31T21:58:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO NEW YORK NY,"- $28.99",$0.00,Venmo balance,FRESH FARM BOX CO NEW YORK NY
-308388999,2026-03-30T08:00:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 #6214,- $33.29,$0.00,Venmo balance,LYFT *RIDE 12345 #6214
-323803354,2026-03-30T20:03:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456 LOS GATOS CA,- $40.92,$0.00,Venmo balance,CHEVRON 00123456 LOS GATOS CA
-301302287,2026-03-29T18:02:00,Payment,Complete,Subscription,Sample User,ROOFTOP STORAGE UNIT,- $50.99,$0.00,Venmo balance,ROOFTOP STORAGE UNIT
-355947333,2026-03-24T16:41:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO
-362799811,2026-03-22T14:34:00,Payment,Complete,Subscription,Sample User,"LYFT *RIDE 12345",- $44.52,$0.00,Venmo balance,"LYFT *RIDE 12345"
-342304894,2026-03-22T22:47:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456 800-247-6813 TX,"- $32.89",$0.00,Venmo balance,CHEVRON 00123456 800-247-6813 TX
-309381332,2026-03-19T10:01:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM 800-717-9308 NY,- $27.01,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM 800-717-9308 NY
-317419507,2026-03-17T08:09:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO
-332298040,2026-03-15T07:35:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456,- $74.18,$0.00,Venmo balance,CHEVRON 00123456
-350927274,2026-03-15T10:54:00,Payment,Complete,Subscription,Sample User,"ROOFTOP STORAGE UNIT",- $50.99,$0.00,Venmo balance,"ROOFTOP STORAGE UNIT"
-330694655,2026-03-12T22:16:00,Payment,Complete,Subscription,Sample User,HBO MAX #6253,- $16.99,$0.00,Venmo balance,HBO MAX #6253
-357640850,2026-03-11T15:50:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345,- $7.40,$0.00,Venmo balance,LYFT *RIDE 12345
-349298160,2026-03-10T16:27:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO 800-583-6843 TX,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO 800-583-6843 TX
-396985492,2026-03-09T22:51:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 800-723-7715 NY,"- $26.02",$0.00,Venmo balance,EXXONMOBIL 4421 800-723-7715 NY
-315539885,2026-03-04T17:12:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 #6175,- $31.86,$0.00,Venmo balance,EXXONMOBIL 4421 #6175
-306373974,2026-03-03T13:13:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO PORTLAND OR,"- $28.99",$0.00,Venmo balance,FRESH FARM BOX CO PORTLAND OR
-320392688,2026-03-01T10:15:00,Payment,Complete,Subscription,Sample User,"ROOFTOP STORAGE UNIT","- $50.99",$0.00,Venmo balance,"ROOFTOP STORAGE UNIT"
-366699634,2026-02-26T08:28:00,Payment,Complete,Subscription,Sample User,OAK TREE FLORIST 800-185-4552 TX,- $95.51,$0.00,Venmo balance,OAK TREE FLORIST 800-185-4552 TX
-371002095,2026-02-26T21:30:00,Payment,Complete,Subscription,Sample User,OAK TREE FLORIST 800-185-4552 TX,- $95.51,$0.00,Venmo balance,OAK TREE FLORIST 800-185-4552 TX
-399077309,2026-02-26T10:01:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412,- $35.46,$0.00,Venmo balance,SPEEDWAY 0412
-395930383,2026-02-24T22:44:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO
-347524380,2026-02-23T11:07:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM LOS GATOS CA,"- $21.22",$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM LOS GATOS CA
-305420909,2026-02-19T18:36:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456,- $26.77,$0.00,Venmo balance,CHEVRON 00123456
-339103397,2026-02-17T16:23:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO #2268,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO #2268
-316004759,2026-02-15T15:02:00,Payment,Complete,Subscription,Sample User,ROOFTOP STORAGE UNIT,- $50.99,$0.00,Venmo balance,ROOFTOP STORAGE UNIT
-321773249,2026-02-12T15:27:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,"- $30.91",$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
-311510700,2026-02-12T20:18:00,Payment,Complete,Subscription,Sample User,HBO MAX AUSTIN TX,- $16.99,$0.00,Venmo balance,HBO MAX AUSTIN TX
-388916121,2026-02-11T22:36:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412,- $50.73,$0.00,Venmo balance,SPEEDWAY 0412
-327786521,2026-02-10T16:05:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,"- $28.99",$0.00,Venmo balance,FRESH FARM BOX CO
-323429122,2026-02-06T11:26:00,Payment,Complete,Subscription,Sample User,"UBER *TRIP HELP.UBER.COM #1364",- $18.12,$0.00,Venmo balance,"UBER *TRIP HELP.UBER.COM #1364"
-357763078,2026-02-03T16:44:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 800-839-4982 TX,- $58.72,$0.00,Venmo balance,SPEEDWAY 0412 800-839-4982 TX
-369139190,2026-02-03T07:56:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO #3347,"- $28.99",$0.00,Venmo balance,FRESH FARM BOX CO #3347
-315099076,2026-02-01T16:14:00,Payment,Complete,Subscription,Sample User,"ROOFTOP STORAGE UNIT 800-833-5446 CA",- $50.99,$0.00,Venmo balance,"ROOFTOP STORAGE UNIT 800-833-5446 CA"
-357664646,2026-01-27T21:38:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3,- $51.81,$0.00,Venmo balance,AMAZON.COM*1A2B3
-362735534,2026-01-27T15:27:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM PORTLAND OR,"- $20.11",$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM PORTLAND OR
-361002726,2026-01-27T10:08:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO DENVER CO,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO DENVER CO
-373030119,2026-01-25T19:01:00,Payment,Complete,Subscription,Sample User,SHELL OIL 57444 #7365,- $36.46,$0.00,Venmo balance,SHELL OIL 57444 #7365
-301940599,2026-01-25T07:47:00,Payment,Complete,Subscription,Sample User,GREEN LEAF LAWN CARE #7522,"- $31.99",$0.00,Venmo balance,GREEN LEAF LAWN CARE #7522
-335761879,2026-01-22T16:14:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 #2094,- $26.82,$0.00,Venmo balance,LYFT *RIDE 12345 #2094
-368564294,2026-01-20T07:07:00,Payment,Complete,Subscription,Sample User,"EXXONMOBIL 4421 AUSTIN TX","- $74.67",$0.00,Venmo balance,"EXXONMOBIL 4421 AUSTIN TX"
-364479204,2026-01-20T18:33:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO 800-171-5204 CA,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO 800-171-5204 CA
-382254194,2026-01-19T16:23:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,- $36.27,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
-323394351,2026-01-18T17:11:00,Payment,Complete,Subscription,Sample User,"ROOFTOP STORAGE UNIT","- $50.99",$0.00,Venmo balance,"ROOFTOP STORAGE UNIT"
-397670019,2026-01-15T21:45:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412,"- $39.08",$0.00,Venmo balance,SPEEDWAY 0412
-373478585,2026-01-13T17:16:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO",- $28.99,$0.00,Venmo balance,"FRESH FARM BOX CO"
-374636752,2026-01-12T07:21:00,Payment,Complete,Subscription,Sample User,HBO MAX,- $16.99,$0.00,Venmo balance,HBO MAX
-330413966,2026-01-11T13:17:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,- $25.09,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
-377334945,2026-01-10T17:01:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412,- $26.00,$0.00,Venmo balance,SPEEDWAY 0412
-304936470,2026-01-06T19:52:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB,- $67.68,$0.00,Venmo balance,AMZN MKTP US*2K4AB
-335325510,2026-01-06T15:14:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO NEW YORK NY,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO NEW YORK NY
-353201890,2026-01-04T07:01:00,Payment,Complete,Subscription,Sample User,ROOFTOP STORAGE UNIT,- $50.99,$0.00,Venmo balance,ROOFTOP STORAGE UNIT
-352519223,2026-01-03T13:57:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3 AUSTIN TX,- $47.70,$0.00,Venmo balance,AMAZON.COM*1A2B3 AUSTIN TX
-329489694,2026-01-02T20:51:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 800-889-1272 TX,- $67.67,$0.00,Venmo balance,EXXONMOBIL 4421 800-889-1272 TX
-333857872,2025-12-30T18:12:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,"- $28.99",$0.00,Venmo balance,FRESH FARM BOX CO
-329409299,2025-12-29T08:48:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 800-537-5135 NY,"- $10.46",$0.00,Venmo balance,LYFT *RIDE 12345 800-537-5135 NY
-342570002,2025-12-25T17:04:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3 #7269,- $114.26,$0.00,Venmo balance,AMAZON.COM*1A2B3 #7269
-383310590,2025-12-25T13:40:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 #8675,"- $25.35",$0.00,Venmo balance,EXXONMOBIL 4421 #8675
-328606260,2025-12-23T20:51:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO",- $28.99,$0.00,Venmo balance,"FRESH FARM BOX CO"
-332673073,2025-12-21T09:02:00,Payment,Complete,Subscription,Sample User,ROOFTOP STORAGE UNIT,- $50.99,$0.00,Venmo balance,ROOFTOP STORAGE UNIT
-361454984,2025-12-20T20:50:00,Payment,Complete,Subscription,Sample User,"CHEVRON 00123456 800-398-6666 TX",- $71.38,$0.00,Venmo balance,"CHEVRON 00123456 800-398-6666 TX"
-308163429,2025-12-16T11:31:00,Payment,Complete,Subscription,Sample User,PARK SHOE REPAIR,- $151.24,$0.00,Venmo balance,PARK SHOE REPAIR
-322882125,2025-12-16T10:49:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO #7933,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO #7933
-396125197,2025-12-15T15:00:00,Payment,Complete,Subscription,Sample User,"AMZN MKTP US*2K4AB #7787",- $92.11,$0.00,Venmo balance,"AMZN MKTP US*2K4AB #7787"
-382227187,2025-12-15T09:54:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456 SAN JOSE CA,- $67.46,$0.00,Venmo balance,CHEVRON 00123456 SAN JOSE CA
-328792850,2025-12-14T11:13:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,- $44.54,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
-316506278,2025-12-12T14:07:00,Payment,Complete,Subscription,Sample User,HBO MAX,- $16.99,$0.00,Venmo balance,HBO MAX
-327427113,2025-12-09T09:10:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO 800-577-3684 CA,- $28.99,$0.00,Venmo balance,FRESH FARM BOX CO 800-577-3684 CA
-306581513,2025-12-07T21:01:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 800-362-8145 TX,- $29.97,$0.00,Venmo balance,SPEEDWAY 0412 800-362-8145 TX
-301076713,2025-12-07T07:38:00,Payment,Complete,Subscription,Sample User,ROOFTOP STORAGE UNIT SAN JOSE CA,- $50.99,$0.00,Venmo balance,ROOFTOP STORAGE UNIT SAN JOSE CA
-389571772,2025-12-04T17:48:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 800-574-2853 NY,"- $21.17",$0.00,Venmo balance,LYFT *RIDE 12345 800-574-2853 NY
-355442906,2025-12-03T12:35:00,Payment,Complete,Subscription,Sample User,"ROOFTOP STORAGE UNIT #2481",- $0.99,$0.00,Venmo balance,"ROOFTOP STORAGE UNIT #2481"
-391049359,2025-12-02T22:30:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO 800-449-4810 TX","- $28.99",$0.00,Venmo balance,"FRESH FARM BOX CO 800-449-4810 TX"
-316839886,2025-12-01T14:36:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 800-271-8997 NY,- $27.26,$0.00,Venmo balance,SPEEDWAY 0412 800-271-8997 NY
+378780747,2026-05-21T11:57:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345,"- $22.28",$0.00,Venmo balance,LYFT *RIDE 12345
+392289815,2026-05-20T16:16:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB 800-914-1818 NY,- $7.03,$0.00,Venmo balance,AMZN MKTP US*2K4AB 800-914-1818 NY
+343129333,2026-05-19T21:36:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 DENVER CO,- $61.91,$0.00,Venmo balance,SPEEDWAY 0412 DENVER CO
+368790718,2026-05-18T22:20:00,Payment,Complete,Subscription,Sample User,"UBER *TRIP HELP.UBER.COM","- $11.48",$0.00,Venmo balance,"UBER *TRIP HELP.UBER.COM"
+350161302,2026-05-17T20:21:00,Payment,Complete,Subscription,RETURN CREDIT SUNRISE HARDWARE 800-567-8569 NY,Sample User,+ $11.83,$0.00,Venmo balance,
+386969382,2026-05-16T13:05:00,Payment,Complete,Subscription,Sample User,MOUNTAIN OUTFITTERS #9275,- $28.17,$0.00,Venmo balance,MOUNTAIN OUTFITTERS #9275
+313692315,2026-05-12T10:30:00,Payment,Complete,Subscription,Sample User,HBO MAX,"- $21.99",$0.00,Venmo balance,HBO MAX
+360267289,2026-05-10T09:49:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 #2803,- $37.83,$0.00,Venmo balance,SPEEDWAY 0412 #2803
+324428196,2026-05-07T11:21:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL NEW YORK NY,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL NEW YORK NY
+389561568,2026-05-03T15:26:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3,- $86.64,$0.00,Venmo balance,AMAZON.COM*1A2B3
+338715985,2026-05-01T11:25:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 AUSTIN TX,- $61.06,$0.00,Venmo balance,EXXONMOBIL 4421 AUSTIN TX
+329936100,2026-04-30T20:29:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL NEW YORK NY,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL NEW YORK NY
+380329976,2026-04-29T09:29:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 #7966,- $7.50,$0.00,Venmo balance,LYFT *RIDE 12345 #7966
+302241173,2026-04-27T07:41:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB,- $69.08,$0.00,Venmo balance,AMZN MKTP US*2K4AB
+375937694,2026-04-26T10:02:00,Payment,Complete,Subscription,Sample User,"SHELL OIL 57444",- $37.17,$0.00,Venmo balance,"SHELL OIL 57444"
+351199009,2026-04-23T13:36:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL
+326235751,2026-04-22T07:52:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345,- $10.27,$0.00,Venmo balance,LYFT *RIDE 12345
+338380499,2026-04-21T20:08:00,Payment,Complete,Subscription,Sample User,"AMZN MKTP US*2K4AB",- $57.44,$0.00,Venmo balance,"AMZN MKTP US*2K4AB"
+395989763,2026-04-21T19:46:00,Payment,Complete,Subscription,Sample User,SHELL OIL 57444 800-706-7101 NY,- $60.55,$0.00,Venmo balance,SHELL OIL 57444 800-706-7101 NY
+332049242,2026-04-16T09:57:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL
+318644656,2026-04-16T16:55:00,Payment,Complete,Subscription,Sample User,BOOKCLUB PLUS #7411,- $45.99,$0.00,Venmo balance,BOOKCLUB PLUS #7411
+319412148,2026-04-14T17:14:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456,- $58.05,$0.00,Venmo balance,CHEVRON 00123456
+347787069,2026-04-13T19:28:00,Payment,Complete,Subscription,Sample User,HBO MAX 800-413-2378 CA,- $21.99,$0.00,Venmo balance,HBO MAX 800-413-2378 CA
+375382842,2026-04-11T07:35:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 PORTLAND OR,- $30.68,$0.00,Venmo balance,LYFT *RIDE 12345 PORTLAND OR
+318605353,2026-04-09T08:27:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL 800-583-6843 TX,"- $57.99",$0.00,Venmo balance,HARBOR SWIM SCHOOL 800-583-6843 TX
+330020807,2026-04-06T18:54:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 800-265-1831 NY,- $50.97,$0.00,Venmo balance,EXXONMOBIL 4421 800-265-1831 NY
+379194197,2026-04-02T21:04:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3 LOS GATOS CA,- $72.60,$0.00,Venmo balance,AMAZON.COM*1A2B3 LOS GATOS CA
+394312491,2026-04-02T16:02:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL PORTLAND OR,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL PORTLAND OR
+378285930,2026-04-02T15:39:00,Payment,Complete,Subscription,Sample User,"BOOKCLUB PLUS",- $45.99,$0.00,Venmo balance,"BOOKCLUB PLUS"
+392205981,2026-03-31T13:01:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 LOS GATOS CA,- $16.86,$0.00,Venmo balance,LYFT *RIDE 12345 LOS GATOS CA
+343521188,2026-03-30T22:30:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 #6214,- $33.29,$0.00,Venmo balance,LYFT *RIDE 12345 #6214
+358958240,2026-03-30T20:18:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456 LOS GATOS CA,- $40.92,$0.00,Venmo balance,CHEVRON 00123456 LOS GATOS CA
+326909051,2026-03-26T15:02:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL
+386780371,2026-03-22T15:07:00,Payment,Complete,Subscription,Sample User,"LYFT *RIDE 12345",- $44.52,$0.00,Venmo balance,"LYFT *RIDE 12345"
+342151588,2026-03-22T21:26:00,Payment,Complete,Subscription,Sample User,"CHEVRON 00123456 800-247-6813 TX",- $32.89,$0.00,Venmo balance,"CHEVRON 00123456 800-247-6813 TX"
+393591944,2026-03-19T21:58:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM 800-717-9308 NY,"- $27.01",$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM 800-717-9308 NY
+308388999,2026-03-19T08:00:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL #2268,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL #2268
+323803354,2026-03-19T20:03:00,Payment,Complete,Subscription,Sample User,BOOKCLUB PLUS,- $45.99,$0.00,Venmo balance,BOOKCLUB PLUS
+301302287,2026-03-15T18:02:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456,- $74.18,$0.00,Venmo balance,CHEVRON 00123456
+355947333,2026-03-12T16:41:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL
+362799811,2026-03-12T14:34:00,Payment,Complete,Subscription,Sample User,"HBO MAX 800-628-2535 NY",- $21.99,$0.00,Venmo balance,"HBO MAX 800-628-2535 NY"
+342304894,2026-03-11T22:47:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345,"- $7.40",$0.00,Venmo balance,LYFT *RIDE 12345
+309381332,2026-03-11T10:01:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE #1176,- $71.99,$0.00,Venmo balance,MAPLE DAYCARE #1176
+317419507,2026-03-09T08:09:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 800-723-7715 NY,- $26.02,$0.00,Venmo balance,EXXONMOBIL 4421 800-723-7715 NY
+332298040,2026-03-05T07:35:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL #3347,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL #3347
+350927274,2026-03-05T10:54:00,Payment,Complete,Subscription,Sample User,"BOOKCLUB PLUS",- $45.99,$0.00,Venmo balance,"BOOKCLUB PLUS"
+330694655,2026-03-04T22:16:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 #6175,- $31.86,$0.00,Venmo balance,EXXONMOBIL 4421 #6175
+357640850,2026-02-26T15:50:00,Payment,Complete,Subscription,Sample User,OAK TREE FLORIST 800-185-4552 TX,- $95.51,$0.00,Venmo balance,OAK TREE FLORIST 800-185-4552 TX
+349298160,2026-02-26T16:27:00,Payment,Complete,Subscription,Sample User,OAK TREE FLORIST 800-185-4552 TX,- $95.51,$0.00,Venmo balance,OAK TREE FLORIST 800-185-4552 TX
+396985492,2026-02-26T22:51:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412,"- $35.46",$0.00,Venmo balance,SPEEDWAY 0412
+315539885,2026-02-26T17:12:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL DENVER CO,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL DENVER CO
+306373974,2026-02-23T13:13:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM LOS GATOS CA,"- $21.22",$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM LOS GATOS CA
+320392688,2026-02-19T10:15:00,Payment,Complete,Subscription,Sample User,"CHEVRON 00123456","- $26.77",$0.00,Venmo balance,"CHEVRON 00123456"
+366699634,2026-02-19T08:28:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL 800-171-5204 CA,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL 800-171-5204 CA
+371002095,2026-02-19T21:30:00,Payment,Complete,Subscription,Sample User,BOOKCLUB PLUS,- $45.99,$0.00,Venmo balance,BOOKCLUB PLUS
+399077309,2026-02-12T10:01:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,- $30.91,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
+395930383,2026-02-12T22:44:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL
+347524380,2026-02-12T11:07:00,Payment,Complete,Subscription,Sample User,HBO MAX #7192,"- $16.99",$0.00,Venmo balance,HBO MAX #7192
+305420909,2026-02-11T18:36:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412,- $50.73,$0.00,Venmo balance,SPEEDWAY 0412
+339103397,2026-02-06T16:23:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM #1364,- $18.12,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM #1364
+316004759,2026-02-05T15:02:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL NEW YORK NY,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL NEW YORK NY
+321773249,2026-02-05T15:27:00,Payment,Complete,Subscription,Sample User,BOOKCLUB PLUS 800-833-5446 CA,"- $45.99",$0.00,Venmo balance,BOOKCLUB PLUS 800-833-5446 CA
+311510700,2026-02-03T20:18:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 800-839-4982 TX,- $58.72,$0.00,Venmo balance,SPEEDWAY 0412 800-839-4982 TX
+388916121,2026-01-29T22:36:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL
+327786521,2026-01-27T16:05:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3,"- $51.81",$0.00,Venmo balance,AMAZON.COM*1A2B3
+323429122,2026-01-27T11:26:00,Payment,Complete,Subscription,Sample User,"UBER *TRIP HELP.UBER.COM PORTLAND OR",- $20.11,$0.00,Venmo balance,"UBER *TRIP HELP.UBER.COM PORTLAND OR"
+357763078,2026-01-25T16:44:00,Payment,Complete,Subscription,Sample User,SHELL OIL 57444 #7365,- $36.46,$0.00,Venmo balance,SHELL OIL 57444 #7365
+369139190,2026-01-22T07:56:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 #2094,"- $26.82",$0.00,Venmo balance,LYFT *RIDE 12345 #2094
+315099076,2026-01-22T16:14:00,Payment,Complete,Subscription,Sample User,"HARBOR SWIM SCHOOL",- $57.99,$0.00,Venmo balance,"HARBOR SWIM SCHOOL"
+357664646,2026-01-22T21:38:00,Payment,Complete,Subscription,Sample User,BOOKCLUB PLUS,- $45.99,$0.00,Venmo balance,BOOKCLUB PLUS
+362735534,2026-01-20T15:27:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 AUSTIN TX,"- $74.67",$0.00,Venmo balance,EXXONMOBIL 4421 AUSTIN TX
+361002726,2026-01-19T10:08:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,- $36.27,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
+373030119,2026-01-15T19:01:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412,- $39.08,$0.00,Venmo balance,SPEEDWAY 0412
+301940599,2026-01-15T07:47:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL #7933,"- $57.99",$0.00,Venmo balance,HARBOR SWIM SCHOOL #7933
+335761879,2026-01-12T16:14:00,Payment,Complete,Subscription,Sample User,HBO MAX,- $16.99,$0.00,Venmo balance,HBO MAX
+368564294,2026-01-11T07:07:00,Payment,Complete,Subscription,Sample User,"UBER *TRIP HELP.UBER.COM","- $25.09",$0.00,Venmo balance,"UBER *TRIP HELP.UBER.COM"
+364479204,2026-01-10T18:33:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412,- $26.00,$0.00,Venmo balance,SPEEDWAY 0412
+382254194,2026-01-08T16:23:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL 800-577-3684 CA,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL 800-577-3684 CA
+323394351,2026-01-08T17:11:00,Payment,Complete,Subscription,Sample User,"BOOKCLUB PLUS","- $45.99",$0.00,Venmo balance,"BOOKCLUB PLUS"
+397670019,2026-01-06T21:45:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB,"- $67.68",$0.00,Venmo balance,AMZN MKTP US*2K4AB
+373478585,2026-01-03T17:16:00,Payment,Complete,Subscription,Sample User,"AMAZON.COM*1A2B3 AUSTIN TX",- $47.70,$0.00,Venmo balance,"AMAZON.COM*1A2B3 AUSTIN TX"
+374636752,2026-01-02T07:21:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 800-889-1272 TX,- $67.67,$0.00,Venmo balance,EXXONMOBIL 4421 800-889-1272 TX
+330413966,2026-01-01T13:17:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL 800-449-4810 TX,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL 800-449-4810 TX
+377334945,2025-12-29T17:01:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 800-537-5135 NY,- $10.46,$0.00,Venmo balance,LYFT *RIDE 12345 800-537-5135 NY
+304936470,2025-12-25T19:52:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3 #7269,- $114.26,$0.00,Venmo balance,AMAZON.COM*1A2B3 #7269
+335325510,2025-12-25T15:14:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 #8675,- $25.35,$0.00,Venmo balance,EXXONMOBIL 4421 #8675
+353201890,2025-12-25T07:01:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL DENVER CO,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL DENVER CO
+352519223,2025-12-25T13:57:00,Payment,Complete,Subscription,Sample User,BOOKCLUB PLUS,- $45.99,$0.00,Venmo balance,BOOKCLUB PLUS
+329489694,2025-12-20T20:51:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456 800-398-6666 TX,- $71.38,$0.00,Venmo balance,CHEVRON 00123456 800-398-6666 TX
+333857872,2025-12-18T18:12:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL #5751,"- $57.99",$0.00,Venmo balance,HARBOR SWIM SCHOOL #5751
+329409299,2025-12-16T08:48:00,Payment,Complete,Subscription,Sample User,PARK SHOE REPAIR,"- $151.24",$0.00,Venmo balance,PARK SHOE REPAIR
+342570002,2025-12-15T17:04:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB #7787,- $92.11,$0.00,Venmo balance,AMZN MKTP US*2K4AB #7787
+383310590,2025-12-15T13:40:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456 SAN JOSE CA,"- $67.46",$0.00,Venmo balance,CHEVRON 00123456 SAN JOSE CA
+328606260,2025-12-14T20:51:00,Payment,Complete,Subscription,Sample User,"UBER *TRIP HELP.UBER.COM",- $44.54,$0.00,Venmo balance,"UBER *TRIP HELP.UBER.COM"
+332673073,2025-12-12T09:02:00,Payment,Complete,Subscription,Sample User,HBO MAX LOS GATOS CA,- $16.99,$0.00,Venmo balance,HBO MAX LOS GATOS CA
+361454984,2025-12-11T20:50:00,Payment,Complete,Subscription,Sample User,"HARBOR SWIM SCHOOL",- $57.99,$0.00,Venmo balance,"HARBOR SWIM SCHOOL"
+308163429,2025-12-11T11:31:00,Payment,Complete,Subscription,Sample User,BOOKCLUB PLUS SAN JOSE CA,- $45.99,$0.00,Venmo balance,BOOKCLUB PLUS SAN JOSE CA
+322882125,2025-12-11T10:49:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE 800-891-8928 CA,- $71.99,$0.00,Venmo balance,MAPLE DAYCARE 800-891-8928 CA
+396125197,2025-12-07T15:00:00,Payment,Complete,Subscription,Sample User,"SPEEDWAY 0412 800-362-8145 TX",- $29.97,$0.00,Venmo balance,"SPEEDWAY 0412 800-362-8145 TX"
+382227187,2025-12-04T09:54:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 800-574-2853 NY,- $21.17,$0.00,Venmo balance,LYFT *RIDE 12345 800-574-2853 NY
+328792850,2025-12-04T11:13:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL #6867,- $57.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL #6867
+316506278,2025-12-01T14:07:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 800-271-8997 NY,- $27.26,$0.00,Venmo balance,SPEEDWAY 0412 800-271-8997 NY

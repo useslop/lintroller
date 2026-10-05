@@ -4,19 +4,19 @@
     {
       "id": "G1",
       "name": "corpus precision >= 0.90",
-      "value": 0.9169,
+      "value": 0.9174,
       "pass": true
     },
     {
       "id": "G2",
       "name": "corpus recall >= 0.90",
-      "value": 0.9668,
+      "value": 0.9699,
       "pass": true
     },
     {
       "id": "G3",
       "name": "precision at confidence >= medium >= 0.95",
-      "value": 0.9302,
+      "value": 0.9306,
       "pass": false
     },
     {
@@ -28,26 +28,26 @@
     {
       "id": "G5",
       "name": "performance: 50k-row parse + detect < 2 s",
-      "value": 804.1475,
+      "value": 823.022,
       "pass": true
     }
   ],
   "corpus": {
     "cases": 40,
-    "tp": 320,
+    "tp": 322,
     "fp": 29,
-    "fn": 11,
-    "precision": 0.9169054441260746,
-    "recall": 0.9667673716012085,
-    "f1": 0.9411764705882354,
-    "precisionAtMedium": 0.9302325581395349,
+    "fn": 10,
+    "precision": 0.9173789173789174,
+    "recall": 0.9698795180722891,
+    "f1": 0.9428989751098097,
+    "precisionAtMedium": 0.930635838150289,
     "cadenceAccuracy": 1,
     "yearlyCostMaxErrorPct": 11.833333333333334,
     "perFormat": {
       "amex": {
-        "tp": 20,
+        "tp": 21,
         "fp": 2,
-        "fn": 2
+        "fn": 1
       },
       "apple-card": {
         "tp": 18,
@@ -65,7 +65,7 @@
         "fn": 1
       },
       "capitalone-card": {
-        "tp": 13,
+        "tp": 14,
         "fp": 0,
         "fn": 0
       },
@@ -156,7 +156,7 @@
     "worstFnCadences": [
       [
         "semimonthly",
-        10
+        9
       ],
       [
         "monthly",
@@ -169,23 +169,23 @@
     {
       "name": "chase-card-9001",
       "lines": 50002,
-      "ms": 537.5063329999999,
-      "parseMs": 344.8794999999999,
-      "detectMs": 192.62683300000003
+      "ms": 518.9163749999999,
+      "parseMs": 329.0056669999999,
+      "detectMs": 189.910708
     },
     {
       "name": "boa-checking-9002",
       "lines": 50008,
-      "ms": 804.1475419999999,
-      "parseMs": 426.12466700000004,
-      "detectMs": 378.0228749999999
+      "ms": 823.0220419999998,
+      "parseMs": 440.8157920000001,
+      "detectMs": 382.2062499999997
     },
     {
       "name": "amex-9003",
       "lines": 50002,
-      "ms": 373.71500000000015,
-      "parseMs": 89.31166699999994,
-      "detectMs": 284.4033330000002
+      "ms": 406.11987499999987,
+      "parseMs": 93.8425830000001,
+      "detectMs": 312.27729199999976
     }
   ],
   "falsePositives": [
@@ -368,11 +368,6 @@
     {
       "caseId": "amex-4070",
       "merchantKey": "raw:maple daycare",
-      "cadence": "semimonthly"
-    },
-    {
-      "caseId": "amex-4071",
-      "merchantKey": "raw:peak pet",
       "cadence": "semimonthly"
     },
     {

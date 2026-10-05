@@ -7,7 +7,7 @@ Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net
 08/27/2025,08:23:33,PDT,ROOFTOP STORAGE UNIT LOS GATOS CA,Subscription Payment,Completed,USD,-71.99,0.00,-71.99
 08/27/2025,12:56:59,PDT,GREEN LEAF LAWN CARE,Subscription Payment,Completed,USD,-55.99,0.00,-55.99
 08/25/2025,15:18:53,PDT,DUNKIN #1234 800-693-2420 TX,Express Checkout Payment,Completed,USD,-8.75,0.00,-8.75
-08/25/2025,14:22:44,PDT,PLANET FITNESS AUSTIN TX,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
+08/25/2025,14:22:44,PDT,SQ *PLANET FITNESS AUSTIN TX,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
 08/25/2025,22:38:51,PDT,PEAK PET BOX,Subscription Payment,Completed,USD,-68.99,0.00,-68.99
 08/25/2025,13:51:43,PDT,"BOOKCLUB PLUS",Subscription Payment,Completed,USD,-60.99,0.00,-60.99
 08/25/2025,06:05:09,PDT,"CITY BIKE SHARE PASS 800-563-4468 NY",Subscription Payment,Completed,USD,-54.99,0.00,-54.99
@@ -62,7 +62,7 @@ Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net
 07/27/2025,17:53:02,PDT,"DUNKIN #1234",Express Checkout Payment,Completed,USD,-5.80,0.00,-5.80
 07/26/2025,16:11:04,PDT,EXXONMOBIL 4421 SAN JOSE CA,Express Checkout Payment,Completed,USD,-57.69,0.00,-57.69
 07/25/2025,17:43:52,PDT,PEETS COFFEE 1234,Express Checkout Payment,Completed,USD,-5.28,0.00,-5.28
-07/25/2025,13:52:42,PDT,PLANET FITNESS #5749,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
+07/25/2025,13:52:42,PDT,SQ *PLANET FITNESS #5749,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
 07/25/2025,14:26:45,PDT,TRIVIA NIGHT LEAGUE,Subscription Payment,Completed,USD,-72.99,0.00,-72.99
 07/25/2025,22:35:34,PDT,BOOKCLUB PLUS,Subscription Payment,Completed,USD,-60.99,0.00,-60.99
 07/24/2025,20:02:09,PDT,SWEETGREEN 0456,Express Checkout Payment,Completed,USD,-19.21,0.00,-19.21
@@ -113,7 +113,7 @@ Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net
 06/27/2025,10:59:45,PDT,TRIVIA NIGHT LEAGUE,Subscription Payment,Completed,USD,-72.99,0.00,-72.99
 06/25/2025,20:55:19,PDT,"SHELL OIL 57444 800-823-3583 TX",Express Checkout Payment,Completed,USD,-47.16,0.00,-47.16
 06/25/2025,06:10:27,PDT,ROOFTOP STORAGE UNIT,Subscription Payment,Completed,USD,-71.99,0.00,-71.99
-06/25/2025,22:08:48,PDT,PLANET FITNESS #7301,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
+06/25/2025,22:08:48,PDT,SQ *PLANET FITNESS #7301,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
 06/25/2025,20:48:52,PDT,PEAK PET BOX,Subscription Payment,Completed,USD,-68.99,0.00,-68.99
 06/25/2025,21:38:13,PDT,BOOKCLUB PLUS,Subscription Payment,Completed,USD,-60.99,0.00,-60.99
 06/24/2025,21:54:05,PDT,DUNKIN #1234 800-281-5359 NY,Express Checkout Payment,Completed,USD,-9.93,0.00,-9.93
@@ -159,7 +159,7 @@ Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net
 05/27/2025,20:49:08,PDT,GREEN LEAF LAWN CARE 800-433-6194 CA,Subscription Payment,Completed,USD,-55.99,0.00,-55.99
 05/26/2025,16:25:17,PDT,CITY BIKE SHARE PASS,Subscription Payment,Completed,USD,-54.99,0.00,-54.99
 05/25/2025,22:08:24,PDT,PEETS COFFEE 1234,Express Checkout Payment,Completed,USD,-8.78,0.00,-8.78
-05/25/2025,11:04:42,PDT,PLANET FITNESS,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
+05/25/2025,11:04:42,PDT,SQ *PLANET FITNESS,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
 05/25/2025,13:17:59,PDT,BOOKCLUB PLUS #9747,Subscription Payment,Completed,USD,-60.99,0.00,-60.99
 05/24/2025,21:58:02,PDT,SUNRISE CLEANERS,Subscription Payment,Completed,USD,-21.99,0.00,-21.99
 05/23/2025,18:46:35,PDT,MAPLE DAYCARE AUSTIN TX,Subscription Payment,Completed,USD,-73.99,0.00,-73.99
@@ -199,7 +199,7 @@ Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net
 04/26/2025,15:15:10,PDT,SHELL OIL 57444 DENVER CO,Express Checkout Payment,Completed,USD,-41.46,0.00,-41.46
 04/25/2025,07:35:42,PDT,STARBUCKS STORE 12345 #5056,Express Checkout Payment,Completed,USD,-10.33,0.00,-10.33
 04/25/2025,13:25:58,PDT,MAPLE DAYCARE,Subscription Payment,Completed,USD,-73.99,0.00,-73.99
-04/25/2025,14:31:39,PDT,"PLANET FITNESS #6742",Subscription Payment,Completed,USD,-10.00,0.00,-10.00
+04/25/2025,14:31:39,PDT,"SQ *PLANET FITNESS #6742",Subscription Payment,Completed,USD,-10.00,0.00,-10.00
 04/25/2025,06:54:08,PDT,BOOKCLUB PLUS #3528,Subscription Payment,Completed,USD,-60.99,0.00,-60.99
 04/23/2025,18:02:37,PDT,PEETS COFFEE 1234 NEW YORK NY,Express Checkout Payment,Completed,USD,-9.87,0.00,-9.87
 04/23/2025,11:41:53,PDT,ROOFTOP STORAGE UNIT,Subscription Payment,Completed,USD,-71.99,0.00,-71.99
@@ -242,7 +242,7 @@ Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net
 03/28/2025,17:37:35,PDT,MAPLE DAYCARE NEW YORK NY,Subscription Payment,Completed,USD,-73.99,0.00,-73.99
 03/27/2025,17:34:39,PDT,ALDI 1234 800-263-6609 NY,Express Checkout Payment,Completed,USD,-172.54,0.00,-172.54
 03/26/2025,18:54:24,PDT,ROOFTOP STORAGE UNIT,Subscription Payment,Completed,USD,-71.99,0.00,-71.99
-03/25/2025,22:51:50,PDT,PLANET FITNESS NEW YORK NY,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
+03/25/2025,22:51:50,PDT,SQ *PLANET FITNESS NEW YORK NY,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
 03/25/2025,06:57:32,PDT,BOOKCLUB PLUS,Subscription Payment,Completed,USD,-60.99,0.00,-60.99
 03/24/2025,20:04:18,PDT,STARBUCKS STORE 12345 800-722-1849 CA,Express Checkout Payment,Completed,USD,-10.03,0.00,-10.03
 03/24/2025,16:27:23,PDT,SPEEDWAY 0412,Express Checkout Payment,Completed,USD,-25.38,0.00,-25.38
@@ -288,7 +288,7 @@ Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net
 02/26/2025,18:01:47,PDT,"STARBUCKS STORE 12345 #7061",Express Checkout Payment,Completed,USD,-5.38,0.00,-5.38
 02/26/2025,22:43:36,PDT,SHELL OIL 57444 #9253,Express Checkout Payment,Completed,USD,-29.36,0.00,-29.36
 02/26/2025,07:52:34,PDT,ROOFTOP STORAGE UNIT #8073,Subscription Payment,Completed,USD,-71.99,0.00,-71.99
-02/25/2025,13:34:17,PDT,PLANET FITNESS 800-764-4575 NY,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
+02/25/2025,13:34:17,PDT,SQ *PLANET FITNESS 800-764-4575 NY,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
 02/25/2025,10:44:36,PDT,PEAK PET BOX,Subscription Payment,Completed,USD,-68.99,0.00,-68.99
 02/25/2025,22:59:33,PDT,BOOKCLUB PLUS,Subscription Payment,Completed,USD,-60.99,0.00,-60.99
 02/24/2025,18:40:10,PDT,CITY BIKE SHARE PASS 800-899-3019 TX,Subscription Payment,Completed,USD,-54.99,0.00,-54.99
@@ -339,7 +339,7 @@ Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net
 01/26/2025,12:24:41,PDT,DUNKIN #1234,Express Checkout Payment,Completed,USD,-8.54,0.00,-8.54
 01/26/2025,13:06:07,PDT,SAFEWAY 0456 DENVER CO,Express Checkout Payment,Completed,USD,-43.96,0.00,-43.96
 01/25/2025,22:36:07,PDT,AMZN MKTP US*2K4AB 800-364-4154 TX,Express Checkout Payment,Completed,USD,-78.73,0.00,-78.73
-01/25/2025,18:39:58,PDT,PLANET FITNESS #6580,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
+01/25/2025,18:39:58,PDT,SQ *PLANET FITNESS #6580,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
 01/25/2025,08:49:12,PDT,BOOKCLUB PLUS,Subscription Payment,Completed,USD,-60.99,0.00,-60.99
 01/24/2025,10:31:42,PDT,SWEETGREEN 0456,Express Checkout Payment,Completed,USD,-60.61,0.00,-60.61
 01/24/2025,15:47:59,PDT,TRIVIA NIGHT LEAGUE #3313,Subscription Payment,Completed,USD,-72.99,0.00,-72.99
@@ -389,7 +389,7 @@ Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net
 12/26/2024,08:07:00,PDT,"TRADER JOE'S #456",Express Checkout Payment,Completed,USD,-49.93,0.00,-49.93
 12/25/2024,08:35:34,PDT,STARBUCKS STORE 12345 800-137-6532 TX,Express Checkout Payment,Completed,USD,-5.98,0.00,-5.98
 12/25/2024,08:23:19,PDT,ROOFTOP STORAGE UNIT #9296,Subscription Payment,Completed,USD,-71.99,0.00,-71.99
-12/25/2024,20:18:21,PDT,"PLANET FITNESS #1653",Subscription Payment,Completed,USD,-10.00,0.00,-10.00
+12/25/2024,20:18:21,PDT,"SQ *PLANET FITNESS #1653",Subscription Payment,Completed,USD,-10.00,0.00,-10.00
 12/25/2024,08:41:14,PDT,PEAK PET BOX LOS GATOS CA,Subscription Payment,Completed,USD,-68.99,0.00,-68.99
 12/25/2024,14:47:52,PDT,BOOKCLUB PLUS #6133,Subscription Payment,Completed,USD,-60.99,0.00,-60.99
 12/24/2024,06:00:03,PDT,EXXONMOBIL 4421 800-224-4405 CA,Express Checkout Payment,Completed,USD,-34.58,0.00,-34.58
@@ -433,7 +433,7 @@ Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net
 11/27/2024,19:21:42,PDT,"ROOFTOP STORAGE UNIT #8860",Subscription Payment,Completed,USD,-71.99,0.00,-71.99
 11/27/2024,09:15:07,PDT,GREEN LEAF LAWN CARE #2130,Subscription Payment,Completed,USD,-55.99,0.00,-55.99
 11/25/2024,06:30:56,PDT,CHIPOTLE 1234 800-748-6893 NY,Express Checkout Payment,Completed,USD,-9.60,0.00,-9.60
-11/25/2024,20:07:53,PDT,PLANET FITNESS,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
+11/25/2024,20:07:53,PDT,SQ *PLANET FITNESS,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
 11/25/2024,14:17:38,PDT,BOOKCLUB PLUS #2258,Subscription Payment,Completed,USD,-60.99,0.00,-60.99
 11/25/2024,12:48:49,PDT,"CITY BIKE SHARE PASS",Subscription Payment,Completed,USD,-54.99,0.00,-54.99
 11/24/2024,09:23:39,PDT,STARBUCKS STORE 12345 #2724,Express Checkout Payment,Completed,USD,-7.61,0.00,-7.61
@@ -486,7 +486,7 @@ Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net
 10/26/2024,06:18:44,PDT,LOCAL TACO BAR 800-178-4143 CA,Express Checkout Payment,Completed,USD,-10.36,0.00,-10.36
 10/26/2024,11:11:08,PDT,CHEVRON 00123456,Express Checkout Payment,Completed,USD,-51.34,0.00,-51.34
 10/25/2024,19:38:43,PDT,MAPLE DAYCARE,Subscription Payment,Completed,USD,-73.99,0.00,-73.99
-10/25/2024,14:29:09,PDT,PLANET FITNESS,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
+10/25/2024,14:29:09,PDT,SQ *PLANET FITNESS,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
 10/25/2024,06:35:41,PDT,"PEAK PET BOX",Subscription Payment,Completed,USD,-68.99,0.00,-68.99
 10/25/2024,15:45:49,PDT,BOOKCLUB PLUS #8389,Subscription Payment,Completed,USD,-60.99,0.00,-60.99
 10/23/2024,22:50:32,PDT,"ROOFTOP STORAGE UNIT #5193",Subscription Payment,Completed,USD,-71.99,0.00,-71.99
@@ -532,7 +532,7 @@ Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net
 09/27/2024,09:00:18,PDT,SHELL OIL 57444 DENVER CO,Express Checkout Payment,Completed,USD,-42.35,0.00,-42.35
 09/27/2024,16:13:30,PDT,MAPLE DAYCARE 800-294-1518 TX,Subscription Payment,Completed,USD,-73.99,0.00,-73.99
 09/25/2024,11:28:06,PDT,ROOFTOP STORAGE UNIT 800-564-9039 CA,Subscription Payment,Completed,USD,-71.99,0.00,-71.99
-09/25/2024,09:01:31,PDT,PLANET FITNESS LOS GATOS CA,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
+09/25/2024,09:01:31,PDT,SQ *PLANET FITNESS LOS GATOS CA,Subscription Payment,Completed,USD,-10.00,0.00,-10.00
 09/25/2024,14:33:22,PDT,BOOKCLUB PLUS #9786,Subscription Payment,Completed,USD,-60.99,0.00,-60.99
 09/23/2024,06:36:29,PDT,CITY BIKE SHARE PASS 800-587-6216 TX,Subscription Payment,Completed,USD,-54.99,0.00,-54.99
 09/22/2024,17:49:40,PDT,AMAZON.COM*1A2B3 SAN JOSE CA,Express Checkout Payment,Completed,USD,-22.59,0.00,-22.59

@@ -19,7 +19,7 @@ const MONTHLY: FixedCadence[] = ['monthly'];
 export const SUBSCRIPTIONS: MerchantSpec[] = [
   { aliasId: 'netflix', name: 'Netflix', kind: 'subscription', category: 'Entertainment', cores: ['NETFLIX.COM', 'NETFLIX'], prices: [1549, 1799, 2299], cadences: MONTHLY },
   { aliasId: 'hulu', name: 'Hulu', kind: 'subscription', category: 'Entertainment', cores: ['HULU', 'HULU 866-9977-BOX'], prices: [799, 1199, 1799], cadences: MONTHLY },
-  { aliasId: 'spotify', name: 'Spotify', kind: 'subscription', category: 'Music', cores: ['SPOTIFY USA', 'SPOTIFY'], prices: [999, 1099, 1199], cadences: MONTHLY },
+  { aliasId: 'spotify', name: 'Spotify', kind: 'subscription', category: 'Music', cores: ['SPOTIFY USA', 'SPOTIFY', 'PAYPAL *SPOTIFYUSA'], prices: [999, 1099, 1199], cadences: MONTHLY },
   { aliasId: 'disney-plus', name: 'Disney+', kind: 'subscription', category: 'Entertainment', cores: ['DISNEY PLUS'], prices: [1399], cadences: MONTHLY },
   { aliasId: 'hbo-max', name: 'HBO Max', kind: 'subscription', category: 'Entertainment', cores: ['HBO MAX'], prices: [1599, 1699], cadences: MONTHLY },
   { aliasId: 'paramount-plus', name: 'Paramount+', kind: 'subscription', category: 'Entertainment', cores: ['PARAMOUNT PLUS'], prices: [799, 1299], cadences: MONTHLY },
@@ -34,7 +34,7 @@ export const SUBSCRIPTIONS: MerchantSpec[] = [
   { aliasId: 'strava', name: 'Strava', kind: 'subscription', category: 'Fitness', cores: ['STRAVA'], prices: [1199], cadences: MONTHLY },
   { aliasId: 'duolingo', name: 'Duolingo', kind: 'subscription', category: 'Education', cores: ['DUOLINGO'], prices: [699], cadences: MONTHLY },
   { aliasId: 'zoom', name: 'Zoom', kind: 'subscription', category: 'Software', cores: ['ZOOM.US', 'ZOOM VIDEO'], prices: [1499], cadences: MONTHLY },
-  { aliasId: 'planet-fitness', name: 'Planet Fitness', kind: 'membership', category: 'Fitness', cores: ['PLANET FITNESS'], prices: [1000, 2499], cadences: MONTHLY },
+  { aliasId: 'planet-fitness', name: 'Planet Fitness', kind: 'membership', category: 'Fitness', cores: ['PLANET FITNESS', 'SQ *PLANET FITNESS'], prices: [1000, 2499], cadences: MONTHLY },
   { aliasId: 'amazon-prime', name: 'Amazon Prime', kind: 'membership', category: 'Shopping', cores: ['AMAZON PRIME', 'AMZN PRIME'], prices: [1499], cadences: MONTHLY },
   { aliasId: 'uber-one', name: 'Uber One', kind: 'membership', category: 'Transportation', cores: ['UBER ONE', 'UBER *ONE'], prices: [999], cadences: MONTHLY },
   { aliasId: 'doordash-dashpass', name: 'DashPass', kind: 'membership', category: 'Food', cores: ['DASHPASS', 'DD *DASHPASS'], prices: [996], cadences: MONTHLY },

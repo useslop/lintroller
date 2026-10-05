@@ -31,6 +31,8 @@ export interface GenerateOptions {
   caseId?: string;
   /** Pads the file with coffee-like noise rows until it has at least this many rows (performance cases). */
   targetRows?: number;
+  /** Distractor families to plant; default: every family the format plausibly carries. */
+  distractors?: DistractorFamily[];
 }
 
 export interface GeneratedCase {
@@ -74,6 +76,7 @@ interface Ctx {
   format: FormatId;
   from: string;
   to: string;
+  only?: DistractorFamily[];
 }
 
 const BANK_WRAPS: ((t: string, d: string, rng: Rng) => string)[] = [
@@ -191,7 +194,7 @@ function makeSeries(ctx: Ctx, cad: FixedCadence, spec: MerchantSpec, core: strin
 
   let rise = -1;
   let newPrice = price;
-  if (cad === 'monthly' && !bill && dates.length >= 5 && rng.chance(0.2)) {
+  if (cad === 'monthly' && !bill && dates.length >= 5 && rng.chance(0.35)) {
     rise = Math.min(Math.floor(dates.length / 2), dates.length - 3);
     newPrice = Math.round((price * (1.08 + rng.next() * 0.17)) / 100) * 100 + 99;
     traps.push('price-rise');
@@ -319,6 +322,7 @@ function planDistractors(ctx: Ctx, rows: Row[], streams: Stream[]): void {
   if (ctx.flavour === 'bank' || ctx.flavour === 'budget') families.push('atm', 'payroll', 'transfer', 'card-payment');
   if (ctx.flavour === 'card') families.push('card-payment');
   for (const f of families) {
+    if (ctx.only && !ctx.only.includes(f)) continue;
     if (!rng.chance(0.9)) continue;
     switch (f) {
       case 'gas': emitVariable(ctx, 'gas', rows, streams, 0); break;
@@ -386,7 +390,7 @@ export function generateCase(o: GenerateOptions): GeneratedCase {
   const root = createRng(o.seed);
   const from = windowStart(root.fork('window'));
   const to = addDays(addMonths(from, o.months), -1);
-  const ctx: Ctx = { rng: root.fork('plan'), flavour: FLAVOUR[o.format], format: o.format, from, to };
+  const ctx: Ctx = { rng: root.fork('plan'), flavour: FLAVOUR[o.format], format: o.format, from, to, only: o.distractors };
   const rows: Row[] = [];
   const streams: Stream[] = [];
   planSeries(ctx, o.series, rows, streams);
