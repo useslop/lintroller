@@ -239,6 +239,7 @@ export interface LinkCheck {
   checkedAt: string;          // ISO datetime with offset
   ok: boolean;                // 2xx, or 3xx to the merchant's own sign-in on an entry domain
   note?: string;              // '403 bot wall', 'redirects to sign-in', 'JS-rendered, steps not checkable'
+  signIn?: boolean;           // F1b: the final URL is a sign-in page (set by the app build from finalUrl, which it drops)
 }
 
 export interface CancelEntry {            // data/cancel.json is CancelEntry[]
@@ -264,6 +265,7 @@ export interface CancelLink {
   checkedOn: string;                      // ISO date shown as "checked Oct 4, 2026"
   route: 'merchant' | PlatformId;         // 'apple' = "billed by Apple: cancel in your Apple subscriptions"
   notes: string[];
+  signIn?: boolean;                       // F1b: the checked link landed on a sign-in page ("sign in first")
 }
 
 export interface FormatHelp {             // data/formats-help.json is FormatHelp[]

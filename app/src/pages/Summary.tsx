@@ -189,7 +189,7 @@ function CancelLinkLine({ link }: { link: CancelLink }) {
   const badge = link.badge === 'verified'
     ? `(official site, checked ${formatDate(link.checkedOn)})`
     : `(official site, last checked ${formatDate(link.checkedOn)}; check it again before you rely on it)`;
-  const text = link.kind === 'help' ? `${link.name}: how to cancel` : `${link.name}: account page`;
+  const text = link.kind === 'help' ? `${link.name}: how to cancel` : `${link.name}: account page${link.signIn ? ' (sign in first)' : ''}`;
   return (
     <p className="cancel">
       {platform && <span>Billed by {platform}: open your {platform} subscriptions. </span>}

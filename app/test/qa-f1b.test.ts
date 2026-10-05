@@ -179,3 +179,16 @@ describe('F1b #9: a past next date says so on the summary card', () => {
     expect(nextLine(spotify, '2026-10-02')).toBe('Next expected Oct 3, 2026');
   });
 });
+
+describe('F1b #12: account links that land on a sign-in page say so', () => {
+  it('the build keeps a signIn flag from the dropped finalUrl, and lookupCancel passes it on', async () => {
+    const { cancelDirectory } = await import('../src/data');
+    const { lookupCancel } = await import('../src/engine');
+    const flagged = cancelDirectory.filter((e) => e.check.manage?.signIn).map((e) => e.id);
+    expect(flagged).toEqual(expect.arrayContaining(['netflix', 'amazon-prime', 'paypal', 'roblox', 'ring']));
+    expect(cancelDirectory.some((e) => Object.values(e.check).some((c) => c && 'finalUrl' in c))).toBe(false);
+    const [link] = lookupCancel({ aliasId: 'amazon-prime', billedThrough: null }, cancelDirectory, '2026-10-05');
+    expect(link?.kind).toBe('manage');
+    expect(link?.signIn).toBe(true);
+  });
+});

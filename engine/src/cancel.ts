@@ -16,10 +16,12 @@ function toLink(e: CancelEntry, route: CancelLink['route'], today: string): Canc
   const okChecks = [e.check.manage, e.check.help].filter((c): c is LinkCheck => Boolean(c?.ok));
   // the ET calendar date of the check: a check at 21:30 ET on Oct 4 is '2026-10-05T01:30Z' in UTC
   const lastOk = okChecks.map((c) => etDate(c.checkedAt)).sort().pop() ?? e.verified;
+  const kind = useHelp || url === e.helpUrl ? 'help' : 'manage';
+  const signIn = Boolean((kind === 'help' ? e.check.help : e.check.manage)?.signIn);
   return {
-    entryId: e.id, name: e.name, url, kind: useHelp || url === e.helpUrl ? 'help' : 'manage',
+    entryId: e.id, name: e.name, url, kind,
     badge: dayNum(today) - dayNum(lastOk) > STALE_DAYS ? 'stale' : 'verified',
-    checkedOn: lastOk, route, notes: [...e.notes],
+    checkedOn: lastOk, route, notes: [...e.notes], ...(signIn ? { signIn } : {}),
   };
 }
 

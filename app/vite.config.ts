@@ -8,6 +8,8 @@ import { defineConfig } from 'vitest/config';
 // statement" page each pattern came from; nothing renders it), and every manageUrl/helpUrl whose own check
 // did not pass. Shipping them would put URLs in the
 // bundle that are not links, which the outbound-link gate (gates.mjs b) rightly rejects.
+const SIGN_IN_RE = /^https:\/\/(accounts\.google\.com\/|login\.|[^/]+\/(.*\/)?(signin|sign-in|sign_in|login|log-in|newlogin)\b|[^/]+\/ax\/claim\b|[^/]+\/ap\/signin\b)/i;
+
 const slimData: Plugin = {
   name: 'subsweep:slim-data',
   enforce: 'pre',
@@ -18,7 +20,8 @@ const slimData: Plugin = {
     for (const row of rows) {
       if (file === 'aliases') { delete row.source; continue; }
       const check = (row.check ?? {}) as Record<string, { ok?: boolean; finalUrl?: string } | undefined>;
-      for (const c of Object.values(check)) if (c) delete c.finalUrl;
+      // keep one fact from the dropped redirect target: whether the checked link lands on a sign-in page (Q1 F1b #12)
+      for (const c of Object.values(check)) if (c) { if (c.ok && c.finalUrl && SIGN_IN_RE.test(c.finalUrl)) (c as { signIn?: boolean }).signIn = true; delete c.finalUrl; }
       // A URL ships only when its own check passed (Q1 F1b #12): the 43 unverified entries keep their names
       // and notes but carry no URL, so no code path can ever render an unchecked link.
       const unverified = row.verified === null;
