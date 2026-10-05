@@ -200,6 +200,8 @@ export interface DetectOptions {
   today?: string;             // ISO; default = latest row date (pure: never reads the clock)
   includeInflows?: boolean;   // default false
   params?: Partial<DetectParams>;
+  /** B1 addition (optional): account kind per file, indexed by Txn.source (from sniffFormat). Default 'unknown'. */
+  accountKinds?: SniffResult['accountKind'][];
 }
 
 export interface DetectResult {
