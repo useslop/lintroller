@@ -158,6 +158,15 @@ describe('detectRecurring: false-positive families', () => {
     expect(kinds).toEqual({ 'city-power': 'bill', 'raw:monthly maintenance': 'fee' });
     expect(r.findings.every((f) => f.reasons.includes('bill-like'))).toBe(true);
   });
+  it('Venmo-style payments are person findings even without accountKinds; transfers to the bank are ignored', () => {
+    const rows = [
+      ...charges('Jane Roommate', monthly('2026-01-01', 5), 60000).map((t) => ({ ...t, type: 'Payment' })),
+      ...charges('', monthly('2026-01-03', 5), 20000).map((t) => ({ ...t, type: 'Standard Transfer' })),
+    ];
+    const r = run(rows);
+    expect(r.findings.map((f) => f.kind)).toEqual(['person']);
+    expect(r.ignored).toEqual([{ rowClass: 'transfer', count: 5 }]);
+  });
   it('payments to people on a wallet file are person findings', () => {
     const rows = charges('Jane Roommate', monthly('2026-01-01', 5), 60000).map((t) => ({ ...t, type: 'Payment' }));
     const f = run(rows, { accountKinds: ['wallet'] }).findings[0]!;

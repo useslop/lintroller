@@ -219,9 +219,12 @@ const WALLET_P2P_TYPE = /^(?:payment|charge|p2p|sent|received|request|cash card|
 
 /** True when a wallet row (Venmo, Cash App) is a payment to or from a person. */
 export function isPersonPayment(t: Txn, m: MerchantMatch, accountKind: SniffResult['accountKind']): boolean {
-  if (accountKind !== 'wallet' || m.aliasId !== null) return false;
-  const type = t.type ?? '';
-  return WALLET_P2P_TYPE.test(type) && !/merchant|subscription|purchase|express checkout|preapproved|pre-approved|bill/i.test(type);
+  if (m.aliasId !== null || m.processor !== null) return false;
+  const type = (t.type ?? '').trim();
+  // without a known account kind, only Venmo-style exact types count ('Payment', 'Charge')
+  if (accountKind === 'unknown') return /^(?:payment|charge)$/i.test(type) && t.amountCents < 0;
+  if (accountKind !== 'wallet') return false;
+  return t.amountCents < 0 && WALLET_P2P_TYPE.test(type) && !/merchant|subscription|purchase|express checkout|preapproved|pre-approved|bill/i.test(type);
 }
 
 export function classifyRow(t: Txn, m: MerchantMatch, accountKind: SniffResult['accountKind']): RowClass {
@@ -234,8 +237,9 @@ export function classifyRow(t: Txn, m: MerchantMatch, accountKind: SniffResult['
   if (/^fee/i.test(type) || /FEE_TRANSACTION/i.test(type)) return 'fee';
   if (/ACCT_XFER|^transfer$/i.test(type)) return 'transfer';
   if (/^ATM/i.test(type)) return 'atm';
-  if (accountKind === 'wallet' && WALLET_TRANSFER_TYPE.test(type) && !/payment|purchase|checkout/i.test(type)) return 'transfer';
-  if (accountKind === 'wallet' && isPersonPayment(t, m, accountKind)) return inflow ? 'income' : 'purchase';
+  if ((accountKind === 'wallet' || accountKind === 'unknown') && WALLET_TRANSFER_TYPE.test(type) && !/payment|purchase|checkout/i.test(type)) return 'transfer';
+  if (isPersonPayment(t, m, accountKind)) return 'purchase';
+  if (accountKind === 'wallet' && WALLET_P2P_TYPE.test(type) && inflow && m.aliasId === null) return 'income';
   if (isCardPaymentText(d)) return 'card-payment';
   if (INTEREST_RE.test(d)) return 'interest';
   if (ATM_RE.test(d)) return 'atm';
