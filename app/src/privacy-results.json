@@ -1,8 +1,8 @@
 {
   "status": "passed 32 of 32 checks on lintroller.vercel.app",
-  "ranAt": "2026-10-05T11:17:16.308Z",
+  "ranAt": "2026-10-05T11:23:39.225Z",
   "target": "https://lintroller.vercel.app",
-  "commit": "37819f2",
+  "commit": "9bc869e",
   "canary": "QUOKKA STREAMING and ZEBRAFISH GYM 7781 at $77.77, 12 months, seeded generator (seed 7777); second file seed 2345",
   "passed": 32,
   "total": 32,
@@ -37,7 +37,7 @@
     },
     {
       "name": "request list to our origin is identical for a second, different file",
-      "result": "pass (4 requests: GET /, GET /assets/index-BO2LiQjr.js, GET /assets/index-BavcVC0c.css, GET /assets/engine.worker-DV3690aV.js)"
+      "result": "pass (4 requests: GET /, GET /assets/index-LFqt1INo.js, GET /assets/index-BavcVC0c.css, GET /assets/engine.worker-DV3690aV.js)"
     },
     {
       "name": "CSV and ICS are built in the browser and saved from blob: URLs",
@@ -124,7 +124,7 @@
       "result": "pass (HTTP 200)"
     },
     {
-      "name": "exact SPEC §10 headers on /assets/index-BO2LiQjr.js",
+      "name": "exact SPEC §10 headers on /assets/index-LFqt1INo.js",
       "result": "pass (HTTP 200)"
     },
     {
@@ -138,7 +138,7 @@
   ],
   "requestsDuringLoad": [
     "GET /",
-    "GET /assets/index-BO2LiQjr.js",
+    "GET /assets/index-LFqt1INo.js",
     "GET /assets/index-BavcVC0c.css",
     "GET /assets/engine.worker-DV3690aV.js"
   ],
@@ -217,7 +217,7 @@
       "exact": true
     },
     {
-      "route": "/assets/index-BO2LiQjr.js",
+      "route": "/assets/index-LFqt1INo.js",
       "status": 200,
       "exact": true
     },
