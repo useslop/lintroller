@@ -1,0 +1,44 @@
+{
+  "caseId": "xss-merchant",
+  "format": "boa-card",
+  "seed": 0,
+  "from": "2026-01-09",
+  "to": "2026-05-27",
+  "recurring": [
+    {
+      "merchantKey": "raw:img src",
+      "aliasId": null,
+      "display": "<img src=x onerror=alert(1)>",
+      "cadence": "monthly",
+      "kind": "unknown",
+      "nominalCents": 299,
+      "lines": [
+        3,
+        5,
+        7,
+        8,
+        10
+      ],
+      "traps": [],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "TRADER JOES #512",
+      "family": "groceries",
+      "lines": [
+        2,
+        6
+      ]
+    },
+    {
+      "merchant": "SHELL OIL 57444442100",
+      "family": "gas",
+      "lines": [
+        4,
+        9
+      ]
+    }
+  ]
+}

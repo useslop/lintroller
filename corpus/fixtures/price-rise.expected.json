@@ -1,0 +1,38 @@
+{
+  "caseId": "price-rise",
+  "format": "paypal",
+  "seed": 0,
+  "from": "2026-01-09",
+  "to": "2026-06-18",
+  "recurring": [
+    {
+      "merchantKey": "spotify",
+      "aliasId": "spotify",
+      "display": "Spotify",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1199,
+      "lines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "traps": [
+        "price-rise"
+      ],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "Hollow Oak Candles",
+      "family": "one-off",
+      "lines": [
+        8
+      ]
+    }
+  ]
+}

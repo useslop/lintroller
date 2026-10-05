@@ -1,0 +1,54 @@
+{
+  "caseId": "trial",
+  "format": "discover",
+  "seed": 0,
+  "from": "2026-05-02",
+  "to": "2026-09-14",
+  "recurring": [
+    {
+      "merchantKey": "hulu",
+      "aliasId": "hulu",
+      "display": "Hulu",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1799,
+      "lines": [
+        2,
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "traps": [
+        "trial"
+      ],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "SHELL OIL 57444442100",
+      "family": "gas",
+      "lines": [
+        4,
+        10
+      ]
+    },
+    {
+      "merchant": "TRADER JOES #512 PLEASANTON CA",
+      "family": "groceries",
+      "lines": [
+        6,
+        12
+      ]
+    },
+    {
+      "merchant": "CHIPOTLE 1834 DUBLIN CA",
+      "family": "restaurant",
+      "lines": [
+        8
+      ]
+    }
+  ]
+}

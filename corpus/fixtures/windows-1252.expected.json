@@ -1,0 +1,44 @@
+{
+  "caseId": "windows-1252",
+  "format": "generic",
+  "seed": 0,
+  "from": "2026-01-09",
+  "to": "2026-05-20",
+  "recurring": [
+    {
+      "merchantKey": "raw:café club",
+      "aliasId": null,
+      "display": "Café Club Monthly",
+      "cadence": "monthly",
+      "kind": "unknown",
+      "nominalCents": 650,
+      "lines": [
+        3,
+        5,
+        7,
+        8,
+        10
+      ],
+      "traps": [],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "Crémerie Gérard",
+      "family": "groceries",
+      "lines": [
+        2,
+        6
+      ]
+    },
+    {
+      "merchant": "BRASSERIE ÉTOILE",
+      "family": "restaurant",
+      "lines": [
+        4,
+        9
+      ]
+    }
+  ]
+}

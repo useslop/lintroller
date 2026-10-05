@@ -1,0 +1,42 @@
+{
+  "caseId": "utf8-bom",
+  "format": "chase-checking",
+  "seed": 0,
+  "from": "2026-01-05",
+  "to": "2026-05-05",
+  "recurring": [
+    {
+      "merchantKey": "netflix",
+      "aliasId": "netflix",
+      "display": "Netflix",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1549,
+      "lines": [
+        2,
+        4,
+        6,
+        7,
+        8
+      ],
+      "traps": [],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "TRADER JOES #512 PLEASANTON CA",
+      "family": "groceries",
+      "lines": [
+        3
+      ]
+    },
+    {
+      "merchant": "SHELL OIL 57444442100",
+      "family": "gas",
+      "lines": [
+        5
+      ]
+    }
+  ]
+}

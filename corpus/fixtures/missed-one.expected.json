@@ -1,0 +1,56 @@
+{
+  "caseId": "missed-one",
+  "format": "citi-card",
+  "seed": 0,
+  "from": "2026-01-18",
+  "to": "2026-07-29",
+  "recurring": [
+    {
+      "merchantKey": "hulu",
+      "aliasId": "hulu",
+      "display": "Hulu",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1799,
+      "lines": [
+        2,
+        4,
+        8,
+        10,
+        11,
+        13
+      ],
+      "traps": [
+        "missed-one"
+      ],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "TRADER JOES #512 PLEASANTON CA",
+      "family": "groceries",
+      "lines": [
+        3,
+        7,
+        9
+      ]
+    },
+    {
+      "merchant": "CHIPOTLE 1834 DUBLIN CA",
+      "family": "restaurant",
+      "lines": [
+        5,
+        12
+      ]
+    },
+    {
+      "merchant": "PAYMENT THANK YOU",
+      "family": "card-payment",
+      "lines": [
+        6,
+        14
+      ]
+    }
+  ]
+}

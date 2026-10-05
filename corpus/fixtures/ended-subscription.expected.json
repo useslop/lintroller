@@ -1,0 +1,54 @@
+{
+  "caseId": "ended-subscription",
+  "format": "usbank",
+  "seed": 0,
+  "from": "2026-01-20",
+  "to": "2026-08-20",
+  "recurring": [
+    {
+      "merchantKey": "hbo-max",
+      "aliasId": "hbo-max",
+      "display": "HBO Max",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1599,
+      "lines": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "traps": [
+        "ended"
+      ],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "SHELL OIL 57444442100",
+      "family": "gas",
+      "lines": [
+        3,
+        9
+      ]
+    },
+    {
+      "merchant": "TRADER JOES #512 PLEASANTON CA",
+      "family": "groceries",
+      "lines": [
+        5,
+        10,
+        12
+      ]
+    },
+    {
+      "merchant": "CHIPOTLE 1834 DUBLIN CA",
+      "family": "restaurant",
+      "lines": [
+        7,
+        11
+      ]
+    }
+  ]
+}

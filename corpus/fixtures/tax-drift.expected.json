@@ -1,0 +1,48 @@
+{
+  "caseId": "tax-drift",
+  "format": "monarch",
+  "seed": 0,
+  "from": "2026-01-05",
+  "to": "2026-06-20",
+  "recurring": [
+    {
+      "merchantKey": "att",
+      "aliasId": "att",
+      "display": "AT&T Wireless",
+      "cadence": "monthly",
+      "kind": "bill",
+      "nominalCents": 8412,
+      "lines": [
+        3,
+        5,
+        7,
+        8,
+        10,
+        11
+      ],
+      "traps": [
+        "tax-drift"
+      ],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "TRADER JOES #512 PLEASANTON CA",
+      "family": "groceries",
+      "lines": [
+        2,
+        6,
+        12
+      ]
+    },
+    {
+      "merchant": "SHELL OIL 57444442100",
+      "family": "gas",
+      "lines": [
+        4,
+        9
+      ]
+    }
+  ]
+}

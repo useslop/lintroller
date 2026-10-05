@@ -1,0 +1,55 @@
+{
+  "caseId": "payroll",
+  "format": "boa-checking",
+  "seed": 0,
+  "from": "2026-01-09",
+  "to": "2026-04-19",
+  "recurring": [
+    {
+      "merchantKey": "hulu",
+      "aliasId": "hulu",
+      "display": "Hulu",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1799,
+      "lines": [
+        3,
+        7,
+        11,
+        15
+      ],
+      "traps": [],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "ACME PAYROLL DIR DEP",
+      "family": "payroll",
+      "lines": [
+        2,
+        4,
+        5,
+        8,
+        9,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "merchant": "TRADER JOES #512 PLEASANTON CA",
+      "family": "groceries",
+      "lines": [
+        6
+      ]
+    },
+    {
+      "merchant": "SHELL OIL 57444442100",
+      "family": "gas",
+      "lines": [
+        10
+      ]
+    }
+  ]
+}

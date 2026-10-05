@@ -1,0 +1,22 @@
+{
+  "caseId": "weekly-gas",
+  "format": "wells-fargo",
+  "seed": 0,
+  "from": "2026-08-16",
+  "to": "2026-09-27",
+  "recurring": [],
+  "distractors": [
+    {
+      "merchant": "SHELL OIL 57444442100",
+      "family": "gas",
+      "lines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ]
+}

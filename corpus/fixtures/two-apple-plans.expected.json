@@ -1,0 +1,68 @@
+{
+  "caseId": "two-apple-plans",
+  "format": "apple-card",
+  "seed": 0,
+  "from": "2026-01-03",
+  "to": "2026-06-07",
+  "recurring": [
+    {
+      "merchantKey": "apple",
+      "aliasId": "apple",
+      "display": "Apple (iCloud+)",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 299,
+      "lines": [
+        2,
+        5,
+        7,
+        10,
+        12,
+        15
+      ],
+      "traps": [
+        "platform-biller",
+        "same-merchant-two-plans"
+      ],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "apple",
+      "aliasId": "apple",
+      "display": "Apple (Apple Music)",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1099,
+      "lines": [
+        3,
+        6,
+        8,
+        11,
+        13,
+        16
+      ],
+      "traps": [
+        "platform-biller",
+        "same-merchant-two-plans"
+      ],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "TRADER JOES #512 PLEASANTON CA",
+      "family": "groceries",
+      "lines": [
+        4,
+        14
+      ]
+    },
+    {
+      "merchant": "SHELL OIL 57444442100",
+      "family": "gas",
+      "lines": [
+        9
+      ]
+    }
+  ]
+}

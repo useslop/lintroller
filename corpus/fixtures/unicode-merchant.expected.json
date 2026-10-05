@@ -1,0 +1,44 @@
+{
+  "caseId": "unicode-merchant",
+  "format": "monarch",
+  "seed": 0,
+  "from": "2026-01-07",
+  "to": "2026-05-19",
+  "recurring": [
+    {
+      "merchantKey": "raw:librería club",
+      "aliasId": null,
+      "display": "Librería Club Plus",
+      "cadence": "monthly",
+      "kind": "unknown",
+      "nominalCents": 949,
+      "lines": [
+        2,
+        4,
+        6,
+        8,
+        9
+      ],
+      "traps": [],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "CAFÉ LUMIÈRE",
+      "family": "coffee",
+      "lines": [
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "merchant": "SHELL OIL 57444442100",
+      "family": "gas",
+      "lines": [
+        5
+      ]
+    }
+  ]
+}

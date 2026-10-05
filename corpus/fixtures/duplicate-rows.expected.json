@@ -1,0 +1,58 @@
+{
+  "caseId": "duplicate-rows",
+  "format": "ynab",
+  "seed": 0,
+  "from": "2026-01-11",
+  "to": "2026-06-11",
+  "recurring": [
+    {
+      "merchantKey": "spotify",
+      "aliasId": "spotify",
+      "display": "Spotify",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1199,
+      "lines": [
+        2,
+        4,
+        5,
+        9,
+        10,
+        12
+      ],
+      "traps": [],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "TRADER JOES #512 PLEASANTON CA",
+      "family": "groceries",
+      "lines": [
+        3
+      ]
+    },
+    {
+      "merchant": "SHELL OIL 57444442100",
+      "family": "gas",
+      "lines": [
+        6
+      ]
+    },
+    {
+      "merchant": "AMAZON.COM",
+      "family": "one-off",
+      "lines": [
+        7,
+        8
+      ]
+    },
+    {
+      "merchant": "CHIPOTLE 1834 DUBLIN CA",
+      "family": "restaurant",
+      "lines": [
+        11
+      ]
+    }
+  ]
+}

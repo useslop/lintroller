@@ -1,0 +1,44 @@
+{
+  "caseId": "csv-injection",
+  "format": "chase-checking",
+  "seed": 0,
+  "from": "2026-01-05",
+  "to": "2026-05-12",
+  "recurring": [
+    {
+      "merchantKey": "raw:hyperlink",
+      "aliasId": null,
+      "display": "=HYPERLINK(\"http://x\")",
+      "cadence": "monthly",
+      "kind": "unknown",
+      "nominalCents": 499,
+      "lines": [
+        3,
+        5,
+        7,
+        8,
+        10
+      ],
+      "traps": [],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "TRADER JOES #512 PLEASANTON CA",
+      "family": "groceries",
+      "lines": [
+        2,
+        6
+      ]
+    },
+    {
+      "merchant": "SHELL OIL 57444442100",
+      "family": "gas",
+      "lines": [
+        4,
+        9
+      ]
+    }
+  ]
+}

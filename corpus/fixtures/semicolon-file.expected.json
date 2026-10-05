@@ -1,0 +1,53 @@
+{
+  "caseId": "semicolon-file",
+  "format": "generic",
+  "seed": 0,
+  "from": "2026-01-27",
+  "to": "2026-05-27",
+  "recurring": [
+    {
+      "merchantKey": "spotify",
+      "aliasId": "spotify",
+      "display": "Spotify",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 999,
+      "lines": [
+        2,
+        5,
+        8,
+        11,
+        13
+      ],
+      "traps": [],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "REWE MARKT 4711 BERLIN",
+      "family": "groceries",
+      "lines": [
+        3,
+        7,
+        12
+      ]
+    },
+    {
+      "merchant": "CAFE MITTE BERLIN",
+      "family": "coffee",
+      "lines": [
+        4,
+        9
+      ]
+    },
+    {
+      "merchant": "TANKSTELLE SHELL 0412",
+      "family": "gas",
+      "lines": [
+        6,
+        10
+      ]
+    }
+  ]
+}

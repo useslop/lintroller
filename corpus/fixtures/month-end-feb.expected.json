@@ -1,0 +1,47 @@
+{
+  "caseId": "month-end-feb",
+  "format": "amex",
+  "seed": 0,
+  "from": "2026-01-09",
+  "to": "2026-06-30",
+  "recurring": [
+    {
+      "merchantKey": "dropbox",
+      "aliasId": "dropbox",
+      "display": "Dropbox",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1199,
+      "lines": [
+        3,
+        5,
+        7,
+        8,
+        10,
+        11
+      ],
+      "traps": [
+        "month-end"
+      ],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "WHOLE FOODS MKT #10237",
+      "family": "groceries",
+      "lines": [
+        2,
+        6
+      ]
+    },
+    {
+      "merchant": "SHELL OIL 57444442100",
+      "family": "gas",
+      "lines": [
+        4,
+        9
+      ]
+    }
+  ]
+}

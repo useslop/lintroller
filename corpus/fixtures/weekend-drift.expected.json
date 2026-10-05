@@ -1,0 +1,48 @@
+{
+  "caseId": "weekend-drift",
+  "format": "boa-checking",
+  "seed": 0,
+  "from": "2026-03-02",
+  "to": "2026-07-21",
+  "recurring": [
+    {
+      "merchantKey": "netflix",
+      "aliasId": "netflix",
+      "display": "Netflix",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1549,
+      "lines": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "traps": [
+        "weekend-shift"
+      ],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "SAFEWAY #1431 PLEASANTON CA",
+      "family": "groceries",
+      "lines": [
+        2,
+        6,
+        10
+      ]
+    },
+    {
+      "merchant": "SHELL OIL 57444442100 DUBLIN CA",
+      "family": "gas",
+      "lines": [
+        4,
+        8,
+        12
+      ]
+    }
+  ]
+}

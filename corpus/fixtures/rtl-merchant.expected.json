@@ -1,0 +1,44 @@
+{
+  "caseId": "rtl-merchant",
+  "format": "usbank",
+  "seed": 0,
+  "from": "2026-01-05",
+  "to": "2026-05-28",
+  "recurring": [
+    {
+      "merchantKey": "raw:موسيقى almusic",
+      "aliasId": null,
+      "display": "موسيقى ALMUSIC",
+      "cadence": "monthly",
+      "kind": "unknown",
+      "nominalCents": 999,
+      "lines": [
+        3,
+        5,
+        6,
+        8,
+        9
+      ],
+      "traps": [],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "TRADER JOES #512 PLEASANTON CA",
+      "family": "groceries",
+      "lines": [
+        2,
+        7
+      ]
+    },
+    {
+      "merchant": "SHELL OIL 57444442100",
+      "family": "gas",
+      "lines": [
+        4,
+        10
+      ]
+    }
+  ]
+}

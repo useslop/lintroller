@@ -1,0 +1,44 @@
+{
+  "caseId": "amazon-retail-noise",
+  "format": "capitalone-card",
+  "seed": 0,
+  "from": "2026-01-08",
+  "to": "2026-06-19",
+  "recurring": [
+    {
+      "merchantKey": "amazon-prime",
+      "aliasId": "amazon-prime",
+      "display": "Amazon Prime",
+      "cadence": "monthly",
+      "kind": "membership",
+      "nominalCents": 1499,
+      "lines": [
+        2,
+        5,
+        8,
+        10,
+        12,
+        15
+      ],
+      "traps": [],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "AMZN MKTP US",
+      "family": "amazon-retail",
+      "lines": [
+        3,
+        4,
+        6,
+        7,
+        9,
+        11,
+        13,
+        14,
+        16
+      ]
+    }
+  ]
+}

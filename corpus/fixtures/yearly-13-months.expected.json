@@ -1,0 +1,67 @@
+{
+  "caseId": "yearly-13-months",
+  "format": "mint",
+  "seed": 0,
+  "from": "2025-09-02",
+  "to": "2026-10-03",
+  "recurring": [
+    {
+      "merchantKey": "costco",
+      "aliasId": "costco",
+      "display": "Costco",
+      "cadence": "yearly",
+      "kind": "membership",
+      "nominalCents": 6500,
+      "lines": [
+        3,
+        14
+      ],
+      "traps": [],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "TRADER JOES #512 PLEASANTON CA",
+      "family": "groceries",
+      "lines": [
+        2,
+        6,
+        10,
+        15
+      ]
+    },
+    {
+      "merchant": "SHELL OIL 57444442100",
+      "family": "gas",
+      "lines": [
+        4,
+        7,
+        12
+      ]
+    },
+    {
+      "merchant": "DAILY GRIND CAFE PLEASANTON CA",
+      "family": "coffee",
+      "lines": [
+        5,
+        11
+      ]
+    },
+    {
+      "merchant": "CHIPOTLE 1834 DUBLIN CA",
+      "family": "restaurant",
+      "lines": [
+        8,
+        13
+      ]
+    },
+    {
+      "merchant": "HOME DEPOT 4018 PLEASANTON CA",
+      "family": "one-off",
+      "lines": [
+        9
+      ]
+    }
+  ]
+}

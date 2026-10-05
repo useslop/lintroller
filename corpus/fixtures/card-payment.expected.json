@@ -1,0 +1,48 @@
+{
+  "caseId": "card-payment",
+  "format": "chase-card",
+  "seed": 0,
+  "from": "2026-01-11",
+  "to": "2026-06-29",
+  "recurring": [
+    {
+      "merchantKey": "spotify",
+      "aliasId": "spotify",
+      "display": "Spotify",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1099,
+      "lines": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "traps": [],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "PAYMENT THANK YOU",
+      "family": "card-payment",
+      "lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ]
+    },
+    {
+      "merchant": "TRADER JOES #512 PLEASANTON CA",
+      "family": "groceries",
+      "lines": [
+        14
+      ]
+    }
+  ]
+}

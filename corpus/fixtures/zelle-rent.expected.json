@@ -1,0 +1,41 @@
+{
+  "caseId": "zelle-rent",
+  "format": "chase-checking",
+  "seed": 0,
+  "from": "2026-01-02",
+  "to": "2026-06-14",
+  "recurring": [
+    {
+      "merchantKey": "netflix",
+      "aliasId": "netflix",
+      "display": "Netflix",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1549,
+      "lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "traps": [],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "Zelle Payment To J Smith",
+      "family": "transfer",
+      "lines": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ]
+    }
+  ]
+}
