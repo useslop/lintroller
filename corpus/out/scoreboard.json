@@ -28,7 +28,7 @@
     {
       "id": "G5",
       "name": "performance: 50k-row parse + detect < 2 s",
-      "value": 842.1233,
+      "value": 821.9083,
       "pass": true
     }
   ],
@@ -314,23 +314,23 @@
     {
       "name": "chase-card-9001",
       "lines": 50002,
-      "ms": 569.107,
-      "parseMs": 369.94108299999994,
-      "detectMs": 199.16591700000004
+      "ms": 548.220667,
+      "parseMs": 360.58124999999995,
+      "detectMs": 187.6394170000001
     },
     {
       "name": "boa-checking-9002",
       "lines": 50008,
-      "ms": 842.123292,
-      "parseMs": 458.148334,
-      "detectMs": 383.974958
+      "ms": 821.9083330000001,
+      "parseMs": 435.144542,
+      "detectMs": 386.7637910000001
     },
     {
       "name": "amex-9003",
       "lines": 50002,
-      "ms": 391.45216600000003,
-      "parseMs": 103.21545800000013,
-      "detectMs": 288.2367079999999
+      "ms": 375.855458,
+      "parseMs": 96.20912500000031,
+      "detectMs": 279.6463329999997
     }
   ],
   "falsePositives": [
