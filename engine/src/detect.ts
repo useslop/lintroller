@@ -7,7 +7,7 @@ import type {
   Cadence, DetectOptions, DetectParams, DetectResult, Evidence, Finding, FindingKind, FixedCadence,
   MerchantMatch, ReasonCode, RowClass, SniffResult, Txn,
 } from './types';
-import { dayNum, fromDayNum, gridDay, monthIndexOf } from './values';
+import { dayNum, formatUsd, fromDayNum, gridDay, monthIndexOf } from './values';
 
 const FIXED: FixedCadence[] = ['weekly', 'biweekly', 'semimonthly', 'monthly', 'bimonthly', 'quarterly', 'semiannual', 'yearly'];
 export const STEP_DAYS: Record<FixedCadence, number> = {
@@ -221,7 +221,8 @@ export function detectRecurring(rows: Txn[], opts: DetectOptions): DetectResult 
   for (const g of groups.values()) {
     if (g.outRows === 0) continue;
     const m = g.m;
-    const display = m.aliasId ? m.display : [...g.displays.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? m.display;
+    const display = (m.aliasId ? m.display : [...g.displays.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? m.display)
+      .replace(/ \(platform biller\)$/, ' subscription');
     if (m.kind === 'variable-merchant') {
       if (g.outRows >= 2) suppressed.push({ merchantKey: g.key, display, count: g.outRows, reason: 'variable-merchant' });
       continue;
@@ -406,6 +407,12 @@ export function detectRecurring(rows: Txn[], opts: DetectOptions): DetectResult 
     }
   }
 
+  // two findings with one name (two Apple plans) are told apart by their amount (Q1 F1b #8)
+  const sameName = new Map<string, Finding[]>();
+  for (const f of findings) sameName.set(f.display, [...(sameName.get(f.display) ?? []), f]);
+  for (const list of sameName.values()) {
+    if (list.length > 1) for (const f of list) f.display = `${f.display}, ${formatUsd(f.amount.lastCents)}`;
+  }
   const cost = new Map(findings.map((f) => [f.id, yearlyCost(f).cents]));
   findings.sort((a, b) => cost.get(b.id)! - cost.get(a.id)! || a.display.localeCompare(b.display) || a.id.localeCompare(b.id));
   suppressed.sort((a, b) => b.count - a.count || a.display.localeCompare(b.display));

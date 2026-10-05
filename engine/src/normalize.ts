@@ -82,12 +82,14 @@ export function cleanDescriptor(desc: string): { cleaned: string; processor: Pro
 interface CleanFull { out: { cleaned: string; processor: ProcessorId | null }; platform: PlatformId | null; remainderEmpty: boolean }
 
 const cleanCache = new Map<string, CleanFull>();
+/** U+200B-U+200F (zero-width, LRM/RLM), U+202A-U+202E (embeddings, overrides), U+2066-U+2069 (isolates), U+FEFF. */
+export const INVISIBLE_RE = /[\u200B-\u200F\u202A-\u202E\u2066-\u2069\uFEFF]/g;
 
 function cleanFull(desc: string): CleanFull {
   const hit = cleanCache.get(desc);
   if (hit) return hit;
-  // 1. NFKC, uppercase, collapse whitespace
-  let s = desc.normalize('NFKC').toUpperCase().replace(/\s+/g, ' ').trim();
+  // 1. bidi controls and zero-width characters out (an RLO can make a name read backwards: Q1 F1b #11), NFKC, uppercase, collapse whitespace
+  let s = desc.replace(INVISIBLE_RE, '').normalize('NFKC').toUpperCase().replace(/\s+/g, ' ').trim();
   // 2. bank wrappers
   for (const re of BANK_WRAPPERS) s = s.replace(re, ' ').replace(/\s+/g, ' ').trim();
   // 3. processor prefixes (stacked ones too: 'PP*FS*ADOBE')

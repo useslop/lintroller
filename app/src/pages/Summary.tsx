@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { cancelDirectory } from '../data';
 import { yearlyCost, findingsToCsv, buildIcs, lookupCancel, totals, type Finding, type CancelLink } from '../engine';
-import { LAW_LINES, LAW_NOTE, PLATFORM_NAME, formatDate, formatMoney } from '../copy';
+import { CATEGORY_LABEL, LAW_LINES, LAW_NOTE, PLATFORM_NAME, formatDate, formatMoney, plural } from '../copy';
 import { PRODUCT_URL } from '../product';
 import { downloadText } from '../files';
 import { Link, navigate } from '../router';
@@ -59,9 +59,9 @@ export function Summary() {
         <ul className="bars">
           {t.byCategory.filter((c) => c.count > 0).map((c) => (
             <li key={c.category}>
-              <span className="bar-label">{c.category === 'uncategorised' ? 'Uncategorised' : c.category}</span>
+              <span className="bar-label">{CATEGORY_LABEL[c.category]}</span>
               <span className="bar"><span style={{ width: `${Math.round((c.yearlyCents / maxCategory) * 100)}%` }} /></span>
-              <span className="bar-value">{formatMoney(c.yearlyCents)} a year, {c.count} {c.count === 1 ? 'charge' : 'charges'}</span>
+              <span className="bar-value">{formatMoney(c.yearlyCents)} a year, {plural(c.count, 'repeating charge', 'repeating charges')}</span>
             </li>
           ))}
         </ul>
@@ -177,8 +177,8 @@ function ChargeCard({ finding: f, confirmed, today }: { finding: Finding; confir
 function CancelLinkLine({ link }: { link: CancelLink }) {
   const platform = link.route === 'merchant' ? null : PLATFORM_NAME[link.route];
   const badge = link.badge === 'verified'
-    ? `official page, checked ${formatDate(link.checkedOn)}`
-    : `official page, last checked ${formatDate(link.checkedOn)}. Check it again before you rely on it.`;
+    ? `(official site, checked ${formatDate(link.checkedOn)})`
+    : `(official site, last checked ${formatDate(link.checkedOn)}; check it again before you rely on it)`;
   const text = link.kind === 'help' ? `${link.name}: how to cancel` : `${link.name}: account page`;
   return (
     <p className="cancel">

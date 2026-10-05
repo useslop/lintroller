@@ -3,7 +3,8 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { aliases } from '../src/data';
-import { signFlipNote } from '../src/copy';
+import { CATEGORY_LABEL, plural, signFlipNote } from '../src/copy';
+import { CATEGORIES } from '../src/engine';
 import { decodeBytes } from '../src/files';
 import { runImportWithAliases } from '../src/pipeline';
 
@@ -84,5 +85,46 @@ describe('F1b #5: UTF-16 files are decoded by their byte-order mark', () => {
     be[0] = 0xfe; be[1] = 0xff;
     for (let i = 0; i < s.length; i++) { be[2 + i * 2] = 0; be[3 + i * 2] = s.charCodeAt(i); }
     expect(decodeBytes(be)).toBe(s);
+  });
+});
+
+describe('F1b LOW copy and naming', () => {
+  it('#6 singular and plural', () => {
+    expect(plural(1, 'row', 'rows')).toBe('1 row');
+    expect(plural(1, 'day', 'days')).toBe('1 day');
+    expect(plural(12345, 'row', 'rows')).toBe('12,345 rows');
+  });
+
+  it('#7 every category id has a label, and no label is an id', () => {
+    for (const c of [...CATEGORIES, 'uncategorised' as const]) {
+      expect(CATEGORY_LABEL[c]).toBeTruthy();
+      expect(CATEGORY_LABEL[c]).not.toMatch(/-/);
+    }
+  });
+
+  it('#8 two Apple plans get two names with their amounts, without "platform biller"', () => {
+    const apple = run('honesty-life.csv').detect.findings.filter((f) => f.aliasId === 'apple');
+    expect(apple.length).toBe(2);
+    expect(new Set(apple.map((f) => f.display)).size).toBe(2);
+    for (const f of apple) expect(f.display).toMatch(/^Apple subscription, \$\d+\.\d\d$/);
+  });
+
+  it('#11 bidi overrides and zero-width characters never reach a name', () => {
+    const r = run('inject.csv');
+    expect(r.detect.findings.length).toBeGreaterThan(5);
+    for (const f of r.detect.findings) expect(f.display).not.toMatch(/[​-‏‪-‮⁦-⁩﻿]/);
+  });
+
+  it('#13 weekly Target, Walmart, CVS and Walgreens runs are shops, not subscriptions', () => {
+    const rows = ['Date,Description,Amount'];
+    const shops = ['TARGET 00012345 MINNEAPOLIS MN', 'WAL-MART #1234 BENTONVILLE AR', 'CVS/PHARMACY #01234 BOSTON MA', 'WALGREENS #1234 CHICAGO IL'];
+    for (let w = 0; w < 30; w++) {
+      const d = new Date(Date.UTC(2026, 0, 2 + w * 7));
+      const ds = `${String(d.getUTCMonth() + 1).padStart(2, '0')}/${String(d.getUTCDate()).padStart(2, '0')}/${d.getUTCFullYear()}`;
+      shops.forEach((s, i) => rows.push(`${ds},${s},-${(20 + i).toFixed(2)}`));
+    }
+    const r = runImportWithAliases([{ name: 'shops', text: rows.join('\n') }], aliases, '2026-10-04');
+    expect(r.detect.findings.length).toBe(0);
+    expect(r.detect.suppressed.filter((s) => s.reason === 'variable-merchant').length).toBe(4);
   });
 });

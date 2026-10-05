@@ -4,7 +4,7 @@ import { useSession } from '../session';
 import { SAMPLE_NAME, SAMPLE_TEXT } from '../sample';
 import { runImportAsync } from '../run-import';
 import { MAX_FILE_BYTES, type FileOverride, type FileReport, type ImportReport, type InputFile } from '../pipeline';
-import { FORMAT_LABEL, SKIP_LABEL, formatDate, signFlipNote } from '../copy';
+import { FORMAT_LABEL, SKIP_LABEL, formatDate, plural, signFlipNote } from '../copy';
 import { readTextFile } from '../files';
 import type { ParseSpec } from '../engine';
 import { Mapper } from './Mapper';
@@ -95,7 +95,7 @@ export function Import() {
   const usable = report?.files.filter((f) => !f.needsMapping) ?? [];
   const found = report?.detect.findings.length ?? 0;
   const summary = report && usable.length > 0
-    ? `Read ${report.txnCount.toLocaleString('en-US')} rows from ${usable.length} ${usable.length === 1 ? 'file' : 'files'}. ${found} ${found === 1 ? 'charge looks' : 'charges look'} like they repeat.`
+    ? `Read ${plural(report.txnCount, 'row', 'rows')} from ${plural(usable.length, 'file', 'files')}. ${found === 1 ? '1 charge looks like it repeats.' : `${found} charges look like they repeat.`}`
     : '';
 
   return (
@@ -142,7 +142,7 @@ export function Import() {
           <h2 id="results-title" tabIndex={-1} ref={resultsRef}>What we read</h2>
           <p aria-live="polite">{summary}</p>
           {report.txnCount > 0 && report.detect.coverage.showHistoryHint && (
-            <p>Your file covers {report.detect.coverage.days} days. Six months or more gives better results.</p>
+            <p>Your file covers {plural(report.detect.coverage.days, 'day', 'days')}. Six months or more gives better results.</p>
           )}
           {report.txnCount > 0 && !report.detect.coverage.canSeeYearly && (
             <p>Yearly renewals need 13 months or more; add a longer export to see them.</p>
@@ -199,7 +199,7 @@ function FileCard({ file, text, open, onToggle, onFlip, onApply, onRemove }: {
           {file.confidence === 'medium' && file.format !== 'generic' && (
             <p className="note">Check the preview: we couldn't confirm this bank's format from an official page.</p>
           )}
-          <p>Read {file.rowsRead.toLocaleString('en-US')} rows{range}.</p>
+          <p>Read {plural(file.rowsRead, 'row', 'rows')}{range}.</p>
           {skipped.length > 0 && (
             <p className="muted">Skipped: {skipped.map(([reason, n]) => `${n} ${SKIP_LABEL[reason]?.[n === 1 ? 0 : 1] ?? reason}`).join(', ')}.</p>
           )}

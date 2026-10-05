@@ -1,5 +1,5 @@
 // Product copy and formatting. Wording follows SPEC §4; lintCopy in the tests checks every literal in src/.
-import type { Cadence, Finding, FormatId, ParseSpec, PlatformId, ReasonCode } from './engine';
+import type { Cadence, Category, Finding, FormatId, ParseSpec, PlatformId, ReasonCode } from './engine';
 
 export const CADENCE_WORDS: Record<Cadence, string> = {
   weekly: 'once a week', biweekly: 'once per 2 weeks', semimonthly: 'twice a month', monthly: 'once a month',
@@ -44,6 +44,19 @@ export function signFlipNote(spec: ParseSpec | null): string {
     default: return 'We read the signs the other way round for this file.';
   }
 }
+
+/** Summary labels for engine category ids (Q1 F1b #7: ids were shown as labels). */
+export const CATEGORY_LABEL: Record<Category | 'uncategorised', string> = {
+  video: 'Video streaming', music: 'Music', 'audio-books': 'Audiobooks', news: 'News and magazines',
+  software: 'Software', cloud: 'Cloud storage', ai: 'AI tools', security: 'Security and privacy', fitness: 'Fitness',
+  wellness: 'Wellness', delivery: 'Delivery', 'shopping-membership': 'Shopping memberships', dating: 'Dating',
+  gaming: 'Gaming', 'home-security': 'Home security', protection: 'Protection plans', telecom: 'Phone and internet',
+  'platform-biller': 'Apps billed by Apple, Google and others', utilities: 'Utilities', insurance: 'Insurance',
+  housing: 'Housing', loans: 'Loans', charity: 'Charity', other: 'Other', uncategorised: 'Uncategorised',
+};
+
+/** '1 row', '2 rows': count plus the right form of the noun. */
+export const plural = (n: number, one: string, many: string): string => `${n.toLocaleString('en-US')} ${n === 1 ? one : many}`;
 
 const usd = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
 
