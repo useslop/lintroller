@@ -81,7 +81,7 @@ export function Privacy() {
           <p>No published run yet. The proof is run against the live site before each release.</p>
         ) : (
           <>
-            <p>Status: {results.status}{results.ranAt ? `, run ${formatDate(results.ranAt.slice(0, 10))}` : ''}.</p>
+            <p>Status: {results.status}{results.ranAt ? `, run ${formatDate(etDate(results.ranAt))}` : ''}.</p>
             <ul>{(results.checks ?? []).map((c) => <li key={c.name}>{c.name}: {c.result}</li>)}</ul>
           </>
         )}
