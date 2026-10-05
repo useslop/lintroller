@@ -671,7 +671,7 @@
     ],
     "manageUrl": "https://www.amazon.com/music/unlimited",
     "helpUrl": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GLQP8385T78LUERA",
-    "stepsStated": true,
+    "stepsStated": false,
     "notes": [],
     "check": {
       "manage": {
