@@ -1,4 +1,4 @@
-import { buildAliasIndex, type AliasEntry, type Txn } from '../src/index';
+import { buildAliasIndex, type AliasEntry, type Finding, type Txn } from '../src/index';
 
 const a = (id: string, name: string, category: AliasEntry['category'], kind: AliasEntry['kind'], patterns: string[], platform?: AliasEntry['platform']): AliasEntry =>
   ({ id, name, category, kind, patterns, ...(platform ? { platform } : {}), source: null, verified: false });
@@ -52,3 +52,16 @@ export function monthly(start: string, count: number, stepMonths = 1, anchor = +
 export function stepDays(start: string, count: number, n: number): string[] {
   return Array.from({ length: count }, (_, i) => addDays(start, i * n));
 }
+
+export function fakeFinding(o: Partial<Finding> = {}): Finding {
+  return {
+    id: 'f1', merchantKey: 'netflix', aliasId: 'netflix', display: 'Netflix', category: 'video', kind: 'subscription',
+    billedThrough: null, cadence: 'monthly', intervalDays: { median: 30, mad: 0, min: 28, max: 31 },
+    amount: { lastCents: 1549, medianCents: 1549, minCents: 1549, maxCents: 1549, varies: false },
+    anchorCents: 1549, priceChanges: [], trial: null,
+    occurrences: [{ txnId: '0:2', source: 0, line: 2, date: '2026-09-02', cents: 1549, description: 'NETFLIX.COM' }],
+    refunds: [], firstDate: '2026-01-02', lastDate: '2026-09-02', nextExpected: '2026-10-02', activity: 'active',
+    confidence: 0.9, confidenceLabel: 'high', reasons: ['regular-interval'], status: 'suggested', ...o,
+  };
+}
+
