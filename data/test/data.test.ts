@@ -114,6 +114,13 @@ describe('merchant normalisation smoke (RESEARCH §3 synthetic examples with an 
     ['RECURRING PAYMENT AUTHORIZED ON 09/01 PANDORA MEDIA 8773526479', 'pandora'],
     ['PP*FS*ADOBE SYSTEMS', 'adobe'],
     ['ACH DEBIT NETFLIX.COM DES:Subscr ID:XXXXXXXXXX WEB', 'netflix'],
+    // Amazon: the specific rows win over the generic retail row (F1)
+    ['AMZN MKTP US*2K4AB1CD3', 'amazon-retail'],
+    ['AMAZON.COM*1A2B3C4D5 AMZN.COM/BILLWA', 'amazon-retail'],
+    ['PURCHASE AUTHORIZED ON 10/15 AMZN MKTP US*2K4AB SEATTLE WA', 'amazon-retail'],
+    ['Amazon Prime*2K3LM4NP5 Amzn.com/bill WA', 'amazon-prime'],
+    ['AMAZON MUSIC*2K4AB', 'amazon-music'],
+    ['PRIME VIDEO CHANNELS', 'amazon-channels'],
   ];
   for (const [desc, id] of cases) {
     it(`${desc} -> ${id}`, () => {

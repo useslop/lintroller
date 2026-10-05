@@ -4,7 +4,7 @@
     {
       "id": "G1",
       "name": "corpus precision >= 0.90",
-      "value": 0.9202,
+      "value": 0.9585,
       "pass": true
     },
     {
@@ -16,8 +16,8 @@
     {
       "id": "G3",
       "name": "precision at confidence >= medium >= 0.95",
-      "value": 0.9335,
-      "pass": false
+      "value": 0.9613,
+      "pass": true
     },
     {
       "id": "G4",
@@ -28,19 +28,19 @@
     {
       "id": "G5",
       "name": "performance: 50k-row parse + detect < 2 s",
-      "value": 798.024,
+      "value": 808.9838,
       "pass": true
     }
   ],
   "corpus": {
     "cases": 40,
     "tp": 323,
-    "fp": 28,
+    "fp": 14,
     "fn": 9,
-    "precision": 0.9202279202279202,
+    "precision": 0.9584569732937686,
     "recall": 0.9728915662650602,
-    "f1": 0.9458272327964861,
-    "precisionAtMedium": 0.9335260115606936,
+    "f1": 0.9656203288490284,
+    "precisionAtMedium": 0.9613095238095238,
     "cadenceAccuracy": 1,
     "yearlyCostMaxErrorPct": 11.833333333333334,
     "perFormat": {
@@ -61,7 +61,7 @@
       },
       "boa-checking": {
         "tp": 22,
-        "fp": 7,
+        "fp": 2,
         "fn": 1
       },
       "capitalone-card": {
@@ -76,7 +76,7 @@
       },
       "chase-card": {
         "tp": 25,
-        "fp": 2,
+        "fp": 1,
         "fn": 0
       },
       "chase-checking": {
@@ -91,12 +91,12 @@
       },
       "discover": {
         "tp": 10,
-        "fp": 1,
+        "fp": 0,
         "fn": 1
       },
       "generic": {
         "tp": 23,
-        "fp": 2,
+        "fp": 0,
         "fn": 0
       },
       "mint": {
@@ -116,7 +116,7 @@
       },
       "usbank": {
         "tp": 14,
-        "fp": 4,
+        "fp": 1,
         "fn": 0
       },
       "venmo": {
@@ -126,12 +126,12 @@
       },
       "wells-fargo": {
         "tp": 19,
-        "fp": 1,
+        "fp": 0,
         "fn": 0
       },
       "ynab": {
         "tp": 11,
-        "fp": 2,
+        "fp": 1,
         "fn": 0
       }
     },
@@ -139,14 +139,6 @@
       [
         "restaurant",
         13
-      ],
-      [
-        "card-payment",
-        7
-      ],
-      [
-        "amazon-retail",
-        7
       ],
       [
         "partial-overlap",
@@ -327,23 +319,23 @@
     {
       "name": "chase-card-9001",
       "lines": 50002,
-      "ms": 535.6842080000001,
-      "parseMs": 345.89637500000003,
-      "detectMs": 189.7878330000001
+      "ms": 546.989375,
+      "parseMs": 360.9415829999999,
+      "detectMs": 186.04779200000007
     },
     {
       "name": "boa-checking-9002",
       "lines": 50008,
-      "ms": 798.0239999999999,
-      "parseMs": 424.89037499999995,
-      "detectMs": 373.13362499999994
+      "ms": 808.9837500000001,
+      "parseMs": 437.42779099999984,
+      "detectMs": 371.55595900000026
     },
     {
       "name": "amex-9003",
       "lines": 50002,
-      "ms": 369.40200000000004,
-      "parseMs": 85.83687500000042,
-      "detectMs": 283.5651249999996
+      "ms": 382.50454200000013,
+      "parseMs": 93.60541699999976,
+      "detectMs": 288.89912500000037
     }
   ],
   "falsePositives": [
@@ -385,39 +377,9 @@
     },
     {
       "caseId": "boa-checking-4000",
-      "findingId": "0cfaa39c",
-      "display": "Autopay Pymt Card Svcs",
-      "why": "card-payment"
-    },
-    {
-      "caseId": "boa-checking-4000",
-      "findingId": "074b1957",
-      "display": "Amazon Marketplace",
-      "why": "amazon-retail"
-    },
-    {
-      "caseId": "boa-checking-4000",
       "findingId": "834137ef",
       "display": "Sweetgreen",
       "why": "restaurant"
-    },
-    {
-      "caseId": "boa-checking-4001",
-      "findingId": "ca887229",
-      "display": "Autopay Pymt Card Svcs",
-      "why": "card-payment"
-    },
-    {
-      "caseId": "boa-checking-4001",
-      "findingId": "3e359bb8",
-      "display": "Amazon Marketplace",
-      "why": "amazon-retail"
-    },
-    {
-      "caseId": "boa-checking-4938",
-      "findingId": "24bd1c82",
-      "display": "Autopay Pymt Card Svcs Portland",
-      "why": "card-payment"
     },
     {
       "caseId": "boa-checking-4938",
@@ -439,33 +401,9 @@
     },
     {
       "caseId": "chase-card-4936",
-      "findingId": "8a5cadb3",
-      "display": "Amazon Marketplace",
-      "why": "amazon-retail"
-    },
-    {
-      "caseId": "chase-card-4936",
       "findingId": "13067d2f",
       "display": "Chipotle",
       "why": "restaurant"
-    },
-    {
-      "caseId": "discover-4080",
-      "findingId": "e031e1b5",
-      "display": "Amazon Marketplace",
-      "why": "amazon-retail"
-    },
-    {
-      "caseId": "generic-4170",
-      "findingId": "051ff222",
-      "display": "Autopay Pymt Card Svcs",
-      "why": "card-payment"
-    },
-    {
-      "caseId": "generic-4171",
-      "findingId": "3c87a3bb",
-      "display": "Amazon",
-      "why": "amazon-retail"
     },
     {
       "caseId": "paypal-4111",
@@ -474,46 +412,16 @@
       "why": "restaurant"
     },
     {
-      "caseId": "usbank-4090",
-      "findingId": "4de5a1f5",
-      "display": "Autopay Pymt Card Svcs",
-      "why": "card-payment"
-    },
-    {
-      "caseId": "usbank-4091",
-      "findingId": "ab3e3c0a",
-      "display": "Autopay Pymt Card Svcs",
-      "why": "card-payment"
-    },
-    {
-      "caseId": "usbank-4091",
-      "findingId": "82b286aa",
-      "display": "Amazon",
-      "why": "amazon-retail"
-    },
-    {
       "caseId": "usbank-4091",
       "findingId": "be664532",
       "display": "Chipotle",
       "why": "restaurant"
     },
     {
-      "caseId": "wells-fargo-4041",
-      "findingId": "e7a94c12",
-      "display": "Autopay Pymt Card Svcs",
-      "why": "card-payment"
-    },
-    {
       "caseId": "ynab-4140",
       "findingId": "3b14c8ae",
       "display": "Chipotle",
       "why": "restaurant"
-    },
-    {
-      "caseId": "ynab-4141",
-      "findingId": "8e44477a",
-      "display": "Amazon Marketplace",
-      "why": "amazon-retail"
     }
   ],
   "falseNegatives": [

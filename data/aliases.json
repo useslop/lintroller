@@ -121,7 +121,7 @@
   {"id":"uber-trip","name":"Uber (rides)","category":"other","kind":"variable-merchant","patterns":["^UBER(?!\\s?(ONE|EATS))"],"source":null,"verified":false},
   {"id":"lyft-trip","name":"Lyft (rides)","category":"other","kind":"variable-merchant","patterns":["^LYFT\\b"],"source":null,"verified":false},
   {"id":"doordash-order","name":"DoorDash (orders)","category":"delivery","kind":"variable-merchant","patterns":["DOORDASH","DD\\s?DOORDASH"],"source":null,"verified":false},
-  {"id":"amazon-retail","name":"Amazon (orders)","category":"other","kind":"variable-merchant","patterns":["AMZN\\s?MKTP","AMAZON\\.COM","AMZN\\.COM","AMAZON\\s?MKTPLACE"],"source":null,"verified":false},
+  {"id":"amazon-retail","name":"Amazon (orders)","category":"other","kind":"variable-merchant","patterns":["^AMAZON\\s?MARKETPLACE\\b","^AMAZON\\b(?!\\s?(PRIME|MUSIC|CHANNELS|WEB\\s?SERVICES|KIDS|DIGITAL|DIGI\\b))","^AMZN\\b(?!\\s?(PRIME|DIGITAL|DIGI\\b))"],"source":null,"verified":false},
   {"id":"utility-electric","name":"Electric utility","category":"utilities","kind":"bill","patterns":["ELECTRIC","POWER\\s?CO"],"source":null,"verified":false},
   {"id":"utility-water","name":"Water utility","category":"utilities","kind":"bill","patterns":["WATER\\s?(UTIL|DEPT|WORKS|BILL)","SEWER"],"source":null,"verified":false},
   {"id":"wireless-bill","name":"Wireless bill","category":"telecom","kind":"bill","patterns":["WIRELESS\\s?(BILL|PAY)"],"source":null,"verified":false},
