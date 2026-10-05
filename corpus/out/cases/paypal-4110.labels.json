@@ -1,0 +1,478 @@
+{
+  "caseId": "paypal-4110",
+  "format": "paypal",
+  "seed": 4110,
+  "from": "2025-02-01",
+  "to": "2025-08-31",
+  "recurring": [
+    {
+      "merchantKey": "raw:northside parking",
+      "aliasId": null,
+      "display": "Northside Parking Pass",
+      "cadence": "semimonthly",
+      "kind": "unknown",
+      "nominalCents": 5999,
+      "lines": [
+        9,
+        24,
+        49,
+        66,
+        81,
+        103,
+        127,
+        146,
+        163,
+        181,
+        204,
+        231,
+        250,
+        271
+      ],
+      "traps": [],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:bookclub plus",
+      "aliasId": null,
+      "display": "Bookclub Plus",
+      "cadence": "biweekly",
+      "kind": "unknown",
+      "nominalCents": 1199,
+      "lines": [
+        11,
+        25,
+        46,
+        62,
+        76,
+        95,
+        118,
+        154,
+        170,
+        190,
+        208,
+        232,
+        252,
+        274
+      ],
+      "traps": [
+        "missed-one"
+      ],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:rooftop storage",
+      "aliasId": null,
+      "display": "Rooftop Storage Unit",
+      "cadence": "semimonthly",
+      "kind": "unknown",
+      "nominalCents": 3099,
+      "lines": [
+        15,
+        30,
+        52,
+        69,
+        86,
+        107,
+        130,
+        150,
+        168,
+        186,
+        210,
+        233,
+        253,
+        275
+      ],
+      "traps": [],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "hulu",
+      "aliasId": "hulu",
+      "display": "Hulu",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 799,
+      "lines": [
+        18,
+        54,
+        88,
+        133,
+        169,
+        214,
+        258
+      ],
+      "traps": [
+        "tax-drift"
+      ],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:trivia night",
+      "aliasId": null,
+      "display": "Trivia Night League",
+      "cadence": "semiannual",
+      "kind": "unknown",
+      "nominalCents": 999,
+      "lines": [
+        23,
+        269
+      ],
+      "traps": [],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:green leaf",
+      "aliasId": null,
+      "display": "Green Leaf Lawn Care",
+      "cadence": "weekly",
+      "kind": "unknown",
+      "nominalCents": 6099,
+      "lines": [
+        31,
+        40,
+        51,
+        58,
+        67,
+        73,
+        80,
+        92,
+        99,
+        113,
+        121,
+        139,
+        149,
+        157,
+        166,
+        173,
+        182,
+        195,
+        199,
+        213,
+        226,
+        234,
+        247,
+        257,
+        267,
+        280
+      ],
+      "traps": [
+        "missed-one",
+        "ended"
+      ],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "utility-water",
+      "aliasId": "utility-water",
+      "display": "Water utility",
+      "cadence": "bimonthly",
+      "kind": "bill",
+      "nominalCents": 4800,
+      "lines": [
+        34,
+        115,
+        194,
+        282
+      ],
+      "traps": [
+        "weekend-shift"
+      ],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:sunrise cleaners",
+      "aliasId": null,
+      "display": "Sunrise Cleaners",
+      "cadence": "bimonthly",
+      "kind": "unknown",
+      "nominalCents": 1799,
+      "lines": [
+        57,
+        137,
+        222
+      ],
+      "traps": [],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:fresh farm",
+      "aliasId": null,
+      "display": "Fresh Farm Box Co",
+      "cadence": "quarterly",
+      "kind": "unknown",
+      "nominalCents": 799,
+      "lines": [
+        59,
+        174
+      ],
+      "traps": [],
+      "mustFind": false
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "SHELL OIL 57444",
+      "family": "gas",
+      "lines": [
+        5,
+        16,
+        20,
+        26,
+        36,
+        48,
+        55,
+        64,
+        71,
+        79,
+        91,
+        98,
+        114,
+        120,
+        129,
+        142,
+        148,
+        156,
+        161,
+        172,
+        178,
+        193,
+        201,
+        221,
+        229,
+        240,
+        249,
+        261,
+        273,
+        285
+      ]
+    },
+    {
+      "merchant": "KROGER #123",
+      "family": "groceries",
+      "lines": [
+        3,
+        6,
+        13,
+        21,
+        29,
+        39,
+        50,
+        56,
+        61,
+        65,
+        70,
+        75,
+        84,
+        90,
+        97,
+        102,
+        112,
+        123,
+        131,
+        138,
+        147,
+        153,
+        159,
+        165,
+        175,
+        185,
+        197,
+        203,
+        217,
+        228,
+        239,
+        245,
+        251,
+        265,
+        268,
+        278,
+        284
+      ]
+    },
+    {
+      "merchant": "STARBUCKS STORE 12345",
+      "family": "coffee",
+      "lines": [
+        10,
+        19,
+        22,
+        28,
+        33,
+        35,
+        38,
+        41,
+        44,
+        47,
+        53,
+        60,
+        63,
+        72,
+        74,
+        78,
+        87,
+        89,
+        93,
+        96,
+        100,
+        101,
+        110,
+        119,
+        122,
+        132,
+        135,
+        136,
+        145,
+        151,
+        152,
+        160,
+        167,
+        171,
+        176,
+        184,
+        188,
+        189,
+        196,
+        198,
+        205,
+        207,
+        211,
+        212,
+        216,
+        218,
+        220,
+        224,
+        225,
+        227,
+        230,
+        238,
+        243,
+        248,
+        256,
+        263,
+        266,
+        270,
+        272,
+        277,
+        279,
+        281,
+        283
+      ]
+    },
+    {
+      "merchant": "CHIPOTLE 1234",
+      "family": "restaurant",
+      "lines": [
+        4,
+        8,
+        14,
+        43,
+        68,
+        83,
+        94,
+        106,
+        111,
+        116,
+        134,
+        140,
+        141,
+        158,
+        177,
+        180,
+        183,
+        187,
+        206,
+        219,
+        237,
+        242,
+        244,
+        260,
+        276
+      ]
+    },
+    {
+      "merchant": "UBER *TRIP HELP.UBER.COM",
+      "family": "rideshare",
+      "lines": [
+        12,
+        32,
+        37,
+        45,
+        82,
+        105,
+        109,
+        117,
+        124,
+        126,
+        128,
+        143,
+        162,
+        164,
+        192,
+        202,
+        246,
+        254,
+        255,
+        259,
+        264
+      ]
+    },
+    {
+      "merchant": "AMZN MKTP US*2K4AB",
+      "family": "amazon-retail",
+      "lines": [
+        2,
+        7,
+        17,
+        42,
+        85,
+        104,
+        108,
+        125,
+        209,
+        215,
+        236,
+        241,
+        262
+      ]
+    },
+    {
+      "merchant": "AMZN REFUND 2K4AB",
+      "family": "refund",
+      "lines": [
+        27,
+        77,
+        144,
+        155,
+        223
+      ]
+    },
+    {
+      "merchant": "PARK SHOE REPAIR",
+      "family": "one-off",
+      "lines": [
+        191
+      ]
+    },
+    {
+      "merchant": "OAK TREE FLORIST",
+      "family": "one-off",
+      "lines": [
+        179
+      ]
+    },
+    {
+      "merchant": "CITY DENTAL GROUP",
+      "family": "one-off",
+      "lines": [
+        200
+      ]
+    },
+    {
+      "merchant": "RIVERBEND VET CLINIC",
+      "family": "one-off",
+      "lines": [
+        235
+      ]
+    }
+  ]
+}

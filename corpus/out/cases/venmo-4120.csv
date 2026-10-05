@@ -1,0 +1,401 @@
+Account Statement - (@sample-user),,,,,,,,,,
+Account Activity,,,,,,,,,,
+ID,Datetime,Type,Status,Note,From,To,Amount (total),Amount (fee),Funding Source,Destination
+384940895,2025-05-01T13:41:00,Payment,Complete,Subscription,Sample User,SAFEWAY 0456 LOS GATOS CA,- $29.25,$0.00,Venmo balance,SAFEWAY 0456 LOS GATOS CA
+327660226,2025-05-02T15:05:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL LOS GATOS CA,- $0.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL LOS GATOS CA
+393070805,2025-05-02T17:59:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO",- $70.99,$0.00,Venmo balance,"FRESH FARM BOX CO"
+321655442,2025-05-02T11:50:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456,- $35.47,$0.00,Venmo balance,CHEVRON 00123456
+308929751,2025-05-02T13:31:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234 NEW YORK NY,- $53.45,$0.00,Venmo balance,CHIPOTLE 1234 NEW YORK NY
+338094697,2025-05-05T21:00:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE
+382083219,2025-05-05T20:47:00,Payment,Complete,Subscription,Sample User,KROGER #123 #2698,- $121.21,$0.00,Venmo balance,KROGER #123 #2698
+361751231,2025-05-07T15:08:00,Payment,Complete,Subscription,Sample User,"AMAZON.COM*1A2B3 PORTLAND OR",- $12.30,$0.00,Venmo balance,"AMAZON.COM*1A2B3 PORTLAND OR"
+304462783,2025-05-08T09:17:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL PORTLAND OR,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL PORTLAND OR
+386765442,2025-05-09T17:32:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO AUSTIN TX",- $70.99,$0.00,Venmo balance,"FRESH FARM BOX CO AUSTIN TX"
+377013557,2025-05-09T18:30:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456 #6057,- $32.68,$0.00,Venmo balance,CHEVRON 00123456 #6057
+340163499,2025-05-09T12:35:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB 800-794-3118 TX,- $51.72,$0.00,Venmo balance,AMZN MKTP US*2K4AB 800-794-3118 TX
+318671678,2025-05-10T09:14:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE DENVER CO,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE DENVER CO
+387408405,2025-05-10T21:31:00,Payment,Complete,Subscription,Sample User,ALDI 1234 AUSTIN TX,- $84.91,$0.00,Venmo balance,ALDI 1234 AUSTIN TX
+381801207,2025-05-10T09:32:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 800-726-8829 TX,- $35.50,$0.00,Venmo balance,LYFT *RIDE 12345 800-726-8829 TX
+301025711,2025-05-12T19:33:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 DENVER CO,- $37.74,$0.00,Venmo balance,LYFT *RIDE 12345 DENVER CO
+319655906,2025-05-14T15:20:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412,- $39.07,$0.00,Venmo balance,SPEEDWAY 0412
+338823858,2025-05-14T17:19:00,Payment,Complete,Subscription,Sample User,SAFEWAY 0456,- $80.70,$0.00,Venmo balance,SAFEWAY 0456
+394096907,2025-05-15T19:55:00,Payment,Complete,Rent split,Sample User,JANE ROOMMATE #7178,"- $1,450.00",$0.00,Venmo balance,JANE ROOMMATE #7178
+389141841,2025-05-15T14:03:00,Payment,Complete,Subscription,Sample User,SWEETGREEN 0456 #7321,"- $41.58",$0.00,Venmo balance,SWEETGREEN 0456 #7321
+373275866,2025-05-15T16:47:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3 800-785-6317 TX,- $15.14,$0.00,Venmo balance,AMAZON.COM*1A2B3 800-785-6317 TX
+307121294,2025-05-16T19:19:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO",- $70.99,$0.00,Venmo balance,"FRESH FARM BOX CO"
+309055892,2025-05-16T21:57:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB,- $87.90,$0.00,Venmo balance,AMZN MKTP US*2K4AB
+327270822,2025-05-18T18:45:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3 800-326-4472 NY,- $94.44,$0.00,Venmo balance,AMAZON.COM*1A2B3 800-326-4472 NY
+356110268,2025-05-19T10:57:00,Payment,Complete,Subscription,Sample User,ROOFTOP STORAGE UNIT,- $24.99,$0.00,Venmo balance,ROOFTOP STORAGE UNIT
+342626873,2025-05-19T08:22:00,Payment,Complete,Subscription,Sample User,SAFEWAY 0456,- $158.47,$0.00,Venmo balance,SAFEWAY 0456
+392162484,2025-05-19T12:24:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM LOS GATOS CA,"- $17.59",$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM LOS GATOS CA
+382756857,2025-05-20T18:15:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE
+378369982,2025-05-23T17:56:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,"- $55.99",$0.00,Venmo balance,HARBOR SWIM SCHOOL
+351259618,2025-05-23T14:55:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO 800-134-2115 TX,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO 800-134-2115 TX
+377425657,2025-05-23T08:18:00,Payment,Complete,Subscription,Sample User,"SHELL OIL 57444","- $27.10",$0.00,Venmo balance,"SHELL OIL 57444"
+395787451,2025-05-23T08:17:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB SAN JOSE CA,- $55.30,$0.00,Venmo balance,AMZN MKTP US*2K4AB SAN JOSE CA
+302225935,2025-05-24T18:08:00,Payment,Complete,Subscription,Sample User,"TRIVIA NIGHT LEAGUE",- $21.99,$0.00,Venmo balance,"TRIVIA NIGHT LEAGUE"
+350004779,2025-05-25T11:25:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 #3149,- $25.41,$0.00,Venmo balance,LYFT *RIDE 12345 #3149
+359463221,2025-05-25T22:26:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3 PORTLAND OR,- $86.38,$0.00,Venmo balance,AMAZON.COM*1A2B3 PORTLAND OR
+393596079,2025-05-27T20:04:00,Payment,Complete,Subscription,Sample User,"SAFEWAY 0456 #8256",- $17.19,$0.00,Venmo balance,"SAFEWAY 0456 #8256"
+328562347,2025-05-28T18:28:00,Payment,Complete,Subscription,Sample User,"CHEVRON 00123456",- $69.64,$0.00,Venmo balance,"CHEVRON 00123456"
+359122079,2025-05-30T13:44:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO 800-291-7108 CA",- $70.99,$0.00,Venmo balance,"FRESH FARM BOX CO 800-291-7108 CA"
+383583853,2025-05-30T18:39:00,Payment,Complete,Subscription,Sample User,SWEETGREEN 0456 AUSTIN TX,- $40.45,$0.00,Venmo balance,SWEETGREEN 0456 AUSTIN TX
+332220073,2025-05-31T11:14:00,Payment,Complete,Subscription,Sample User,KROGER #123 LOS GATOS CA,"- $154.15",$0.00,Venmo balance,KROGER #123 LOS GATOS CA
+359915064,2025-05-31T13:50:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB LOS GATOS CA,- $97.38,$0.00,Venmo balance,AMZN MKTP US*2K4AB LOS GATOS CA
+343660438,2025-06-02T14:37:00,Payment,Complete,Subscription,Sample User,GREEN LEAF LAWN CARE,- $59.99,$0.00,Venmo balance,GREEN LEAF LAWN CARE
+301396674,2025-06-04T11:14:00,Payment,Complete,Subscription,Sample User,PIXEL PRINT CLUB,- $17.99,$0.00,Venmo balance,PIXEL PRINT CLUB
+371871048,2025-06-04T21:09:00,Payment,Complete,Subscription,Sample User,KROGER #123 #7837,- $152.42,$0.00,Venmo balance,KROGER #123 #7837
+389009291,2025-06-05T17:38:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE SAN JOSE CA,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE SAN JOSE CA
+312783423,2025-06-06T08:42:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO 800-670-8716 NY,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO 800-670-8716 NY
+316816389,2025-06-06T20:15:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 #3735,- $60.52,$0.00,Venmo balance,EXXONMOBIL 4421 #3735
+357913893,2025-06-07T19:57:00,Payment,Complete,Subscription,Sample User,"TRIVIA NIGHT LEAGUE",- $21.99,$0.00,Venmo balance,"TRIVIA NIGHT LEAGUE"
+329252900,2025-06-08T07:08:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,"- $55.99",$0.00,Venmo balance,HARBOR SWIM SCHOOL
+309776375,2025-06-08T08:48:00,Payment,Complete,Subscription,Sample User,CITY DENTAL GROUP,- $177.95,$0.00,Venmo balance,CITY DENTAL GROUP
+330149770,2025-06-10T22:12:00,Payment,Complete,Subscription,Sample User,TRADER JOE'S #456 800-485-7005 TX,- $23.36,$0.00,Venmo balance,TRADER JOE'S #456 800-485-7005 TX
+370241650,2025-06-11T10:55:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234 #1060,- $42.18,$0.00,Venmo balance,CHIPOTLE 1234 #1060
+372689301,2025-06-12T21:42:00,Payment,Complete,Subscription,Sample User,SWEETGREEN 0456 #3683,- $33.90,$0.00,Venmo balance,SWEETGREEN 0456 #3683
+326569476,2025-06-13T18:06:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO NEW YORK NY,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO NEW YORK NY
+371155157,2025-06-13T21:47:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412,- $41.51,$0.00,Venmo balance,SPEEDWAY 0412
+386613916,2025-06-14T21:45:00,Payment,Complete,Subscription,Sample User,ALDI 1234,- $48.12,$0.00,Venmo balance,ALDI 1234
+346991755,2025-06-15T09:01:00,Payment,Complete,Rent split,Sample User,JANE ROOMMATE #7468,"- $1,450.00",$0.00,Venmo balance,JANE ROOMMATE #7468
+339300049,2025-06-16T12:19:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,- $22.95,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
+344275564,2025-06-19T18:20:00,Payment,Complete,Subscription,Sample User,CITY WATER UTIL,- $47.04,$0.00,Venmo balance,CITY WATER UTIL
+326393939,2025-06-19T15:43:00,Payment,Complete,Subscription,Sample User,KROGER #123,- $178.57,$0.00,Venmo balance,KROGER #123
+314285845,2025-06-19T11:17:00,Payment,Complete,Subscription,Sample User,LOCAL TACO BAR #5869,- $48.13,$0.00,Venmo balance,LOCAL TACO BAR #5869
+349430617,2025-06-20T13:08:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,"- $70.99",$0.00,Venmo balance,FRESH FARM BOX CO
+311286603,2025-06-20T09:44:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE 800-956-8585 TX,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE 800-956-8585 TX
+340082465,2025-06-20T12:49:00,Payment,Complete,Subscription,Sample User,"GREEN CAR WASH","- $37.12",$0.00,Venmo balance,"GREEN CAR WASH"
+384321439,2025-06-21T17:35:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE AUSTIN TX,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE AUSTIN TX
+317384325,2025-06-21T08:45:00,Payment,Complete,Subscription,Sample User,SHELL OIL 57444 800-541-5518 TX,- $72.61,$0.00,Venmo balance,SHELL OIL 57444 800-541-5518 TX
+328242651,2025-06-22T15:01:00,Payment,Complete,Subscription,Sample User,"CHIPOTLE 1234 #3198",- $62.64,$0.00,Venmo balance,"CHIPOTLE 1234 #3198"
+335749727,2025-06-23T15:28:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL AUSTIN TX,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL AUSTIN TX
+313926727,2025-06-24T21:56:00,Payment,Complete,Subscription,Sample User,"SAFEWAY 0456 DENVER CO",- $152.34,$0.00,Venmo balance,"SAFEWAY 0456 DENVER CO"
+323464754,2025-06-25T16:23:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234 DENVER CO,- $18.19,$0.00,Venmo balance,CHIPOTLE 1234 DENVER CO
+302362234,2025-06-27T21:42:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO #2827,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO #2827
+397345593,2025-06-28T18:19:00,Payment,Complete,Subscription,Sample User,PEAK PET BOX,"- $56.99",$0.00,Venmo balance,PEAK PET BOX
+333891598,2025-06-28T09:29:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412,- $38.33,$0.00,Venmo balance,SPEEDWAY 0412
+328764690,2025-06-28T20:16:00,Payment,Complete,Subscription,Sample User,TRADER JOE'S #456,- $28.47,$0.00,Venmo balance,TRADER JOE'S #456
+332061411,2025-07-03T15:36:00,Payment,Complete,Subscription,Sample User,SHELL OIL 57444 #6147,- $64.77,$0.00,Venmo balance,SHELL OIL 57444 #6147
+357950496,2025-07-03T14:42:00,Payment,Complete,Subscription,Sample User,KROGER #123 #3573,- $46.64,$0.00,Venmo balance,KROGER #123 #3573
+353310043,2025-07-04T22:53:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO #4138,"- $70.99",$0.00,Venmo balance,FRESH FARM BOX CO #4138
+347082303,2025-07-04T07:54:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM 800-695-9432 NY,"- $35.97",$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM 800-695-9432 NY
+372459127,2025-07-05T09:21:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE
+318142640,2025-07-05T10:54:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE #4815,"- $61.99",$0.00,Venmo balance,MAPLE DAYCARE #4815
+340742903,2025-07-07T12:59:00,Payment,Complete,Subscription,Sample User,SAFEWAY 0456,- $165.14,$0.00,Venmo balance,SAFEWAY 0456
+357496855,2025-07-08T14:24:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL 800-972-5460 CA,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL 800-972-5460 CA
+327826586,2025-07-08T13:53:00,Payment,Complete,Subscription,Sample User,"AMAZON.COM*1A2B3","- $57.20",$0.00,Venmo balance,"AMAZON.COM*1A2B3"
+381521842,2025-07-11T09:49:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,"- $70.99",$0.00,Venmo balance,FRESH FARM BOX CO
+387381327,2025-07-11T14:51:00,Payment,Complete,Subscription,Sample User,SHELL OIL 57444 #8203,- $59.38,$0.00,Venmo balance,SHELL OIL 57444 #8203
+358082855,2025-07-14T20:32:00,Payment,Complete,Subscription,Sample User,"SAFEWAY 0456",- $147.09,$0.00,Venmo balance,"SAFEWAY 0456"
+381916071,2025-07-14T21:24:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3 #5307,- $73.84,$0.00,Venmo balance,AMAZON.COM*1A2B3 #5307
+396715561,2025-07-15T15:43:00,Payment,Complete,Rent split,Sample User,JANE ROOMMATE,"- $1,450.00",$0.00,Venmo balance,JANE ROOMMATE
+320145686,2025-07-16T08:41:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 #3373,- $55.93,$0.00,Venmo balance,EXXONMOBIL 4421 #3373
+388430923,2025-07-16T12:05:00,Payment,Complete,Subscription,Sample User,LOCAL TACO BAR,"- $23.37",$0.00,Venmo balance,LOCAL TACO BAR
+348484531,2025-07-18T18:18:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO #6206",- $70.99,$0.00,Venmo balance,"FRESH FARM BOX CO #6206"
+342102953,2025-07-19T18:05:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE NEW YORK NY,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE NEW YORK NY
+348292950,2025-07-20T21:30:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE
+338168270,2025-07-20T10:23:00,Payment,Complete,Subscription,Sample User,TRADER JOE'S #456 #1192,- $12.70,$0.00,Venmo balance,TRADER JOE'S #456 #1192
+368836384,2025-07-22T13:17:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412,- $54.94,$0.00,Venmo balance,SPEEDWAY 0412
+334353529,2025-07-22T17:58:00,Payment,Complete,Subscription,Sample User,"LYFT *RIDE 12345 SAN JOSE CA",- $19.32,$0.00,Venmo balance,"LYFT *RIDE 12345 SAN JOSE CA"
+379721853,2025-07-23T12:56:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL
+301956269,2025-07-24T08:16:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3,- $10.67,$0.00,Venmo balance,AMAZON.COM*1A2B3
+314794085,2025-07-25T21:44:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO 800-104-7412 CA,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO 800-104-7412 CA
+335288192,2025-07-25T19:43:00,Payment,Complete,Subscription,Sample User,"SAFEWAY 0456 NEW YORK NY",- $170.47,$0.00,Venmo balance,"SAFEWAY 0456 NEW YORK NY"
+347562815,2025-07-28T18:39:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 PORTLAND OR,"- $38.53",$0.00,Venmo balance,SPEEDWAY 0412 PORTLAND OR
+380073411,2025-07-30T18:55:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234 800-744-9488 NY,- $39.74,$0.00,Venmo balance,CHIPOTLE 1234 800-744-9488 NY
+331277342,2025-07-31T08:32:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234 800-455-3031 NY,- $43.19,$0.00,Venmo balance,CHIPOTLE 1234 800-455-3031 NY
+307756024,2025-08-01T15:50:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO DENVER CO,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO DENVER CO
+367284122,2025-08-02T11:43:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE #4243,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE #4243
+369552464,2025-08-02T20:48:00,Payment,Complete,Subscription,Sample User,KROGER #123,- $56.45,$0.00,Venmo balance,KROGER #123
+316209406,2025-08-03T12:15:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM #7476,- $25.07,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM #7476
+386841739,2025-08-05T22:11:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE
+329124330,2025-08-05T22:23:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456 #8863,- $71.50,$0.00,Venmo balance,CHEVRON 00123456 #8863
+361103886,2025-08-08T21:59:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL
+353292250,2025-08-08T13:11:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO
+336738436,2025-08-09T15:47:00,Payment,Complete,Subscription,Sample User,LOCAL TACO BAR AUSTIN TX,- $47.68,$0.00,Venmo balance,LOCAL TACO BAR AUSTIN TX
+329479984,2025-08-10T14:00:00,Payment,Complete,Subscription,Sample User,KROGER #123 PORTLAND OR,- $37.06,$0.00,Venmo balance,KROGER #123 PORTLAND OR
+374305057,2025-08-14T21:18:00,Payment,Complete,Subscription,Sample User,SHELL OIL 57444,- $61.15,$0.00,Venmo balance,SHELL OIL 57444
+370660747,2025-08-15T07:11:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO #7994",- $70.99,$0.00,Venmo balance,"FRESH FARM BOX CO #7994"
+355354934,2025-08-15T22:28:00,Payment,Complete,Rent split,Sample User,JANE ROOMMATE,"- $1,450.00",$0.00,Venmo balance,JANE ROOMMATE
+359677973,2025-08-15T15:11:00,Payment,Complete,Subscription,Sample User,ALDI 1234 #2099,- $15.86,$0.00,Venmo balance,ALDI 1234 #2099
+306083916,2025-08-16T16:41:00,Payment,Complete,Subscription,Sample User,"TRIVIA NIGHT LEAGUE","- $21.99",$0.00,Venmo balance,"TRIVIA NIGHT LEAGUE"
+387409386,2025-08-18T15:02:00,Payment,Complete,Subscription,Sample User,ROOFTOP STORAGE UNIT 800-816-9645 NY,- $24.99,$0.00,Venmo balance,ROOFTOP STORAGE UNIT 800-816-9645 NY
+358734299,2025-08-19T19:52:00,Payment,Complete,Subscription,Sample User,CITY WATER UTIL,- $49.35,$0.00,Venmo balance,CITY WATER UTIL
+305105190,2025-08-20T18:09:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE
+385538173,2025-08-20T20:22:00,Payment,Complete,Subscription,Sample User,KROGER #123,- $170.77,$0.00,Venmo balance,KROGER #123
+301848584,2025-08-22T09:27:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO",- $70.99,$0.00,Venmo balance,"FRESH FARM BOX CO"
+358333592,2025-08-22T15:42:00,Payment,Complete,Subscription,Sample User,"CHEVRON 00123456 #7234",- $44.98,$0.00,Venmo balance,"CHEVRON 00123456 #7234"
+380089329,2025-08-23T09:35:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL
+362101259,2025-08-24T22:48:00,Payment,Complete,Subscription,Sample User,"LYFT *RIDE 12345",- $40.93,$0.00,Venmo balance,"LYFT *RIDE 12345"
+364558925,2025-08-25T08:42:00,Payment,Complete,Subscription,Sample User,SWEETGREEN 0456 800-408-8396 CA,- $21.43,$0.00,Venmo balance,SWEETGREEN 0456 800-408-8396 CA
+346224577,2025-08-28T17:17:00,Payment,Complete,Subscription,Sample User,"PEAK PET BOX 800-129-7940 NY",- $56.99,$0.00,Venmo balance,"PEAK PET BOX 800-129-7940 NY"
+350468021,2025-08-28T22:50:00,Payment,Complete,Subscription,Sample User,ALDI 1234 LOS GATOS CA,- $23.80,$0.00,Venmo balance,ALDI 1234 LOS GATOS CA
+329048914,2025-08-29T10:00:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO
+316912160,2025-08-29T19:48:00,Payment,Complete,Subscription,Sample User,OAK TREE FLORIST,- $153.60,$0.00,Venmo balance,OAK TREE FLORIST
+355982673,2025-08-30T20:38:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE SAN JOSE CA,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE SAN JOSE CA
+310796812,2025-08-30T19:25:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 #9609,- $72.67,$0.00,Venmo balance,SPEEDWAY 0412 #9609
+343100409,2025-09-02T10:59:00,Payment,Complete,Subscription,Sample User,GREEN LEAF LAWN CARE,- $59.99,$0.00,Venmo balance,GREEN LEAF LAWN CARE
+384448621,2025-09-02T12:11:00,Payment,Complete,Subscription,Sample User,ALDI 1234 800-274-2508 NY,- $42.56,$0.00,Venmo balance,ALDI 1234 800-274-2508 NY
+352089453,2025-09-05T20:55:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,"- $70.99",$0.00,Venmo balance,FRESH FARM BOX CO
+352044470,2025-09-05T16:15:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE DENVER CO,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE DENVER CO
+379629793,2025-09-05T16:15:00,Payment,Complete,Subscription,Sample User,"SHELL OIL 57444 PORTLAND OR",- $52.94,$0.00,Venmo balance,"SHELL OIL 57444 PORTLAND OR"
+332709136,2025-09-05T14:53:00,Payment,Complete,Subscription,Sample User,SWEETGREEN 0456,- $38.01,$0.00,Venmo balance,SWEETGREEN 0456
+336761666,2025-09-07T09:31:00,Payment,Complete,Subscription,Sample User,"SAFEWAY 0456",- $25.48,$0.00,Venmo balance,"SAFEWAY 0456"
+326966689,2025-09-07T14:16:00,Payment,Complete,Subscription,Sample User,"SWEETGREEN 0456 800-963-1122 CA","- $45.38",$0.00,Venmo balance,"SWEETGREEN 0456 800-963-1122 CA"
+319042231,2025-09-08T10:30:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL
+397138073,2025-09-08T17:24:00,Payment,Complete,Subscription,AMZN REFUND 2K4AB 800-170-3082 NY,Sample User,+ $22.41,$0.00,Venmo balance,
+312469809,2025-09-11T16:16:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 800-171-2804 NY,- $55.20,$0.00,Venmo balance,EXXONMOBIL 4421 800-171-2804 NY
+394391174,2025-09-12T10:22:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO AUSTIN TX,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO AUSTIN TX
+342892441,2025-09-13T09:48:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE #9312,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE #9312
+323893375,2025-09-15T14:01:00,Payment,Complete,Rent split,Sample User,JANE ROOMMATE,"- $1,450.00",$0.00,Venmo balance,JANE ROOMMATE
+302689274,2025-09-15T13:03:00,Payment,Complete,Subscription,Sample User,TRADER JOE'S #456,- $157.76,$0.00,Venmo balance,TRADER JOE'S #456
+349224396,2025-09-18T12:18:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421,- $73.13,$0.00,Venmo balance,EXXONMOBIL 4421
+320599079,2025-09-19T12:02:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO #1558,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO #1558
+309810017,2025-09-20T09:50:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE
+305599991,2025-09-22T07:40:00,Payment,Complete,Subscription,Sample User,BOOKCLUB PLUS SAN JOSE CA,- $65.99,$0.00,Venmo balance,BOOKCLUB PLUS SAN JOSE CA
+397279791,2025-09-22T22:47:00,Payment,Complete,Subscription,Sample User,SWEETGREEN 0456 #3061,- $13.21,$0.00,Venmo balance,SWEETGREEN 0456 #3061
+357061459,2025-09-23T21:50:00,Payment,Complete,Subscription,Sample User,"HARBOR SWIM SCHOOL 800-134-3420 TX","- $55.99",$0.00,Venmo balance,"HARBOR SWIM SCHOOL 800-134-3420 TX"
+390760142,2025-09-23T07:54:00,Payment,Complete,Subscription,Sample User,ALDI 1234,"- $174.33",$0.00,Venmo balance,ALDI 1234
+386944543,2025-09-25T12:23:00,Payment,Complete,Subscription,Sample User,"EXXONMOBIL 4421 #9582",- $40.12,$0.00,Venmo balance,"EXXONMOBIL 4421 #9582"
+308219709,2025-09-26T15:01:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO","- $70.99",$0.00,Venmo balance,"FRESH FARM BOX CO"
+317976642,2025-09-27T18:03:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE NEW YORK NY,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE NEW YORK NY
+397511366,2025-09-27T21:41:00,Payment,Complete,Subscription,Sample User,LOCAL TACO BAR,- $34.48,$0.00,Venmo balance,LOCAL TACO BAR
+341210463,2025-09-28T22:35:00,Payment,Complete,Subscription,Sample User,ALDI 1234,- $73.96,$0.00,Venmo balance,ALDI 1234
+303973963,2025-09-30T11:40:00,Payment,Complete,Subscription,Sample User,"SPEEDWAY 0412",- $32.76,$0.00,Venmo balance,"SPEEDWAY 0412"
+315089865,2025-10-01T22:03:00,Payment,Complete,Subscription,Sample User,"LYFT *RIDE 12345 AUSTIN TX",- $14.51,$0.00,Venmo balance,"LYFT *RIDE 12345 AUSTIN TX"
+312531903,2025-10-02T15:21:00,Payment,Complete,Subscription,Sample User,KROGER #123,- $37.61,$0.00,Venmo balance,KROGER #123
+398225089,2025-10-03T15:20:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO #4344",- $70.99,$0.00,Venmo balance,"FRESH FARM BOX CO #4344"
+374148790,2025-10-03T13:54:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,- $7.93,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
+366407098,2025-10-03T08:27:00,Payment,Complete,Subscription,RETURN CREDIT SUNRISE HARDWARE,Sample User,"+ $16.32",$0.00,Venmo balance,
+332670496,2025-10-05T11:57:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE #6640,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE #6640
+328654777,2025-10-06T10:25:00,Payment,Complete,Subscription,Sample User,"SPEEDWAY 0412","- $60.77",$0.00,Venmo balance,"SPEEDWAY 0412"
+386075500,2025-10-06T18:06:00,Payment,Complete,Subscription,Sample User,"LYFT *RIDE 12345",- $14.65,$0.00,Venmo balance,"LYFT *RIDE 12345"
+354024040,2025-10-08T21:54:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL DENVER CO,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL DENVER CO
+387799541,2025-10-09T20:23:00,Payment,Complete,Subscription,Sample User,KROGER #123,- $156.81,$0.00,Venmo balance,KROGER #123
+309335744,2025-10-10T07:26:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO 800-289-2362 TX,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO 800-289-2362 TX
+350337328,2025-10-10T19:25:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM SAN JOSE CA,- $8.67,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM SAN JOSE CA
+334736273,2025-10-11T07:12:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE LOS GATOS CA,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE LOS GATOS CA
+340321801,2025-10-11T20:47:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 #8727,- $35.92,$0.00,Venmo balance,SPEEDWAY 0412 #8727
+333118325,2025-10-11T20:41:00,Payment,Complete,Subscription,Sample User,LOCAL TACO BAR SAN JOSE CA,- $28.91,$0.00,Venmo balance,LOCAL TACO BAR SAN JOSE CA
+362303144,2025-10-15T22:28:00,Payment,Complete,Rent split,Sample User,"JANE ROOMMATE #7533","- $1,450.00",$0.00,Venmo balance,"JANE ROOMMATE #7533"
+307179362,2025-10-16T20:17:00,Payment,Complete,Subscription,Sample User,KROGER #123 #9745,"- $128.47",$0.00,Venmo balance,KROGER #123 #9745
+300135703,2025-10-17T18:42:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO NEW YORK NY,"- $70.99",$0.00,Venmo balance,FRESH FARM BOX CO NEW YORK NY
+346034836,2025-10-17T12:16:00,Payment,Complete,Subscription,Sample User,"EXXONMOBIL 4421 800-644-5158 NY","- $67.29",$0.00,Venmo balance,"EXXONMOBIL 4421 800-644-5158 NY"
+374227431,2025-10-17T14:12:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234 800-353-2563 CA,- $63.06,$0.00,Venmo balance,CHIPOTLE 1234 800-353-2563 CA
+383168202,2025-10-18T07:22:00,Payment,Complete,Subscription,Sample User,"SWEETGREEN 0456 NEW YORK NY","- $29.61",$0.00,Venmo balance,"SWEETGREEN 0456 NEW YORK NY"
+387951488,2025-10-18T17:09:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB 800-583-8170 CA,- $94.03,$0.00,Venmo balance,AMZN MKTP US*2K4AB 800-583-8170 CA
+359916902,2025-10-20T12:27:00,Payment,Complete,Subscription,Sample User,CITY WATER UTIL LOS GATOS CA,- $52.64,$0.00,Venmo balance,CITY WATER UTIL LOS GATOS CA
+347839415,2025-10-20T09:17:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE DENVER CO,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE DENVER CO
+344081803,2025-10-21T18:51:00,Payment,Complete,Subscription,Sample User,TRADER JOE'S #456,- $61.86,$0.00,Venmo balance,TRADER JOE'S #456
+340048791,2025-10-21T12:02:00,Payment,Complete,Subscription,Sample User,"CHIPOTLE 1234",- $42.58,$0.00,Venmo balance,"CHIPOTLE 1234"
+354520687,2025-10-21T09:58:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,"- $33.40",$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
+374472342,2025-10-22T20:28:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 800-445-9682 NY,- $20.49,$0.00,Venmo balance,LYFT *RIDE 12345 800-445-9682 NY
+356377592,2025-10-23T17:14:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL 800-278-6240 TX,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL 800-278-6240 TX
+352893458,2025-10-24T15:38:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO AUSTIN TX,"- $70.99",$0.00,Venmo balance,FRESH FARM BOX CO AUSTIN TX
+387322982,2025-10-25T21:04:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE LOS GATOS CA,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE LOS GATOS CA
+384421782,2025-10-25T12:07:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 800-770-7409 NY,"- $72.53",$0.00,Venmo balance,SPEEDWAY 0412 800-770-7409 NY
+345916859,2025-10-25T12:24:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234,"- $37.30",$0.00,Venmo balance,CHIPOTLE 1234
+351205093,2025-10-26T12:30:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,- $26.02,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
+345997221,2025-10-28T07:53:00,Payment,Complete,Subscription,Sample User,PEAK PET BOX 800-834-7787 NY,- $56.99,$0.00,Venmo balance,PEAK PET BOX 800-834-7787 NY
+326622008,2025-10-28T07:50:00,Payment,Complete,Subscription,Sample User,LOCAL TACO BAR #3310,- $64.06,$0.00,Venmo balance,LOCAL TACO BAR #3310
+346666594,2025-10-29T16:18:00,Payment,Complete,Subscription,Sample User,KROGER #123,- $149.20,$0.00,Venmo balance,KROGER #123
+317621900,2025-10-29T11:48:00,Payment,Complete,Subscription,Sample User,SWEETGREEN 0456 800-521-5536 NY,- $43.53,$0.00,Venmo balance,SWEETGREEN 0456 800-521-5536 NY
+354935955,2025-10-30T09:59:00,Payment,Complete,Subscription,Sample User,"AMZN MKTP US*2K4AB",- $25.24,$0.00,Venmo balance,"AMZN MKTP US*2K4AB"
+373015593,2025-10-31T17:09:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 800-355-8580 NY,- $42.61,$0.00,Venmo balance,SPEEDWAY 0412 800-355-8580 NY
+384226231,2025-10-31T20:44:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,- $38.61,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
+381547187,2025-10-31T14:04:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3 800-566-8343 TX,- $90.34,$0.00,Venmo balance,AMAZON.COM*1A2B3 800-566-8343 TX
+319548576,2025-11-03T11:00:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234,- $39.74,$0.00,Venmo balance,CHIPOTLE 1234
+376323529,2025-11-05T14:50:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE #6447,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE #6447
+376702717,2025-11-05T10:31:00,Payment,Complete,Subscription,Sample User,SAFEWAY 0456 800-925-9648 TX,- $111.64,$0.00,Venmo balance,SAFEWAY 0456 800-925-9648 TX
+335287190,2025-11-07T15:39:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO
+391591261,2025-11-08T22:38:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL 800-898-4169 NY,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL 800-898-4169 NY
+338605919,2025-11-08T20:02:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE
+393465063,2025-11-08T13:05:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456 #8132,"- $73.01",$0.00,Venmo balance,CHEVRON 00123456 #8132
+326616233,2025-11-10T18:30:00,Payment,Complete,Subscription,AMZN REFUND 2K4AB,Sample User,+ $43.80,$0.00,Venmo balance,
+315329591,2025-11-12T12:55:00,Payment,Complete,Subscription,Sample User,KROGER #123,- $101.31,$0.00,Venmo balance,KROGER #123
+322098290,2025-11-13T09:19:00,Payment,Complete,Subscription,Sample User,SWEETGREEN 0456 PORTLAND OR,- $14.53,$0.00,Venmo balance,SWEETGREEN 0456 PORTLAND OR
+376528695,2025-11-14T16:07:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO DENVER CO",- $70.99,$0.00,Venmo balance,"FRESH FARM BOX CO DENVER CO"
+395533115,2025-11-14T18:22:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 #7839,"- $35.90",$0.00,Venmo balance,SPEEDWAY 0412 #7839
+341438725,2025-11-15T21:01:00,Payment,Complete,Rent split,Sample User,JANE ROOMMATE #7623,"- $1,450.00",$0.00,Venmo balance,JANE ROOMMATE #7623
+367381523,2025-11-17T07:24:00,Payment,Complete,Subscription,Sample User,"SAFEWAY 0456","- $25.23",$0.00,Venmo balance,"SAFEWAY 0456"
+365527602,2025-11-18T17:32:00,Payment,Complete,Subscription,Sample User,ROOFTOP STORAGE UNIT AUSTIN TX,- $24.99,$0.00,Venmo balance,ROOFTOP STORAGE UNIT AUSTIN TX
+304422175,2025-11-18T10:50:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234 #7040,- $54.23,$0.00,Venmo balance,CHIPOTLE 1234 #7040
+338663731,2025-11-20T11:03:00,Payment,Complete,Subscription,Sample User,"MAPLE DAYCARE 800-816-4250 NY",- $61.99,$0.00,Venmo balance,"MAPLE DAYCARE 800-816-4250 NY"
+391326494,2025-11-20T09:17:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234,- $15.50,$0.00,Venmo balance,CHIPOTLE 1234
+381942367,2025-11-21T11:53:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO #6975,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO #6975
+339491286,2025-11-22T21:35:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE SAN JOSE CA,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE SAN JOSE CA
+384220636,2025-11-22T09:01:00,Payment,Complete,Subscription,Sample User,SHELL OIL 57444,"- $62.26",$0.00,Venmo balance,SHELL OIL 57444
+340701284,2025-11-23T15:12:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL LOS GATOS CA,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL LOS GATOS CA
+351442925,2025-11-25T22:10:00,Payment,Complete,Subscription,Sample User,TRADER JOE'S #456 #4089,- $140.11,$0.00,Venmo balance,TRADER JOE'S #456 #4089
+346752672,2025-11-28T20:46:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO DENVER CO",- $70.99,$0.00,Venmo balance,"FRESH FARM BOX CO DENVER CO"
+316532760,2025-11-28T13:50:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456 PORTLAND OR,- $72.35,$0.00,Venmo balance,CHEVRON 00123456 PORTLAND OR
+357717125,2025-11-28T14:52:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM 800-796-2501 CA,"- $9.47",$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM 800-796-2501 CA
+383460276,2025-11-30T10:42:00,Payment,Complete,Subscription,Sample User,KROGER #123 #8595,- $78.49,$0.00,Venmo balance,KROGER #123 #8595
+333738517,2025-12-02T08:04:00,Payment,Complete,Subscription,Sample User,GREEN LEAF LAWN CARE,- $59.99,$0.00,Venmo balance,GREEN LEAF LAWN CARE
+386875979,2025-12-03T21:54:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 800-777-3033 CA,- $61.59,$0.00,Venmo balance,SPEEDWAY 0412 800-777-3033 CA
+378256657,2025-12-04T10:12:00,Payment,Complete,Subscription,Sample User,"PIXEL PRINT CLUB #8835",- $17.99,$0.00,Venmo balance,"PIXEL PRINT CLUB #8835"
+372910823,2025-12-05T07:18:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO #7798,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO #7798
+391182400,2025-12-05T10:18:00,Payment,Complete,Subscription,Sample User,"MAPLE DAYCARE",- $61.99,$0.00,Venmo balance,"MAPLE DAYCARE"
+362691682,2025-12-05T16:32:00,Payment,Complete,Subscription,Sample User,SWEETGREEN 0456,"- $41.55",$0.00,Venmo balance,SWEETGREEN 0456
+342294922,2025-12-05T07:29:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM AUSTIN TX,- $40.17,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM AUSTIN TX
+395499591,2025-12-06T08:09:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE
+370761882,2025-12-06T10:39:00,Payment,Complete,Subscription,Sample User,KROGER #123 800-738-6983 CA,- $60.77,$0.00,Venmo balance,KROGER #123 800-738-6983 CA
+322986399,2025-12-08T21:09:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL
+358085667,2025-12-09T21:11:00,Payment,Complete,Subscription,Sample User,SHELL OIL 57444 #8978,- $57.60,$0.00,Venmo balance,SHELL OIL 57444 #8978
+336321022,2025-12-11T15:27:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM #6169,- $29.32,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM #6169
+381051603,2025-12-12T12:38:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO 800-789-8654 NY,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO 800-789-8654 NY
+330602959,2025-12-12T08:01:00,Payment,Complete,Subscription,Sample User,"KROGER #123",- $53.36,$0.00,Venmo balance,"KROGER #123"
+322708585,2025-12-12T19:09:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM #2630,- $37.85,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM #2630
+359019179,2025-12-14T15:04:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB,"- $83.09",$0.00,Venmo balance,AMZN MKTP US*2K4AB
+362219369,2025-12-14T14:52:00,Payment,Complete,Subscription,RETURN CREDIT SUNRISE HARDWARE 800-613-4513 NY,Sample User,"+ $21.96",$0.00,Venmo balance,
+390820549,2025-12-15T11:06:00,Payment,Complete,Rent split,Sample User,JANE ROOMMATE 800-541-8804 CA,"- $1,450.00",$0.00,Venmo balance,JANE ROOMMATE 800-541-8804 CA
+312810813,2025-12-15T15:59:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,- $9.86,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
+393751255,2025-12-16T17:11:00,Payment,Complete,Subscription,Sample User,TRADER JOE'S #456 #2180,- $103.67,$0.00,Venmo balance,TRADER JOE'S #456 #2180
+306084460,2025-12-17T12:32:00,Payment,Complete,Subscription,Sample User,"SHELL OIL 57444 #1709",- $63.98,$0.00,Venmo balance,"SHELL OIL 57444 #1709"
+385196545,2025-12-19T15:00:00,Payment,Complete,Subscription,Sample User,"CITY WATER UTIL 800-652-7007 NY","- $50.90",$0.00,Venmo balance,"CITY WATER UTIL 800-652-7007 NY"
+384480180,2025-12-19T08:36:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO #9198,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO #9198
+373305382,2025-12-20T13:48:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE
+393431167,2025-12-20T13:40:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE NEW YORK NY,"- $61.99",$0.00,Venmo balance,MAPLE DAYCARE NEW YORK NY
+382791474,2025-12-21T14:02:00,Payment,Complete,Subscription,Sample User,"TRADER JOE'S #456",- $40.42,$0.00,Venmo balance,"TRADER JOE'S #456"
+328176185,2025-12-21T14:12:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345,- $42.17,$0.00,Venmo balance,LYFT *RIDE 12345
+300677246,2025-12-22T10:14:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 #5457,- $36.98,$0.00,Venmo balance,SPEEDWAY 0412 #5457
+374862639,2025-12-23T18:29:00,Payment,Complete,Subscription,Sample User,"HARBOR SWIM SCHOOL 800-313-3362 TX",- $55.99,$0.00,Venmo balance,"HARBOR SWIM SCHOOL 800-313-3362 TX"
+371330332,2025-12-26T07:22:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO #2609",- $70.99,$0.00,Venmo balance,"FRESH FARM BOX CO #2609"
+347757561,2025-12-27T15:56:00,Payment,Complete,Subscription,Sample User,KROGER #123 #7581,- $155.76,$0.00,Venmo balance,KROGER #123 #7581
+344224416,2025-12-29T12:19:00,Payment,Complete,Subscription,Sample User,SWEETGREEN 0456,- $18.31,$0.00,Venmo balance,SWEETGREEN 0456
+378061005,2025-12-30T19:47:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234 800-363-6489 TX,- $11.22,$0.00,Venmo balance,CHIPOTLE 1234 800-363-6489 TX
+318463758,2025-12-31T11:07:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456 #3945,- $29.34,$0.00,Venmo balance,CHEVRON 00123456 #3945
+379695562,2026-01-01T14:02:00,Payment,Complete,Subscription,Sample User,"AMAZON.COM*1A2B3 PORTLAND OR",- $7.22,$0.00,Venmo balance,"AMAZON.COM*1A2B3 PORTLAND OR"
+334641621,2026-01-02T10:26:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO LOS GATOS CA,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO LOS GATOS CA
+399826813,2026-01-03T11:19:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE,"- $21.99",$0.00,Venmo balance,TRIVIA NIGHT LEAGUE
+361392317,2026-01-03T13:51:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345,- $10.19,$0.00,Venmo balance,LYFT *RIDE 12345
+359569251,2026-01-04T10:03:00,Payment,Complete,Subscription,Sample User,"KROGER #123 #7013",- $166.38,$0.00,Venmo balance,"KROGER #123 #7013"
+305108671,2026-01-04T13:54:00,Payment,Complete,Subscription,Sample User,"CHIPOTLE 1234",- $26.85,$0.00,Venmo balance,"CHIPOTLE 1234"
+392385507,2026-01-05T13:48:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE
+339745850,2026-01-05T16:37:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 800-834-2481 NY,- $50.42,$0.00,Venmo balance,SPEEDWAY 0412 800-834-2481 NY
+377031147,2026-01-05T14:10:00,Payment,Complete,Subscription,Sample User,LOCAL TACO BAR #9508,- $11.84,$0.00,Venmo balance,LOCAL TACO BAR #9508
+337839973,2026-01-07T09:07:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB NEW YORK NY,"- $41.17",$0.00,Venmo balance,AMZN MKTP US*2K4AB NEW YORK NY
+330938954,2026-01-08T19:11:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL SAN JOSE CA,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL SAN JOSE CA
+306270585,2026-01-08T12:38:00,Payment,Complete,Subscription,Sample User,SAFEWAY 0456 PORTLAND OR,- $153.60,$0.00,Venmo balance,SAFEWAY 0456 PORTLAND OR
+372283751,2026-01-08T13:20:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,- $28.22,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
+328527819,2026-01-09T15:26:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO LOS GATOS CA,"- $70.99",$0.00,Venmo balance,FRESH FARM BOX CO LOS GATOS CA
+304635655,2026-01-09T21:22:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB,- $77.24,$0.00,Venmo balance,AMZN MKTP US*2K4AB
+341208459,2026-01-11T14:44:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM NEW YORK NY,- $16.34,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM NEW YORK NY
+331209227,2026-01-13T12:07:00,Payment,Complete,Subscription,Sample User,"LYFT *RIDE 12345",- $8.82,$0.00,Venmo balance,"LYFT *RIDE 12345"
+334079394,2026-01-14T11:48:00,Payment,Complete,Subscription,Sample User,"SPEEDWAY 0412 800-538-4578 NY",- $50.57,$0.00,Venmo balance,"SPEEDWAY 0412 800-538-4578 NY"
+334538589,2026-01-14T08:18:00,Payment,Complete,Subscription,Sample User,"AMZN MKTP US*2K4AB 800-719-6986 CA",- $28.76,$0.00,Venmo balance,"AMZN MKTP US*2K4AB 800-719-6986 CA"
+337251892,2026-01-15T20:11:00,Payment,Complete,Rent split,Sample User,JANE ROOMMATE,"- $1,450.00",$0.00,Venmo balance,JANE ROOMMATE
+378864951,2026-01-15T09:53:00,Payment,Complete,Subscription,Sample User,"ALDI 1234 NEW YORK NY",- $151.04,$0.00,Venmo balance,"ALDI 1234 NEW YORK NY"
+344841684,2026-01-16T10:43:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO 800-518-1702 NY,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO 800-518-1702 NY
+362438756,2026-01-17T10:12:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE #7868,"- $21.99",$0.00,Venmo balance,TRIVIA NIGHT LEAGUE #7868
+371946367,2026-01-18T09:23:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM 800-105-4090 TX,"- $9.83",$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM 800-105-4090 TX
+364056885,2026-01-19T10:00:00,Payment,Complete,Subscription,Sample User,ALDI 1234,- $61.28,$0.00,Venmo balance,ALDI 1234
+381543445,2026-01-20T21:08:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE,"- $61.99",$0.00,Venmo balance,MAPLE DAYCARE
+386906784,2026-01-23T17:15:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL 800-384-6372 CA,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL 800-384-6372 CA
+369508639,2026-01-23T18:46:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO
+332459093,2026-01-23T15:17:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456 800-478-6145 TX,- $61.91,$0.00,Venmo balance,CHEVRON 00123456 800-478-6145 TX
+370233283,2026-01-23T17:58:00,Payment,Complete,Subscription,RETURN CREDIT SUNRISE HARDWARE 800-943-6572 NY,Sample User,+ $7.39,$0.00,Venmo balance,
+352461254,2026-01-24T20:36:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3 DENVER CO,- $71.33,$0.00,Venmo balance,AMAZON.COM*1A2B3 DENVER CO
+385528981,2026-01-26T08:57:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB PORTLAND OR,- $17.39,$0.00,Venmo balance,AMZN MKTP US*2K4AB PORTLAND OR
+367304369,2026-01-27T16:03:00,Payment,Complete,Subscription,Sample User,KROGER #123 #8895,- $171.81,$0.00,Venmo balance,KROGER #123 #8895
+326598622,2026-01-27T07:03:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,"- $8.99",$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
+384095861,2026-01-30T21:59:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO LOS GATOS CA",- $70.99,$0.00,Venmo balance,"FRESH FARM BOX CO LOS GATOS CA"
+388721558,2026-01-30T15:54:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234 #4562,- $48.03,$0.00,Venmo balance,CHIPOTLE 1234 #4562
+364641309,2026-01-31T10:18:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE
+306709741,2026-02-01T10:12:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 PORTLAND OR,- $69.04,$0.00,Venmo balance,SPEEDWAY 0412 PORTLAND OR
+374123857,2026-02-01T21:12:00,Payment,Complete,Subscription,Sample User,SAFEWAY 0456 800-954-1171 NY,"- $113.47",$0.00,Venmo balance,SAFEWAY 0456 800-954-1171 NY
+386236719,2026-02-05T12:41:00,Payment,Complete,Subscription,Sample User,"MAPLE DAYCARE 800-210-4090 NY",- $61.99,$0.00,Venmo balance,"MAPLE DAYCARE 800-210-4090 NY"
+350060246,2026-02-05T22:39:00,Payment,Complete,Subscription,Sample User,SAFEWAY 0456 SAN JOSE CA,- $126.79,$0.00,Venmo balance,SAFEWAY 0456 SAN JOSE CA
+311685043,2026-02-06T13:55:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO #2211,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO #2211
+332343439,2026-02-07T08:21:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345,- $7.91,$0.00,Venmo balance,LYFT *RIDE 12345
+379221609,2026-02-08T21:12:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL PORTLAND OR,"- $55.99",$0.00,Venmo balance,HARBOR SWIM SCHOOL PORTLAND OR
+313957954,2026-02-08T15:15:00,Payment,Complete,Subscription,Sample User,SHELL OIL 57444 800-361-5881 CA,- $58.33,$0.00,Venmo balance,SHELL OIL 57444 800-361-5881 CA
+320599262,2026-02-09T12:15:00,Payment,Complete,Subscription,Sample User,TRADER JOE'S #456,- $24.91,$0.00,Venmo balance,TRADER JOE'S #456
+376568572,2026-02-13T22:42:00,Payment,Complete,Subscription,Sample User,"FRESH FARM BOX CO AUSTIN TX",- $70.99,$0.00,Venmo balance,"FRESH FARM BOX CO AUSTIN TX"
+328408676,2026-02-13T13:40:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456 PORTLAND OR,- $31.99,$0.00,Venmo balance,CHEVRON 00123456 PORTLAND OR
+323309171,2026-02-14T12:52:00,Payment,Complete,Subscription,Sample User,"TRIVIA NIGHT LEAGUE 800-348-8673 TX","- $21.99",$0.00,Venmo balance,"TRIVIA NIGHT LEAGUE 800-348-8673 TX"
+341007291,2026-02-15T14:52:00,Payment,Complete,Rent split,Sample User,"JANE ROOMMATE #5043","- $1,450.00",$0.00,Venmo balance,"JANE ROOMMATE #5043"
+303669552,2026-02-16T17:48:00,Payment,Complete,Subscription,Sample User,KROGER #123 #4356,- $59.06,$0.00,Venmo balance,KROGER #123 #4356
+327097359,2026-02-18T13:57:00,Payment,Complete,Subscription,Sample User,ROOFTOP STORAGE UNIT,"- $24.99",$0.00,Venmo balance,ROOFTOP STORAGE UNIT
+319346075,2026-02-18T16:19:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 #8150,- $70.73,$0.00,Venmo balance,EXXONMOBIL 4421 #8150
+333340155,2026-02-18T19:42:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,"- $16.44",$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
+325857997,2026-02-19T15:41:00,Payment,Complete,Subscription,Sample User,CITY WATER UTIL 800-560-8445 NY,- $50.43,$0.00,Venmo balance,CITY WATER UTIL 800-560-8445 NY
+304495147,2026-02-20T17:33:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO #6921,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO #6921
+314331884,2026-02-20T08:05:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE
+303320837,2026-02-20T12:05:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3,- $31.39,$0.00,Venmo balance,AMAZON.COM*1A2B3
+348075538,2026-02-22T22:29:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 800-268-2494 CA,- $31.30,$0.00,Venmo balance,LYFT *RIDE 12345 800-268-2494 CA
+334249375,2026-02-23T12:24:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL
+362041734,2026-02-23T22:23:00,Payment,Complete,Subscription,Sample User,KROGER #123,- $46.94,$0.00,Venmo balance,KROGER #123
+390435778,2026-02-23T11:03:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM PORTLAND OR,- $36.36,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM PORTLAND OR
+343661344,2026-02-24T20:06:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 #4541,- $52.77,$0.00,Venmo balance,SPEEDWAY 0412 #4541
+308427372,2026-02-25T08:10:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234,- $42.34,$0.00,Venmo balance,CHIPOTLE 1234
+312545086,2026-02-27T16:31:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO #2621,"- $70.99",$0.00,Venmo balance,FRESH FARM BOX CO #2621
+320482552,2026-02-27T13:50:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3 AUSTIN TX,"- $11.28",$0.00,Venmo balance,AMAZON.COM*1A2B3 AUSTIN TX
+347635466,2026-02-28T11:01:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE
+352291132,2026-03-02T15:51:00,Payment,Complete,Subscription,Sample User,GREEN LEAF LAWN CARE DENVER CO,"- $59.99",$0.00,Venmo balance,GREEN LEAF LAWN CARE DENVER CO
+327150640,2026-03-02T19:18:00,Payment,Complete,Subscription,Sample User,CHEVRON 00123456 800-549-2099 TX,- $31.29,$0.00,Venmo balance,CHEVRON 00123456 800-549-2099 TX
+369643067,2026-03-03T19:55:00,Payment,Complete,Subscription,Sample User,"ALDI 1234 #2022",- $148.16,$0.00,Venmo balance,"ALDI 1234 #2022"
+379590235,2026-03-03T16:45:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234 LOS GATOS CA,- $25.17,$0.00,Venmo balance,CHIPOTLE 1234 LOS GATOS CA
+338356663,2026-03-04T14:38:00,Payment,Complete,Subscription,Sample User,LOCAL TACO BAR,- $45.11,$0.00,Venmo balance,LOCAL TACO BAR
+367407222,2026-03-05T20:16:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE #8504,"- $61.99",$0.00,Venmo balance,MAPLE DAYCARE #8504
+350480702,2026-03-06T18:51:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO
+326761402,2026-03-06T18:31:00,Payment,Complete,Subscription,Sample User,AMAZON.COM*1A2B3 SAN JOSE CA,- $69.07,$0.00,Venmo balance,AMAZON.COM*1A2B3 SAN JOSE CA
+375340037,2026-03-07T19:10:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 800-992-3369 NY,"- $43.27",$0.00,Venmo balance,SPEEDWAY 0412 800-992-3369 NY
+352432505,2026-03-08T20:42:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL PORTLAND OR,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL PORTLAND OR
+309597185,2026-03-11T17:50:00,Payment,Complete,Subscription,Sample User,ALDI 1234 800-622-9696 TX,- $177.73,$0.00,Venmo balance,ALDI 1234 800-622-9696 TX
+345496444,2026-03-12T12:20:00,Payment,Complete,Subscription,Sample User,LOCAL TACO BAR #8564,- $60.59,$0.00,Venmo balance,LOCAL TACO BAR #8564
+377557789,2026-03-13T17:00:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO
+368345474,2026-03-13T10:40:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB,- $18.70,$0.00,Venmo balance,AMZN MKTP US*2K4AB
+309462983,2026-03-14T16:54:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE LOS GATOS CA,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE LOS GATOS CA
+320018282,2026-03-15T12:37:00,Payment,Complete,Rent split,Sample User,"JANE ROOMMATE","- $1,450.00",$0.00,Venmo balance,"JANE ROOMMATE"
+389586366,2026-03-15T20:10:00,Payment,Complete,Subscription,Sample User,ALDI 1234,"- $126.65",$0.00,Venmo balance,ALDI 1234
+395459596,2026-03-16T21:52:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 PORTLAND OR,- $37.94,$0.00,Venmo balance,SPEEDWAY 0412 PORTLAND OR
+337879262,2026-03-17T14:49:00,Payment,Complete,Subscription,Sample User,"SWEETGREEN 0456 SAN JOSE CA",- $31.73,$0.00,Venmo balance,"SWEETGREEN 0456 SAN JOSE CA"
+306384138,2026-03-18T22:35:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 800-327-4887 CA,- $24.29,$0.00,Venmo balance,LYFT *RIDE 12345 800-327-4887 CA
+391830117,2026-03-18T19:33:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB SAN JOSE CA,- $69.73,$0.00,Venmo balance,AMZN MKTP US*2K4AB SAN JOSE CA
+353020236,2026-03-19T12:26:00,Payment,Complete,Subscription,Sample User,LOCAL TACO BAR 800-701-8472 CA,- $55.29,$0.00,Venmo balance,LOCAL TACO BAR 800-701-8472 CA
+379463500,2026-03-20T17:03:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO AUSTIN TX,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO AUSTIN TX
+335449998,2026-03-20T19:37:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE,- $61.99,$0.00,Venmo balance,MAPLE DAYCARE
+344350575,2026-03-21T16:09:00,Payment,Complete,Subscription,Sample User,TRADER JOE'S #456,"- $46.49",$0.00,Venmo balance,TRADER JOE'S #456
+301858864,2026-03-22T08:34:00,Payment,Complete,Subscription,Sample User,"BOOKCLUB PLUS SAN JOSE CA",- $65.99,$0.00,Venmo balance,"BOOKCLUB PLUS SAN JOSE CA"
+301939390,2026-03-22T12:45:00,Payment,Complete,Subscription,RETURN CREDIT SUNRISE HARDWARE,Sample User,+ $34.24,$0.00,Venmo balance,
+367452772,2026-03-23T22:08:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL
+307042657,2026-03-23T10:29:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412,- $54.31,$0.00,Venmo balance,SPEEDWAY 0412
+381773237,2026-03-23T10:11:00,Payment,Complete,Subscription,Sample User,LOCAL TACO BAR #1862,- $56.34,$0.00,Venmo balance,LOCAL TACO BAR #1862
+394323952,2026-03-27T09:10:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO
+369384427,2026-03-28T12:40:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE
+327650999,2026-03-28T16:56:00,Payment,Complete,Subscription,Sample User,"SPEEDWAY 0412 #8648",- $38.32,$0.00,Venmo balance,"SPEEDWAY 0412 #8648"
+343238881,2026-03-28T22:06:00,Payment,Complete,Subscription,Sample User,LOCAL TACO BAR 800-723-8821 TX,- $15.93,$0.00,Venmo balance,LOCAL TACO BAR 800-723-8821 TX
+355291499,2026-03-29T07:29:00,Payment,Complete,Subscription,Sample User,TRADER JOE'S #456 #4825,"- $103.90",$0.00,Venmo balance,TRADER JOE'S #456 #4825
+353014915,2026-03-29T09:46:00,Payment,Complete,Subscription,AMZN REFUND 2K4AB SAN JOSE CA,Sample User,+ $42.48,$0.00,Venmo balance,
+360650213,2026-03-30T19:56:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 DENVER CO,- $41.13,$0.00,Venmo balance,LYFT *RIDE 12345 DENVER CO
+375557000,2026-03-31T09:24:00,Payment,Complete,Subscription,Sample User,AMZN MKTP US*2K4AB #7393,"- $36.11",$0.00,Venmo balance,AMZN MKTP US*2K4AB #7393
+376111479,2026-04-02T07:36:00,Payment,Complete,Subscription,Sample User,CHIPOTLE 1234,- $56.58,$0.00,Venmo balance,CHIPOTLE 1234
+309221498,2026-04-03T16:16:00,Payment,Complete,Subscription,Sample User,FRESH FARM BOX CO #6342,- $70.99,$0.00,Venmo balance,FRESH FARM BOX CO #6342
+351444888,2026-04-03T18:51:00,Payment,Complete,Subscription,Sample User,"SWEETGREEN 0456","- $19.26",$0.00,Venmo balance,"SWEETGREEN 0456"
+363881460,2026-04-04T14:54:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 SAN JOSE CA,- $57.06,$0.00,Venmo balance,EXXONMOBIL 4421 SAN JOSE CA
+326368661,2026-04-04T19:56:00,Payment,Complete,Subscription,Sample User,RIVERBEND VET CLINIC 800-689-6687 CA,"- $92.85",$0.00,Venmo balance,RIVERBEND VET CLINIC 800-689-6687 CA
+368268646,2026-04-05T19:18:00,Payment,Complete,Subscription,Sample User,MAPLE DAYCARE 800-317-1460 TX,"- $61.99",$0.00,Venmo balance,MAPLE DAYCARE 800-317-1460 TX
+374961339,2026-04-05T18:57:00,Payment,Complete,Subscription,Sample User,"ALDI 1234",- $65.71,$0.00,Venmo balance,"ALDI 1234"
+350116696,2026-04-05T08:40:00,Payment,Complete,Subscription,Sample User,SWEETGREEN 0456 NEW YORK NY,- $35.34,$0.00,Venmo balance,SWEETGREEN 0456 NEW YORK NY
+372415649,2026-04-08T16:14:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL LOS GATOS CA,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL LOS GATOS CA
+366553786,2026-04-09T11:43:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 #7117,- $30.67,$0.00,Venmo balance,SPEEDWAY 0412 #7117
+380840902,2026-04-09T13:11:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM NEW YORK NY,- $21.33,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM NEW YORK NY
+385475468,2026-04-11T21:53:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE
+350333673,2026-04-11T17:26:00,Payment,Complete,Subscription,Sample User,"LYFT *RIDE 12345 LOS GATOS CA",- $25.78,$0.00,Venmo balance,"LYFT *RIDE 12345 LOS GATOS CA"
+369477726,2026-04-13T22:58:00,Payment,Complete,Subscription,Sample User,KROGER #123,"- $101.56",$0.00,Venmo balance,KROGER #123
+399815995,2026-04-13T21:04:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345 800-441-2384 TX,- $11.16,$0.00,Venmo balance,LYFT *RIDE 12345 800-441-2384 TX
+361734518,2026-04-15T15:26:00,Payment,Complete,Rent split,Sample User,"JANE ROOMMATE #1490","- $1,450.00",$0.00,Venmo balance,"JANE ROOMMATE #1490"
+380854704,2026-04-16T20:18:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 #2816,"- $70.51",$0.00,Venmo balance,SPEEDWAY 0412 #2816
+310583125,2026-04-16T13:37:00,Payment,Complete,Subscription,Sample User,"CHIPOTLE 1234",- $35.29,$0.00,Venmo balance,"CHIPOTLE 1234"
+313584795,2026-04-16T08:23:00,Payment,Complete,Subscription,Sample User,LYFT *RIDE 12345,- $20.45,$0.00,Venmo balance,LYFT *RIDE 12345
+329073632,2026-04-20T07:17:00,Payment,Complete,Subscription,Sample User,CITY WATER UTIL #9365,- $53.34,$0.00,Venmo balance,CITY WATER UTIL #9365
+354897307,2026-04-20T22:13:00,Payment,Complete,Subscription,Sample User,"MAPLE DAYCARE DENVER CO",- $61.99,$0.00,Venmo balance,"MAPLE DAYCARE DENVER CO"
+347264450,2026-04-21T22:14:00,Payment,Complete,Subscription,Sample User,TRADER JOE'S #456 SAN JOSE CA,- $115.68,$0.00,Venmo balance,TRADER JOE'S #456 SAN JOSE CA
+307266763,2026-04-23T13:55:00,Payment,Complete,Subscription,Sample User,HARBOR SWIM SCHOOL SAN JOSE CA,- $55.99,$0.00,Venmo balance,HARBOR SWIM SCHOOL SAN JOSE CA
+336668712,2026-04-23T18:52:00,Payment,Complete,Subscription,Sample User,SPEEDWAY 0412 800-503-8314 TX,- $70.24,$0.00,Venmo balance,SPEEDWAY 0412 800-503-8314 TX
+385804562,2026-04-24T19:51:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM,- $11.88,$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM
+303889377,2026-04-25T13:51:00,Payment,Complete,Subscription,Sample User,TRIVIA NIGHT LEAGUE,- $21.99,$0.00,Venmo balance,TRIVIA NIGHT LEAGUE
+392838002,2026-04-26T11:59:00,Payment,Complete,Subscription,Sample User,TRADER JOE'S #456 PORTLAND OR,- $31.67,$0.00,Venmo balance,TRADER JOE'S #456 PORTLAND OR
+358988277,2026-04-28T09:39:00,Payment,Complete,Subscription,Sample User,EXXONMOBIL 4421 DENVER CO,- $70.58,$0.00,Venmo balance,EXXONMOBIL 4421 DENVER CO
+306948890,2026-04-28T11:13:00,Payment,Complete,Subscription,Sample User,UBER *TRIP HELP.UBER.COM NEW YORK NY,"- $39.22",$0.00,Venmo balance,UBER *TRIP HELP.UBER.COM NEW YORK NY

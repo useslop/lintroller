@@ -1,0 +1,498 @@
+{
+  "caseId": "monarch-4151",
+  "format": "monarch",
+  "seed": 4151,
+  "from": "2024-08-01",
+  "to": "2025-03-31",
+  "recurring": [
+    {
+      "merchantKey": "raw:rooftop storage",
+      "aliasId": null,
+      "display": "Rooftop Storage Unit",
+      "cadence": "semimonthly",
+      "kind": "unknown",
+      "nominalCents": 1299,
+      "lines": [
+        4,
+        20,
+        36,
+        50,
+        66,
+        82,
+        105,
+        122,
+        141,
+        154,
+        174,
+        187,
+        209,
+        229,
+        248,
+        261
+      ],
+      "traps": [],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:trivia night",
+      "aliasId": null,
+      "display": "Trivia Night League",
+      "cadence": "weekly",
+      "kind": "unknown",
+      "nominalCents": 4999,
+      "lines": [
+        9,
+        18,
+        25,
+        31,
+        38,
+        45,
+        52,
+        59,
+        67,
+        76,
+        84,
+        93,
+        104,
+        112,
+        116,
+        127,
+        136,
+        143,
+        149,
+        159,
+        166,
+        172,
+        179,
+        188,
+        197,
+        205,
+        216,
+        223,
+        234,
+        241,
+        252,
+        257,
+        266,
+        273
+      ],
+      "traps": [],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:green leaf",
+      "aliasId": null,
+      "display": "Green Leaf Lawn Care",
+      "cadence": "bimonthly",
+      "kind": "unknown",
+      "nominalCents": 4899,
+      "lines": [
+        11,
+        16,
+        79,
+        150,
+        225
+      ],
+      "traps": [
+        "trial"
+      ],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:maple daycare",
+      "aliasId": null,
+      "display": "Maple Daycare",
+      "cadence": "biweekly",
+      "kind": "unknown",
+      "nominalCents": 1599,
+      "lines": [
+        14,
+        29,
+        43,
+        57,
+        74,
+        88,
+        106,
+        124,
+        139,
+        155,
+        170,
+        182,
+        200,
+        219,
+        239,
+        255,
+        270
+      ],
+      "traps": [],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:city bike",
+      "aliasId": null,
+      "display": "City Bike Share Pass",
+      "cadence": "semiannual",
+      "kind": "unknown",
+      "nominalCents": 1599,
+      "lines": [
+        15,
+        224
+      ],
+      "traps": [],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "apple",
+      "aliasId": "apple",
+      "display": "Apple (iCloud+)",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 299,
+      "lines": [
+        19,
+        49,
+        81,
+        119,
+        153
+      ],
+      "traps": [
+        "platform-biller",
+        "same-merchant-two-plans",
+        "ended",
+        "tax-drift"
+      ],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "apple",
+      "aliasId": "apple",
+      "display": "Apple (Apple Music)",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1299,
+      "lines": [
+        22,
+        51,
+        85,
+        125,
+        157
+      ],
+      "traps": [
+        "platform-biller",
+        "same-merchant-two-plans",
+        "weekend-shift",
+        "ended",
+        "price-rise"
+      ],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "insurance-auto",
+      "aliasId": "insurance-auto",
+      "display": "Auto insurance",
+      "cadence": "monthly",
+      "kind": "bill",
+      "nominalCents": 12000,
+      "lines": [
+        32,
+        64,
+        100,
+        138,
+        169,
+        204,
+        244,
+        279
+      ],
+      "traps": [
+        "month-end"
+      ],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:peak pet",
+      "aliasId": null,
+      "display": "Peak Pet Box",
+      "cadence": "quarterly",
+      "kind": "unknown",
+      "nominalCents": 699,
+      "lines": [
+        87,
+        193
+      ],
+      "traps": [],
+      "mustFind": false
+    },
+    {
+      "merchantKey": "raw:fresh farm",
+      "aliasId": null,
+      "display": "Fresh Farm Box Co",
+      "cadence": "quarterly",
+      "kind": "unknown",
+      "nominalCents": 799,
+      "lines": [
+        92,
+        198
+      ],
+      "traps": [],
+      "mustFind": false
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "SHELL OIL 57444",
+      "family": "gas",
+      "lines": [
+        5,
+        12,
+        23,
+        26,
+        33,
+        41,
+        46,
+        55,
+        63,
+        69,
+        75,
+        80,
+        89,
+        99,
+        107,
+        113,
+        117,
+        131,
+        137,
+        144,
+        151,
+        160,
+        164,
+        171,
+        177,
+        183,
+        194,
+        202,
+        213,
+        226,
+        236,
+        243,
+        253,
+        258,
+        267,
+        272
+      ]
+    },
+    {
+      "merchant": "KROGER #123",
+      "family": "groceries",
+      "lines": [
+        2,
+        10,
+        21,
+        27,
+        35,
+        40,
+        44,
+        53,
+        60,
+        70,
+        77,
+        86,
+        94,
+        101,
+        110,
+        115,
+        123,
+        128,
+        134,
+        140,
+        148,
+        156,
+        163,
+        168,
+        173,
+        178,
+        184,
+        190,
+        199,
+        206,
+        214,
+        220,
+        227,
+        233,
+        238,
+        246,
+        254,
+        262,
+        269,
+        274
+      ]
+    },
+    {
+      "merchant": "CHIPOTLE 1234",
+      "family": "restaurant",
+      "lines": [
+        3,
+        47,
+        65,
+        68,
+        90,
+        132,
+        161,
+        180,
+        186,
+        189,
+        195,
+        207,
+        215,
+        221,
+        222,
+        235,
+        263,
+        271,
+        275,
+        280
+      ]
+    },
+    {
+      "merchant": "UBER *TRIP HELP.UBER.COM",
+      "family": "rideshare",
+      "lines": [
+        7,
+        13,
+        17,
+        39,
+        54,
+        56,
+        58,
+        83,
+        95,
+        98,
+        102,
+        109,
+        120,
+        152,
+        181,
+        185,
+        191,
+        210,
+        230,
+        247,
+        250,
+        259,
+        264,
+        277,
+        281
+      ]
+    },
+    {
+      "merchant": "AMZN MKTP US*2K4AB",
+      "family": "amazon-retail",
+      "lines": [
+        28,
+        42,
+        73,
+        91,
+        103,
+        111,
+        118,
+        129,
+        158,
+        211,
+        217,
+        218,
+        231,
+        232,
+        237,
+        240,
+        256,
+        265
+      ]
+    },
+    {
+      "merchant": "GREEN CAR WASH",
+      "family": "one-off",
+      "lines": [
+        196
+      ]
+    },
+    {
+      "merchant": "PIZZA BARN 77",
+      "family": "one-off",
+      "lines": [
+        145,
+        146
+      ]
+    },
+    {
+      "merchant": "CITY DENTAL GROUP",
+      "family": "one-off",
+      "lines": [
+        251
+      ]
+    },
+    {
+      "merchant": "ATM WITHDRAWAL 1234 MAIN ST",
+      "family": "atm",
+      "lines": [
+        71,
+        121,
+        126,
+        130,
+        165,
+        203,
+        268
+      ]
+    },
+    {
+      "merchant": "ACME PAYROLL DIR DEP",
+      "family": "payroll",
+      "lines": [
+        6,
+        24,
+        34,
+        48,
+        62,
+        78,
+        96,
+        114,
+        133,
+        147,
+        162,
+        175,
+        192,
+        208,
+        228,
+        245,
+        260,
+        278
+      ]
+    },
+    {
+      "merchant": "ONLINE TRANSFER TO SAV XXXX1234",
+      "family": "transfer",
+      "lines": [
+        8,
+        37,
+        72,
+        108,
+        142,
+        176,
+        212,
+        249
+      ]
+    },
+    {
+      "merchant": "AUTOPAY PYMT CARD SVCS",
+      "family": "card-payment",
+      "lines": [
+        30,
+        61,
+        97,
+        135,
+        167,
+        201,
+        242,
+        276
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@subsweep/corpus",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Subscription Sweep evaluator: synthetic labelled bank and card CSVs, hand fixtures, and the scoreboard that gates the engine (SPEC §9). Test data only.",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest run",
+    "generate": "tsx src/cli-generate.ts",
+    "eval": "tsx src/cli-eval.ts",
+    "typecheck": "tsc -p . --noEmit"
+  },
+  "dependencies": {
+    "@subsweep/data": "*",
+    "@subsweep/engine": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3"
+  }
+}

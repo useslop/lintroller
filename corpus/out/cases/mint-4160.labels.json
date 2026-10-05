@@ -1,0 +1,440 @@
+{
+  "caseId": "mint-4160",
+  "format": "mint",
+  "seed": 4160,
+  "from": "2024-06-01",
+  "to": "2024-11-30",
+  "recurring": [
+    {
+      "merchantKey": "raw:maple daycare",
+      "aliasId": null,
+      "display": "Maple Daycare",
+      "cadence": "semimonthly",
+      "kind": "unknown",
+      "nominalCents": 6899,
+      "lines": [
+        2,
+        23,
+        50,
+        67,
+        89,
+        103,
+        131,
+        148,
+        174,
+        195
+      ],
+      "traps": [
+        "ended"
+      ],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:bookclub plus",
+      "aliasId": null,
+      "display": "Bookclub Plus",
+      "cadence": "quarterly",
+      "kind": "unknown",
+      "nominalCents": 5399,
+      "lines": [
+        10,
+        136
+      ],
+      "traps": [],
+      "mustFind": false
+    },
+    {
+      "merchantKey": "raw:harbor swim",
+      "aliasId": null,
+      "display": "Harbor Swim School",
+      "cadence": "semimonthly",
+      "kind": "unknown",
+      "nominalCents": 3199,
+      "lines": [
+        12,
+        30,
+        60,
+        73,
+        97,
+        113,
+        140,
+        154,
+        185,
+        203,
+        227,
+        245
+      ],
+      "traps": [],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:fresh farm",
+      "aliasId": null,
+      "display": "Fresh Farm Box Co",
+      "cadence": "weekly",
+      "kind": "unknown",
+      "nominalCents": 2399,
+      "lines": [
+        14,
+        24,
+        35,
+        45,
+        57,
+        65,
+        75,
+        84,
+        92,
+        101,
+        108,
+        119,
+        128,
+        139,
+        145,
+        159,
+        169,
+        182,
+        189,
+        202,
+        211,
+        219,
+        229,
+        239,
+        249,
+        257
+      ],
+      "traps": [],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:trivia night",
+      "aliasId": null,
+      "display": "Trivia Night League",
+      "cadence": "biweekly",
+      "kind": "unknown",
+      "nominalCents": 7399,
+      "lines": [
+        22,
+        43,
+        63,
+        83,
+        100,
+        117,
+        137,
+        157,
+        179,
+        200,
+        218,
+        238,
+        256
+      ],
+      "traps": [],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "strava",
+      "aliasId": "strava",
+      "display": "Strava",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1199,
+      "lines": [
+        26,
+        70,
+        104,
+        150,
+        197,
+        240
+      ],
+      "traps": [],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "utility-water",
+      "aliasId": "utility-water",
+      "display": "Water utility",
+      "cadence": "bimonthly",
+      "kind": "bill",
+      "nominalCents": 4800,
+      "lines": [
+        54,
+        134,
+        222
+      ],
+      "traps": [],
+      "mustFind": true
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "SHELL OIL 57444",
+      "family": "gas",
+      "lines": [
+        7,
+        20,
+        33,
+        40,
+        48,
+        61,
+        68,
+        80,
+        86,
+        98,
+        105,
+        120,
+        127,
+        133,
+        143,
+        152,
+        163,
+        171,
+        186,
+        192,
+        204,
+        215,
+        223,
+        232,
+        242,
+        254
+      ]
+    },
+    {
+      "merchant": "KROGER #123",
+      "family": "groceries",
+      "lines": [
+        3,
+        13,
+        21,
+        34,
+        46,
+        58,
+        62,
+        71,
+        77,
+        81,
+        87,
+        95,
+        102,
+        106,
+        116,
+        121,
+        130,
+        138,
+        144,
+        160,
+        172,
+        177,
+        187,
+        198,
+        207,
+        217,
+        226,
+        234,
+        241,
+        247,
+        258
+      ]
+    },
+    {
+      "merchant": "STARBUCKS STORE 12345",
+      "family": "coffee",
+      "lines": [
+        4,
+        15,
+        18,
+        27,
+        28,
+        36,
+        39,
+        41,
+        42,
+        44,
+        55,
+        66,
+        72,
+        78,
+        79,
+        85,
+        88,
+        90,
+        109,
+        112,
+        118,
+        122,
+        124,
+        142,
+        146,
+        149,
+        161,
+        162,
+        164,
+        166,
+        168,
+        173,
+        175,
+        178,
+        180,
+        183,
+        188,
+        193,
+        196,
+        208,
+        212,
+        224,
+        228,
+        235,
+        243,
+        248,
+        250,
+        252,
+        253,
+        255
+      ]
+    },
+    {
+      "merchant": "CHIPOTLE 1234",
+      "family": "restaurant",
+      "lines": [
+        16,
+        64,
+        82,
+        99,
+        107,
+        125,
+        141,
+        155,
+        165,
+        167,
+        210,
+        213,
+        260
+      ]
+    },
+    {
+      "merchant": "UBER *TRIP HELP.UBER.COM",
+      "family": "rideshare",
+      "lines": [
+        6,
+        8,
+        19,
+        25,
+        29,
+        31,
+        37,
+        51,
+        69,
+        96,
+        110,
+        123,
+        126,
+        151,
+        153,
+        184,
+        190,
+        199,
+        201,
+        206,
+        216,
+        221,
+        230,
+        233,
+        236,
+        237,
+        244,
+        259
+      ]
+    },
+    {
+      "merchant": "AMZN REFUND 2K4AB",
+      "family": "refund",
+      "lines": [
+        11,
+        49,
+        158,
+        209
+      ]
+    },
+    {
+      "merchant": "RIVERBEND VET CLINIC",
+      "family": "one-off",
+      "lines": [
+        194
+      ]
+    },
+    {
+      "merchant": "PARK SHOE REPAIR",
+      "family": "one-off",
+      "lines": [
+        52
+      ]
+    },
+    {
+      "merchant": "LAKESIDE HARDWARE 4412",
+      "family": "one-off",
+      "lines": [
+        115
+      ]
+    },
+    {
+      "merchant": "BOOK NOOK 12",
+      "family": "one-off",
+      "lines": [
+        47
+      ]
+    },
+    {
+      "merchant": "ACME PAYROLL DIR DEP",
+      "family": "payroll",
+      "lines": [
+        17,
+        38,
+        59,
+        76,
+        93,
+        111,
+        129,
+        147,
+        170,
+        191,
+        214,
+        231,
+        251
+      ]
+    },
+    {
+      "merchant": "ONLINE TRANSFER TO SAV XXXX1234",
+      "family": "transfer",
+      "lines": [
+        9,
+        56,
+        94,
+        135,
+        181,
+        225
+      ]
+    },
+    {
+      "merchant": "ZELLE PAYMENT TO JANE SMITH",
+      "family": "transfer",
+      "lines": [
+        5,
+        53,
+        91,
+        132,
+        176,
+        220
+      ]
+    },
+    {
+      "merchant": "AUTOPAY PYMT CARD SVCS",
+      "family": "card-payment",
+      "lines": [
+        32,
+        74,
+        114,
+        156,
+        205,
+        246
+      ]
+    }
+  ]
+}

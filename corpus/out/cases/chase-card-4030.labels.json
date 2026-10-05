@@ -1,0 +1,334 @@
+{
+  "caseId": "chase-card-4030",
+  "format": "chase-card",
+  "seed": 4030,
+  "from": "2024-07-01",
+  "to": "2024-12-29",
+  "recurring": [
+    {
+      "merchantKey": "raw:fresh farm",
+      "aliasId": null,
+      "display": "Fresh Farm Box Co",
+      "cadence": "weekly",
+      "kind": "unknown",
+      "nominalCents": 2599,
+      "lines": [
+        5,
+        13,
+        19,
+        29,
+        40,
+        45,
+        53,
+        60,
+        67,
+        77,
+        85,
+        90,
+        100,
+        105,
+        111,
+        117,
+        123,
+        133,
+        138,
+        148,
+        155,
+        166,
+        173,
+        179,
+        188,
+        198
+      ],
+      "traps": [],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "zoom",
+      "aliasId": "zoom",
+      "display": "Zoom (family plan)",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 3099,
+      "lines": [
+        23,
+        59,
+        93,
+        121,
+        154,
+        191
+      ],
+      "traps": [
+        "same-merchant-two-plans"
+      ],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "utility-water",
+      "aliasId": "utility-water",
+      "display": "Water utility",
+      "cadence": "bimonthly",
+      "kind": "bill",
+      "nominalCents": 4800,
+      "lines": [
+        30,
+        97,
+        163
+      ],
+      "traps": [
+        "weekend-shift"
+      ],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "zoom",
+      "aliasId": "zoom",
+      "display": "Zoom",
+      "cadence": "monthly",
+      "kind": "subscription",
+      "nominalCents": 1499,
+      "lines": [
+        38,
+        69,
+        103
+      ],
+      "traps": [
+        "same-merchant-two-plans",
+        "month-end",
+        "weekend-shift",
+        "missed-one",
+        "ended"
+      ],
+      "mustFind": true
+    },
+    {
+      "merchantKey": "raw:bookclub plus",
+      "aliasId": null,
+      "display": "Bookclub Plus",
+      "cadence": "quarterly",
+      "kind": "unknown",
+      "nominalCents": 3499,
+      "lines": [
+        92,
+        190
+      ],
+      "traps": [],
+      "mustFind": false
+    }
+  ],
+  "distractors": [
+    {
+      "merchant": "SHELL OIL 57444",
+      "family": "gas",
+      "lines": [
+        2,
+        14,
+        21,
+        32,
+        43,
+        48,
+        57,
+        64,
+        73,
+        80,
+        88,
+        98,
+        102,
+        110,
+        118,
+        126,
+        134,
+        141,
+        147,
+        158,
+        168,
+        176,
+        182,
+        194,
+        200
+      ]
+    },
+    {
+      "merchant": "KROGER #123",
+      "family": "groceries",
+      "lines": [
+        6,
+        9,
+        18,
+        25,
+        36,
+        44,
+        50,
+        58,
+        66,
+        74,
+        82,
+        86,
+        91,
+        101,
+        108,
+        112,
+        116,
+        119,
+        124,
+        130,
+        135,
+        139,
+        145,
+        153,
+        162,
+        169,
+        174,
+        180,
+        187,
+        192,
+        199
+      ]
+    },
+    {
+      "merchant": "STARBUCKS STORE 12345",
+      "family": "coffee",
+      "lines": [
+        4,
+        7,
+        8,
+        10,
+        11,
+        15,
+        17,
+        20,
+        24,
+        26,
+        27,
+        33,
+        35,
+        37,
+        41,
+        42,
+        52,
+        54,
+        55,
+        61,
+        63,
+        65,
+        68,
+        70,
+        71,
+        75,
+        78,
+        79,
+        81,
+        83,
+        84,
+        87,
+        89,
+        94,
+        95,
+        99,
+        104,
+        106,
+        109,
+        113,
+        114,
+        115,
+        120,
+        127,
+        128,
+        129,
+        131,
+        136,
+        137,
+        140,
+        142,
+        144,
+        149,
+        150,
+        151,
+        152,
+        156,
+        160,
+        164,
+        170,
+        171,
+        172,
+        175,
+        181,
+        183,
+        185,
+        186,
+        189,
+        193,
+        195
+      ]
+    },
+    {
+      "merchant": "CHIPOTLE 1234",
+      "family": "restaurant",
+      "lines": [
+        3,
+        31,
+        49,
+        56,
+        107,
+        146,
+        157,
+        159,
+        178,
+        184
+      ]
+    },
+    {
+      "merchant": "AMZN MKTP US*2K4AB",
+      "family": "amazon-retail",
+      "lines": [
+        16,
+        34,
+        39,
+        46,
+        47,
+        51,
+        72,
+        76,
+        122,
+        143,
+        165,
+        167,
+        177,
+        197
+      ]
+    },
+    {
+      "merchant": "OAK TREE FLORIST",
+      "family": "one-off",
+      "lines": [
+        12
+      ]
+    },
+    {
+      "merchant": "LAKESIDE HARDWARE 4412",
+      "family": "one-off",
+      "lines": [
+        132
+      ]
+    },
+    {
+      "merchant": "GREEN CAR WASH",
+      "family": "one-off",
+      "lines": [
+        22
+      ]
+    },
+    {
+      "merchant": "PAYMENT THANK YOU",
+      "family": "card-payment",
+      "lines": [
+        28,
+        62,
+        96,
+        125,
+        161,
+        196
+      ]
+    }
+  ]
+}

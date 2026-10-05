@@ -1,0 +1,424 @@
+{
+  "generated": "npm run eval -w corpus",
+  "gates": [
+    {
+      "id": "G1",
+      "name": "corpus precision >= 0.90",
+      "value": 0.9169,
+      "pass": true
+    },
+    {
+      "id": "G2",
+      "name": "corpus recall >= 0.90",
+      "value": 0.9668,
+      "pass": true
+    },
+    {
+      "id": "G3",
+      "name": "precision at confidence >= medium >= 0.95",
+      "value": 0.9302,
+      "pass": false
+    },
+    {
+      "id": "G4",
+      "name": "fixtures exact (at least 15)",
+      "value": 0,
+      "pass": false
+    },
+    {
+      "id": "G5",
+      "name": "performance: 50k-row parse + detect < 2 s",
+      "value": 804.1475,
+      "pass": true
+    }
+  ],
+  "corpus": {
+    "cases": 40,
+    "tp": 320,
+    "fp": 29,
+    "fn": 11,
+    "precision": 0.9169054441260746,
+    "recall": 0.9667673716012085,
+    "f1": 0.9411764705882354,
+    "precisionAtMedium": 0.9302325581395349,
+    "cadenceAccuracy": 1,
+    "yearlyCostMaxErrorPct": 11.833333333333334,
+    "perFormat": {
+      "amex": {
+        "tp": 20,
+        "fp": 2,
+        "fn": 2
+      },
+      "apple-card": {
+        "tp": 18,
+        "fp": 3,
+        "fn": 0
+      },
+      "boa-card": {
+        "tp": 18,
+        "fp": 1,
+        "fn": 1
+      },
+      "boa-checking": {
+        "tp": 22,
+        "fp": 7,
+        "fn": 1
+      },
+      "capitalone-card": {
+        "tp": 13,
+        "fp": 0,
+        "fn": 0
+      },
+      "cashapp": {
+        "tp": 17,
+        "fp": 2,
+        "fn": 2
+      },
+      "chase-card": {
+        "tp": 24,
+        "fp": 3,
+        "fn": 1
+      },
+      "chase-checking": {
+        "tp": 10,
+        "fp": 0,
+        "fn": 0
+      },
+      "citi-card": {
+        "tp": 23,
+        "fp": 0,
+        "fn": 0
+      },
+      "discover": {
+        "tp": 10,
+        "fp": 1,
+        "fn": 1
+      },
+      "generic": {
+        "tp": 23,
+        "fp": 2,
+        "fn": 0
+      },
+      "mint": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 2
+      },
+      "monarch": {
+        "tp": 12,
+        "fp": 0,
+        "fn": 1
+      },
+      "paypal": {
+        "tp": 36,
+        "fp": 1,
+        "fn": 0
+      },
+      "usbank": {
+        "tp": 14,
+        "fp": 4,
+        "fn": 0
+      },
+      "venmo": {
+        "tp": 14,
+        "fp": 0,
+        "fn": 0
+      },
+      "wells-fargo": {
+        "tp": 19,
+        "fp": 1,
+        "fn": 0
+      },
+      "ynab": {
+        "tp": 11,
+        "fp": 2,
+        "fn": 0
+      }
+    },
+    "worstFpFamilies": [
+      [
+        "restaurant",
+        13
+      ],
+      [
+        "card-payment",
+        7
+      ],
+      [
+        "amazon-retail",
+        7
+      ],
+      [
+        "partial-overlap",
+        2
+      ]
+    ],
+    "worstFnCadences": [
+      [
+        "semimonthly",
+        10
+      ],
+      [
+        "monthly",
+        1
+      ]
+    ]
+  },
+  "fixtures": [],
+  "performance": [
+    {
+      "name": "chase-card-9001",
+      "lines": 50002,
+      "ms": 537.5063329999999,
+      "parseMs": 344.8794999999999,
+      "detectMs": 192.62683300000003
+    },
+    {
+      "name": "boa-checking-9002",
+      "lines": 50008,
+      "ms": 804.1475419999999,
+      "parseMs": 426.12466700000004,
+      "detectMs": 378.0228749999999
+    },
+    {
+      "name": "amex-9003",
+      "lines": 50002,
+      "ms": 373.71500000000015,
+      "parseMs": 89.31166699999994,
+      "detectMs": 284.4033330000002
+    }
+  ],
+  "falsePositives": [
+    {
+      "caseId": "amex-4071",
+      "findingId": "3948bba9",
+      "display": "Sweetgreen",
+      "why": "restaurant"
+    },
+    {
+      "caseId": "amex-4937",
+      "findingId": "7d892c92",
+      "display": "Sweetgreen",
+      "why": "restaurant"
+    },
+    {
+      "caseId": "apple-card-4101",
+      "findingId": "fc963d06",
+      "display": "Chipotle",
+      "why": "restaurant"
+    },
+    {
+      "caseId": "apple-card-4101",
+      "findingId": "99da5e76",
+      "display": "Local Taco Bar",
+      "why": "restaurant"
+    },
+    {
+      "caseId": "apple-card-4101",
+      "findingId": "4cacfcef",
+      "display": "Google One",
+      "why": "partial-overlap"
+    },
+    {
+      "caseId": "boa-card-4011",
+      "findingId": "60f47e45",
+      "display": "Sweetgreen",
+      "why": "restaurant"
+    },
+    {
+      "caseId": "boa-checking-4000",
+      "findingId": "0cfaa39c",
+      "display": "Autopay Pymt Card Svcs",
+      "why": "card-payment"
+    },
+    {
+      "caseId": "boa-checking-4000",
+      "findingId": "074b1957",
+      "display": "Amazon Marketplace",
+      "why": "amazon-retail"
+    },
+    {
+      "caseId": "boa-checking-4000",
+      "findingId": "834137ef",
+      "display": "Sweetgreen",
+      "why": "restaurant"
+    },
+    {
+      "caseId": "boa-checking-4001",
+      "findingId": "ca887229",
+      "display": "Autopay Pymt Card Svcs",
+      "why": "card-payment"
+    },
+    {
+      "caseId": "boa-checking-4001",
+      "findingId": "3e359bb8",
+      "display": "Amazon Marketplace",
+      "why": "amazon-retail"
+    },
+    {
+      "caseId": "boa-checking-4938",
+      "findingId": "24bd1c82",
+      "display": "Autopay Pymt Card Svcs Portland",
+      "why": "card-payment"
+    },
+    {
+      "caseId": "boa-checking-4938",
+      "findingId": "71e81660",
+      "display": "Chipotle",
+      "why": "restaurant"
+    },
+    {
+      "caseId": "cashapp-4130",
+      "findingId": "833a3996",
+      "display": "Chipotle",
+      "why": "restaurant"
+    },
+    {
+      "caseId": "cashapp-4131",
+      "findingId": "490f3bcf",
+      "display": "Local Taco Bar",
+      "why": "restaurant"
+    },
+    {
+      "caseId": "chase-card-4936",
+      "findingId": "8a5cadb3",
+      "display": "Amazon Marketplace",
+      "why": "amazon-retail"
+    },
+    {
+      "caseId": "chase-card-4936",
+      "findingId": "43cca778",
+      "display": "Verizon",
+      "why": "partial-overlap"
+    },
+    {
+      "caseId": "chase-card-4936",
+      "findingId": "13067d2f",
+      "display": "Chipotle",
+      "why": "restaurant"
+    },
+    {
+      "caseId": "discover-4080",
+      "findingId": "e031e1b5",
+      "display": "Amazon Marketplace",
+      "why": "amazon-retail"
+    },
+    {
+      "caseId": "generic-4170",
+      "findingId": "051ff222",
+      "display": "Autopay Pymt Card Svcs",
+      "why": "card-payment"
+    },
+    {
+      "caseId": "generic-4171",
+      "findingId": "3c87a3bb",
+      "display": "Amazon",
+      "why": "amazon-retail"
+    },
+    {
+      "caseId": "paypal-4111",
+      "findingId": "719a3b9e",
+      "display": "Chipotle",
+      "why": "restaurant"
+    },
+    {
+      "caseId": "usbank-4090",
+      "findingId": "4de5a1f5",
+      "display": "Autopay Pymt Card Svcs",
+      "why": "card-payment"
+    },
+    {
+      "caseId": "usbank-4091",
+      "findingId": "ab3e3c0a",
+      "display": "Autopay Pymt Card Svcs",
+      "why": "card-payment"
+    },
+    {
+      "caseId": "usbank-4091",
+      "findingId": "82b286aa",
+      "display": "Amazon",
+      "why": "amazon-retail"
+    },
+    {
+      "caseId": "usbank-4091",
+      "findingId": "be664532",
+      "display": "Chipotle",
+      "why": "restaurant"
+    },
+    {
+      "caseId": "wells-fargo-4041",
+      "findingId": "e7a94c12",
+      "display": "Autopay Pymt Card Svcs",
+      "why": "card-payment"
+    },
+    {
+      "caseId": "ynab-4140",
+      "findingId": "3b14c8ae",
+      "display": "Chipotle",
+      "why": "restaurant"
+    },
+    {
+      "caseId": "ynab-4141",
+      "findingId": "8e44477a",
+      "display": "Amazon Marketplace",
+      "why": "amazon-retail"
+    }
+  ],
+  "falseNegatives": [
+    {
+      "caseId": "amex-4070",
+      "merchantKey": "raw:maple daycare",
+      "cadence": "semimonthly"
+    },
+    {
+      "caseId": "amex-4071",
+      "merchantKey": "raw:peak pet",
+      "cadence": "semimonthly"
+    },
+    {
+      "caseId": "boa-card-4011",
+      "merchantKey": "raw:city bike",
+      "cadence": "semimonthly"
+    },
+    {
+      "caseId": "boa-checking-4938",
+      "merchantKey": "raw:rooftop storage",
+      "cadence": "semimonthly"
+    },
+    {
+      "caseId": "cashapp-4130",
+      "merchantKey": "raw:northside parking",
+      "cadence": "semimonthly"
+    },
+    {
+      "caseId": "cashapp-4130",
+      "merchantKey": "raw:harbor swim",
+      "cadence": "semimonthly"
+    },
+    {
+      "caseId": "chase-card-4936",
+      "merchantKey": "verizon",
+      "cadence": "monthly"
+    },
+    {
+      "caseId": "discover-4080",
+      "merchantKey": "raw:green leaf",
+      "cadence": "semimonthly"
+    },
+    {
+      "caseId": "mint-4160",
+      "merchantKey": "raw:maple daycare",
+      "cadence": "semimonthly"
+    },
+    {
+      "caseId": "mint-4161",
+      "merchantKey": "raw:trivia night",
+      "cadence": "semimonthly"
+    },
+    {
+      "caseId": "monarch-4151",
+      "merchantKey": "raw:rooftop storage",
+      "cadence": "semimonthly"
+    }
+  ]
+}

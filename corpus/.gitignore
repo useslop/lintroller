@@ -1,0 +1,3 @@
+# The root .gitignore hides corpus/out/ (scratch). The generated corpus and the
+# sample statement are committed on purpose: they are deterministic test data.
+!out/
