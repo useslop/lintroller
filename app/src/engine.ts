@@ -1,9 +1,10 @@
 // The one place the UI imports the engine from.
-// Types: the real @subsweep/engine (type-only, erased at build). Values and behaviour: dev-fixtures/engine.ts until B1's
-// implementations replace the "not yet" stubs. Then re-export everything from '@subsweep/engine' and delete dev-fixtures/engine.ts.
+// Real from @subsweep/engine now: types, constants, sniff, parse, sign check, alias index (B1 commits d9c6a8a onward).
+// Still dev-fixtures/engine.ts until B1 implements them: detectRecurring, yearlyCost, totals, lookupCancel, exports, lintCopy.
+// Switch every name to '@subsweep/engine' and delete dev-fixtures/engine.ts when the stubs are gone.
 export type * from '@subsweep/engine';
 export {
-  FORMAT_IDS, CATEGORIES, CADENCES, NEVER_SAY, DEFAULT_PARAMS,
-  sniffFormat, suggestMapping, parseRows, mergeRows, checkSign, flipSigns, buildAliasIndex, detectRecurring,
-  yearlyCost, totals, lookupCancel, findingsToCsv, buildIcs, lintCopy,
-} from './dev-fixtures/engine';
+  FORMAT_IDS, CATEGORIES, CADENCES, DEFAULT_PARAMS,
+  sniffFormat, suggestMapping, parseRows, mergeRows, checkSign, flipSigns, buildAliasIndex,
+} from '@subsweep/engine';
+export { NEVER_SAY, detectRecurring, yearlyCost, totals, lookupCancel, findingsToCsv, buildIcs, lintCopy } from './dev-fixtures/engine';
