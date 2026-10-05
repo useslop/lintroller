@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import type { DateOrder, ParseSpec } from '../engine';
 import { formatDate, formatMoney } from '../copy';
-import { previewRows, specFromChoice, type FileReport, type MapChoice } from '../pipeline';
+import { previewProblem, previewRows, specFromChoice, type FileReport, type MapChoice } from '../pipeline';
 
 export function Mapper({ file, text, onApply }: { file: FileReport; text: string; onApply: (spec: ParseSpec) => void }) {
   const sniff = file.sniffSpec;
@@ -96,9 +96,16 @@ export function Mapper({ file, text, onApply }: { file: FileReport; text: string
           </tbody>
         </table>
       ) : (
-        <p className="problem">No rows read with these columns. Check the date order and the sign.</p>
+        <p className="problem" id={`map-problem-${file.source}`}>
+          {previewProblem(text, spec) === 'amount'
+            ? 'No rows read with these columns: the amount column has no amounts in it. Choose the column with the money.'
+            : previewProblem(text, spec) === 'date'
+              ? 'No rows read with these columns: the date column has no dates we can read. Choose the date column or change the date order.'
+              : 'No rows read with these columns. Check the date column and the amount column.'}
+        </p>
       )}
-      <button type="button" className="button primary" onClick={() => onApply(spec)} disabled={preview.length === 0}>
+      <button type="button" className="button primary" onClick={() => onApply(spec)} disabled={preview.length === 0}
+        aria-describedby={preview.length === 0 ? `map-problem-${file.source}` : undefined}>
         Use these columns
       </button>
     </div>

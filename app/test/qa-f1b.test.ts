@@ -156,3 +156,16 @@ describe('F1b #10: plain causes for empty, non-text and open-quote files', () =>
     expect(report('amounts-odd.csv').problem).toBeUndefined();
   });
 });
+
+describe('F1b #15: the mapper names the real cause', () => {
+  it('dup-headers.csv with the Description column as the amount: "amount" is the cause', async () => {
+    const { previewProblem, specFromChoice } = await import('../src/pipeline');
+    const t = text('dup-headers.csv');
+    const cols = t.split('\n')[0]!.split(',');
+    const spec = specFromChoice({
+      delimiter: ',', headerLine: 0, date: 0, description: cols.indexOf('Description'), amount: cols.indexOf('Description'),
+      sign: 'debit-negative', dateOrder: 'MDY',
+    });
+    expect(previewProblem(t, spec)).toBe('amount');
+  });
+});

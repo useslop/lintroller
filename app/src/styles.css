@@ -51,7 +51,8 @@ label.button:focus-within { outline: 3px solid var(--focus); outline-offset: 2px
 .field { display: grid; gap: 0.3rem; margin: 0.8rem 0; font-weight: 600; }
 .field select, .field textarea { font: inherit; font-weight: 400; min-height: 44px; padding: 0.4rem; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
 textarea { width: 100%; font-family: ui-monospace, Menlo, monospace; font-size: 0.9rem; }
-input[type="checkbox"], input[type="radio"] { width: 22px; height: 22px; vertical-align: middle; }
+input[type="checkbox"], input[type="radio"] { width: 24px; height: 24px; vertical-align: middle; }
+.row-links a { display: inline-flex; align-items: center; min-height: 44px; }
 label:has(> input[type="checkbox"]), label:has(> input[type="radio"]) { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 44px; }
 fieldset.choice { border: 0; padding: 0; margin: 0.8rem 0; display: grid; gap: 0.2rem; }
 fieldset.choice legend { font-weight: 600; padding: 0; }

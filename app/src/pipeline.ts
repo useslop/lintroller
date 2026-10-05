@@ -139,6 +139,15 @@ export function previewRows(text: string, spec: ParseSpec, flip: boolean, limit 
   return (flip ? flipSigns(rows) : rows).slice(0, limit);
 }
 
+/** Q1 F1b #15: why the chosen columns read no rows, from the skip reasons of the same preview parse. */
+export function previewProblem(text: string, spec: ParseSpec): 'amount' | 'date' | null {
+  const { skipped } = parseRows(head(text, 200), spec, 0);
+  const amount = skipped.filter((s) => s.reason === 'unparseable-amount').length;
+  const date = skipped.filter((s) => s.reason === 'unparseable-date').length;
+  if (amount === 0 && date === 0) return null;
+  return amount >= date ? 'amount' : 'date';
+}
+
 export interface MapChoice {
   delimiter: ParseSpec['delimiter']; headerLine: number;
   date: number; description: number;
