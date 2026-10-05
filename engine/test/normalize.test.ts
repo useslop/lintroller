@@ -85,6 +85,11 @@ describe('classifyRow', () => {
   it('families', () => {
     expect(c('PAYMENT THANK YOU', 50000, 'card')).toBe('card-payment');
     expect(c('CHASE CREDIT CRD AUTOPAY', -50000)).toBe('card-payment');
+    // bank wrappers in front of the card-payment phrase (F1: the phrase is matched in the cleaned text)
+    expect(c('PURCHASE AUTHORIZED ON 10/15 AUTOPAY PYMT CARD SVCS', -50000)).toBe('card-payment');
+    expect(c('POS DEBIT AUTOPAY PYMT CARD SVCS PORTLAND OR', -50000)).toBe('card-payment');
+    expect(c('CHECKCARD 1015 ONLINE PAYMENT THANK YOU', -50000)).toBe('card-payment');
+    expect(c('PURCHASE AUTHORIZED ON 10/15 NETFLIX.COM', -1549)).toBe('purchase');
     expect(c('ONLINE TRANSFER TO SAV XXXX1234', -20000)).toBe('transfer');
     expect(c('ZELLE TO J SMITH', -120000)).toBe('transfer');
     expect(c('ACME CORP PAYROLL DIR DEP', 250000)).toBe('income');

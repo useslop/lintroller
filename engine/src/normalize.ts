@@ -203,9 +203,14 @@ const CARD_PAYMENT_RE = [
   /^(?:online|mobile|internet|electronic|autopay|automatic) (?:payment|pymt|pmt)\b/i,
   /^payment (?:received|- thank|thank)/i,
 ];
+// The same phrases anywhere in the cleaned text: bank wrappers ('PURCHASE AUTHORIZED ON 10/15 …',
+// 'POS DEBIT …') are stripped there, so a wrapped 'AUTOPAY PYMT CARD SVCS' is still a card payment.
+const CARD_PAYMENT_CLEANED_RE = CARD_PAYMENT_RE.map((re) => new RegExp(re.source.replace(/^\^/, '\\b'), re.flags));
 
 export function isCardPaymentText(desc: string): boolean {
-  return CARD_PAYMENT_RE.some((re) => re.test(desc));
+  if (CARD_PAYMENT_RE.some((re) => re.test(desc))) return true;
+  const { cleaned } = cleanDescriptor(desc);
+  return CARD_PAYMENT_CLEANED_RE.some((re) => re.test(cleaned));
 }
 
 const TRANSFER_RE = /\b(?:transfer|xfer|trnsfr|tfr)\b|\b(?:to|from) (?:sav|savings|chk|checking|share|money market)\b|\boverdraft protection\b|\bzelle\b|\bvenmo\b|\bcash ?app\b|\bapple cash\b|\bpaypal transfer\b|\bwire (?:in|out|transfer)\b|\bquickpay\b/i;
