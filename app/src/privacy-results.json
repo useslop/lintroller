@@ -1,19 +1,19 @@
 {
   "status": "passed 32 of 32 checks on lintroller.vercel.app",
-  "ranAt": "2026-10-05T02:39:47.454Z",
+  "ranAt": "2026-10-05T10:59:37.140Z",
   "target": "https://lintroller.vercel.app",
-  "commit": "c4ef325",
+  "commit": "d2da551",
   "canary": "QUOKKA STREAMING and ZEBRAFISH GYM 7781 at $77.77, 12 months, seeded generator (seed 7777); second file seed 2345",
   "passed": 32,
   "total": 32,
   "checks": [
     {
       "name": "flow walked with the canary file: import, review (confirm 2, dismiss 1), summary",
-      "result": "pass (Read 132 rows from 1 file. 5 charges look like they repeat. confirmed Quokka Streaming; confirmed Zebrafish Gym; dismissed Apple; Confirmed: $1,866.48 a year. Not yet reviewed: $329.76 a year.)"
+      "result": "pass (Read 132 rows from 1 file. 5 charges look like they repeat. confirmed Quokka Streaming; confirmed Zebrafish Gym; dismissed Apple subscription; Confirmed: $1,866.48 a year. Not yet reviewed: $329.76 a year.)"
     },
     {
       "name": "flow walked with the second file: import, review (confirm 2, dismiss 1), summary",
-      "result": "pass (Read 132 rows from 1 file. 5 charges look like they repeat. confirmed Pelican News; confirmed Otter Climbing; dismissed Apple; Confirmed: $562.80 a year. Not yet reviewed: $329.76 a year.)"
+      "result": "pass (Read 132 rows from 1 file. 5 charges look like they repeat. confirmed Pelican News; confirmed Otter Climbing; dismissed Apple subscription; Confirmed: $562.80 a year. Not yet reviewed: $329.76 a year.)"
     },
     {
       "name": "zero requests after the initial page load, other than the cancel-link clicks",
@@ -37,11 +37,11 @@
     },
     {
       "name": "request list to our origin is identical for a second, different file",
-      "result": "pass (4 requests: GET /, GET /assets/index-ChpSMqBe.js, GET /assets/index--UwEdMGh.css, GET /assets/engine.worker-CSsh-f2n.js)"
+      "result": "pass (4 requests: GET /, GET /assets/index-pGcGCWZt.js, GET /assets/index-BavcVC0c.css, GET /assets/engine.worker-DV3690aV.js)"
     },
     {
       "name": "CSV and ICS are built in the browser and saved from blob: URLs",
-      "result": "pass (CSV 981 chars, ICS 2434 chars)"
+      "result": "pass (CSV 1014 chars, ICS 2434 chars)"
     },
     {
       "name": "before the opt-in: no cookies, local/session storage and IndexedDB empty",
@@ -124,23 +124,23 @@
       "result": "pass (HTTP 200)"
     },
     {
-      "name": "exact SPEC §10 headers on /assets/index-ChpSMqBe.js",
+      "name": "exact SPEC §10 headers on /assets/index-pGcGCWZt.js",
       "result": "pass (HTTP 200)"
     },
     {
-      "name": "exact SPEC §10 headers on /assets/index--UwEdMGh.css",
+      "name": "exact SPEC §10 headers on /assets/index-BavcVC0c.css",
       "result": "pass (HTTP 200)"
     },
     {
-      "name": "exact SPEC §10 headers on /assets/engine.worker-CSsh-f2n.js",
+      "name": "exact SPEC §10 headers on /assets/engine.worker-DV3690aV.js",
       "result": "pass (HTTP 200)"
     }
   ],
   "requestsDuringLoad": [
     "GET /",
-    "GET /assets/index-ChpSMqBe.js",
-    "GET /assets/index--UwEdMGh.css",
-    "GET /assets/engine.worker-CSsh-f2n.js"
+    "GET /assets/index-pGcGCWZt.js",
+    "GET /assets/index-BavcVC0c.css",
+    "GET /assets/engine.worker-DV3690aV.js"
   ],
   "requestsAfterLoad": 2,
   "cancelLinksClicked": [
@@ -217,17 +217,17 @@
       "exact": true
     },
     {
-      "route": "/assets/index-ChpSMqBe.js",
+      "route": "/assets/index-pGcGCWZt.js",
       "status": 200,
       "exact": true
     },
     {
-      "route": "/assets/index--UwEdMGh.css",
+      "route": "/assets/index-BavcVC0c.css",
       "status": 200,
       "exact": true
     },
     {
-      "route": "/assets/engine.worker-CSsh-f2n.js",
+      "route": "/assets/engine.worker-DV3690aV.js",
       "status": 200,
       "exact": true
     }
