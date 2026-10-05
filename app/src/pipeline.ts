@@ -25,6 +25,33 @@ export interface FileReport {
   skipped: Partial<Record<SkipReason, number>>;   // counts only, never row text
   flipSuggested: boolean;
   flipApplied: boolean;
+  problem?: FileProblem;                 // a plain cause when the file is empty, not text, or has an open quote
+}
+
+export type FileProblem = { kind: 'empty' } | { kind: 'not-text' } | { kind: 'open-quote'; line: number };
+
+/** Q1 F1b #10: name the cause instead of "We couldn't map the columns". */
+export function fileProblem(text: string): FileProblem | undefined {
+  if (text.trim() === '') return { kind: 'empty' };
+  const sample = text.slice(0, 4096);
+  let odd = 0;
+  for (let i = 0; i < sample.length; i++) {
+    const c = sample.charCodeAt(i);
+    if (c === 0 || c === 0xfffd || (c < 32 && c !== 9 && c !== 10 && c !== 13)) odd++;
+  }
+  if (odd / sample.length > 0.05) return { kind: 'not-text' };
+  let quotes = 0;
+  for (let at = text.indexOf('"'); at !== -1; at = text.indexOf('"', at + 1)) quotes++;
+  if (quotes % 2 === 0) return undefined;
+  // an odd count means one quote never closes: find the line it opens on
+  let open = false;
+  let line = 1;
+  let openLine = 1;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text.charCodeAt(i);
+    if (ch === 34) { open = !open; if (open) openLine = line; } else if (ch === 10) line++;
+  }
+  return { kind: 'open-quote', line: openLine };
 }
 
 export interface ImportReport {
@@ -60,8 +87,10 @@ export function runImport(inputs: InputFile[], index: AliasIndex, today?: string
     const sniff = sniffFormat(input.text);
     const sniffSpec = specFromSniff(sniff);
     const spec = input.override?.spec ?? (sniff.mapping ? sniffSpec : null);
+    const problem = fileProblem(input.text);
     const base = {
       name: input.name, source, format: sniff.format, confidence: sniff.confidence, columns: sniff.columns, sniffSpec,
+      ...(problem ? { problem } : {}),
     };
     if (!spec) {
       files.push({

@@ -128,3 +128,31 @@ describe('F1b LOW copy and naming', () => {
     expect(r.detect.suppressed.filter((s) => s.reason === 'variable-merchant').length).toBe(4);
   });
 });
+
+describe('F1b #12: unverified cancel URLs are not in the bundle', () => {
+  it('an entry ships a URL only when that URL passed its check; unverified entries keep their names', async () => {
+    const { cancelDirectory } = await import('../src/data');
+    const unverified = cancelDirectory.filter((e) => e.verified === null);
+    expect(unverified.length).toBeGreaterThan(30);
+    for (const e of unverified) {
+      expect(e.name).toBeTruthy();
+      expect(e.manageUrl).toBeNull();
+      expect(e.helpUrl).toBeNull();
+    }
+    for (const e of cancelDirectory) {
+      if (e.manageUrl) expect(e.check.manage?.ok).toBe(true);
+      if (e.helpUrl) expect(e.check.help?.ok).toBe(true);
+    }
+  });
+});
+
+describe('F1b #10: plain causes for empty, non-text and open-quote files', () => {
+  const report = (name: string) => runImportWithAliases([{ name, text: decodeBytes(readFileSync(resolve(QA, name))) }], aliases, '2026-10-04').files[0]!;
+  it('empty.csv', () => expect(report('empty.csv').problem).toEqual({ kind: 'empty' }));
+  it('png-renamed.csv', () => expect(report('png-renamed.csv').problem).toEqual({ kind: 'not-text' }));
+  it('unbalanced-quotes.csv names the line the quote opens on', () => expect(report('unbalanced-quotes.csv').problem).toEqual({ kind: 'open-quote', line: 2 }));
+  it('ordinary files have no problem', () => {
+    expect(report('honesty-life.csv').problem).toBeUndefined();
+    expect(report('amounts-odd.csv').problem).toBeUndefined();
+  });
+});

@@ -3,7 +3,7 @@ import { navigate } from '../router';
 import { useSession } from '../session';
 import { SAMPLE_NAME, SAMPLE_TEXT } from '../sample';
 import { runImportAsync } from '../run-import';
-import { MAX_FILE_BYTES, type FileOverride, type FileReport, type ImportReport, type InputFile } from '../pipeline';
+import { MAX_FILE_BYTES, type FileOverride, type FileProblem, type FileReport, type ImportReport, type InputFile } from '../pipeline';
 import { FORMAT_LABEL, SKIP_LABEL, formatDate, plural, signFlipNote } from '../copy';
 import { readTextFile } from '../files';
 import type { ParseSpec } from '../engine';
@@ -188,11 +188,13 @@ function FileCard({ file, text, open, onToggle, onFlip, onApply, onRemove }: {
 }) {
   const skipped = Object.entries(file.skipped).filter(([, n]) => (n ?? 0) > 0);
   const range = file.dateRange ? `, ${formatDate(file.dateRange.from)} to ${formatDate(file.dateRange.to)}` : '';
+  const unreadable = file.problem?.kind === 'empty' || file.problem?.kind === 'not-text';
   return (
     <article className="file">
       <h3>{file.name}</h3>
+      {file.problem && <p className="problem">{problemText(file.problem)}</p>}
       {file.needsMapping ? (
-        <p className="problem">We couldn't map the columns of this file. Choose them below.</p>
+        !unreadable && <p className="problem">We couldn't map the columns of this file. Choose them below.</p>
       ) : (
         <>
           <p>{file.format === 'generic' ? 'A CSV we read with the columns you choose' : `Looks like a ${FORMAT_LABEL[file.format]} CSV`}</p>
@@ -210,18 +212,26 @@ function FileCard({ file, text, open, onToggle, onFlip, onApply, onRemove }: {
           {signFlipNote(file.spec)} Wrong?{' '}
           <button type="button" className="link" onClick={onFlip}>Flip back</button>
         </p>
-      ) : !file.needsMapping && (
+      ) : !file.needsMapping && !unreadable && (
         <p>
           <button type="button" className="link" onClick={onFlip}>{file.flipApplied ? 'Flip back' : 'Flip the signs'}</button>
         </p>
       )}
       <p className="row-links">
-        {!file.needsMapping && (
+        {!file.needsMapping && !unreadable && (
           <button type="button" className="link" aria-expanded={open} onClick={onToggle}>Not right? Choose the columns</button>
         )}
         <button type="button" className="link" onClick={onRemove}>Remove</button>
       </p>
-      {(open || file.needsMapping) && <Mapper file={file} text={text} onApply={onApply} />}
+      {(open || file.needsMapping) && !unreadable && <Mapper file={file} text={text} onApply={onApply} />}
     </article>
   );
+}
+
+function problemText(p: FileProblem): string {
+  switch (p.kind) {
+    case 'empty': return 'This file is empty.';
+    case 'not-text': return "This doesn't look like a CSV file. Download the statement again and choose CSV.";
+    case 'open-quote': return `A quote mark on line ${p.line} is never closed, so the rows after it run together. Fix that line in a text editor, or download the file again.`;
+  }
 }
