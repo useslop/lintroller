@@ -134,7 +134,8 @@ export function Import() {
       {busy && <p role="status">Reading your file…</p>}
       {error && <p role="alert" className="problem">{error}</p>}
       {session.savedAvailable && (
-        <p className="muted">You have a saved review on this device. <button type="button" className="link" onClick={() => { session.openSaved(); navigate('/sweep/review'); }}>Open your saved review</button></p>
+        <p className="muted">You have a saved review on this device. <button type="button" className="link" onClick={() => { session.openSaved(); navigate('/sweep/review'); }}>Open your saved review</button>{' '}
+          <button type="button" className="link" onClick={() => session.deleteEverything()}>Delete it</button></p>
       )}
 
       {report && (

@@ -61,7 +61,7 @@ export function Privacy() {
 
       <section className="panel" aria-labelledby="rule">
         <h2 id="rule">The rule the browser enforces</h2>
-        <p>This is the Content Security Policy sent with each page. <code>connect-src 'none'</code> means the page cannot open any network connection after it loads.</p>
+        <p>This is the Content Security Policy sent with each page. <code>connect-src 'none'</code> means the page cannot send anything to a server after it loads: the browser blocks scripted requests, beacons and live connections.</p>
         <pre className="code"><code>{CSP}</code></pre>
       </section>
 

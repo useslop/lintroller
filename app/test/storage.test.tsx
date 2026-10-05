@@ -34,3 +34,18 @@ describe('storage is opt-in and removable', () => {
     expect(window.localStorage.length).toBe(0);
   });
 });
+
+describe('F1b #14: a saved review can be deleted without opening it', () => {
+  it('"Delete it" next to "Open your saved review" on /sweep clears storage', async () => {
+    await reviewSample();
+    fireEvent.click(screen.getByRole('checkbox', { name: 'Remember on this device' }));
+    expect(window.localStorage.length).toBe(1);
+    cleanup();
+    window.history.pushState({}, '', '/sweep');
+    render(<App />);
+    expect(screen.getByRole('button', { name: 'Open your saved review' })).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: 'Delete it' }));
+    expect(window.localStorage.length).toBe(0);
+    expect(screen.queryByRole('button', { name: 'Open your saved review' })).toBeNull();
+  });
+});

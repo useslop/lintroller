@@ -38,9 +38,11 @@ export function Landing() {
           >
             Open your saved review
           </button>{' '}
-          (from an earlier visit, on this device)
+          (from an earlier visit, on this device){' '}
+          <button type="button" className="link" onClick={() => session.deleteEverything()}>Delete it</button>
         </p>
       )}
+      {session.note && <p role="status" className="note">{session.note}</p>}
     </section>
   );
 }
