@@ -162,7 +162,7 @@ function mapByNames(columns: string[], def: FormatDef): ColumnMapping | null {
   return out as ColumnMapping;
 }
 
-const MONEY_RE = /^[(+\-]?\s*\$?\s*[-+]?\s*[\d,]*\d(\.\d{1,2})?\)?-?$/;
+const MONEY_RE = /^[(+\-]?\s*\$?\s*[-+]?\s*(?:[\d,]*\d(?:\.\d{1,2})?|[\d.]*\d(?:,\d{1,2})?)\)?-?$/;
 const isMoney = (v: string) => MONEY_RE.test(v.trim()) && parseAmountCents(v) !== null;
 const isDate = (v: string) => parseDateIso(v, 'MDY') !== null || parseDateIso(v, 'DMY') !== null;
 
