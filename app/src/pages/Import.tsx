@@ -201,7 +201,7 @@ function FileCard({ file, text, open, onToggle, onFlip, onApply, onRemove }: {
           )}
           <p>Read {file.rowsRead.toLocaleString('en-US')} rows{range}.</p>
           {skipped.length > 0 && (
-            <p className="muted">Skipped: {skipped.map(([reason, n]) => `${n} ${SKIP_LABEL[reason] ?? reason}`).join(', ')}.</p>
+            <p className="muted">Skipped: {skipped.map(([reason, n]) => `${n} ${SKIP_LABEL[reason]?.[n === 1 ? 0 : 1] ?? reason}`).join(', ')}.</p>
           )}
         </>
       )}

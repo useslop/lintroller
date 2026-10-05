@@ -323,6 +323,8 @@ export function detectRecurring(rows: Txn[], opts: DetectOptions): DetectResult 
       // amount varies is as likely a place someone shops at as a subscription. Two such charges are one
       // gap, which any two visits have, so they stay below medium; longer series are never 'high'.
       if (!m.aliasId && !billish && !g.fee && varies) conf = Math.min(conf, n === 2 ? 0.49 : 0.74);
+      // a short file carries the SPEC §4 line "Your file is short, so this is a guess": never 'high' next to it
+      if (coverage.showHistoryHint) conf = Math.min(conf, 0.74);
       conf = Math.round(conf * 100) / 100;
       if (conf < p.minConfidence) { belowConf = true; continue; }
 

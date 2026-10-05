@@ -21,11 +21,14 @@ export const FORMAT_LABEL: Record<FormatId, string> = {
   cashapp: 'Cash App', ynab: 'YNAB', monarch: 'Monarch', mint: 'Mint', generic: 'generic',
 };
 
-export const SKIP_LABEL: Record<string, string> = {
-  blank: 'blank lines', preamble: 'lines above the header', 'summary-row': 'summary rows',
-  'unparseable-date': 'rows with no readable date', 'unparseable-amount': 'rows with no readable amount',
-  'zero-amount': 'zero-amount rows', pending: 'pending rows', 'non-usd': 'rows in another currency',
-  'duplicate-across-files': 'rows also in another file',
+export const SKIP_LABEL: Record<string, [one: string, many: string]> = {
+  blank: ['blank line', 'blank lines'], preamble: ['line above the header', 'lines above the header'],
+  'summary-row': ['summary row', 'summary rows'],
+  'unparseable-date': ['row with no readable date', 'rows with no readable date'],
+  'unparseable-amount': ['row with no readable amount', 'rows with no readable amount'],
+  'zero-amount': ['zero-amount row', 'zero-amount rows'], pending: ['pending row', 'pending rows'],
+  'non-usd': ['row in another currency', 'rows in another currency'],
+  'duplicate-across-files': ['row also in another file', 'rows also in another file'],
 };
 
 const usd = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });

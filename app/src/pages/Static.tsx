@@ -2,6 +2,7 @@ import { formatsHelp, dataMeta } from '../data';
 import { CSP } from '../security';
 import { PRODUCT_NAME, REPO_URL, RECEIPT_URL } from '../product';
 import { formatDate } from '../copy';
+import { etDate } from '../engine';
 import { Link } from '../router';
 import privacyResults from '../privacy-results.json';
 
@@ -84,7 +85,7 @@ export function Privacy() {
             <ul>{(results.checks ?? []).map((c) => <li key={c.name}>{c.name}: {c.result}</li>)}</ul>
           </>
         )}
-        <p className="muted">Cancel links were last checked {dataMeta.linkCheckRanAt ? formatDate(dataMeta.linkCheckRanAt.slice(0, 10)) : 'when the directory was built'}.</p>
+        <p className="muted">Cancel links were last checked {dataMeta.linkCheckRanAt ? formatDate(etDate(dataMeta.linkCheckRanAt)) : 'when the directory was built'}.</p>
       </section>
     </section>
   );

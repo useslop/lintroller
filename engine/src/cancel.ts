@@ -1,7 +1,7 @@
 // Cancel lookup: platform route first when billedThrough is set, then the merchant's own page.
 // Entries with verified: null are never returned; 'stale' when the last ok check is > 90 days old.
 import type { CancelEntry, CancelLink, Finding, LinkCheck, PlatformId } from './types';
-import { dayNum } from './values';
+import { dayNum, etDate } from './values';
 
 const PLATFORM_ENTRY: Record<PlatformId, string[]> = {
   apple: ['apple'], 'google-play': ['google-play'], amazon: ['amazon-channels', 'amazon'], paypal: ['paypal'], roku: ['roku'],
@@ -14,7 +14,8 @@ function toLink(e: CancelEntry, route: CancelLink['route'], today: string): Canc
   const url = useHelp ? e.helpUrl : e.manageUrl ?? e.helpUrl;
   if (!url) return null;
   const okChecks = [e.check.manage, e.check.help].filter((c): c is LinkCheck => Boolean(c?.ok));
-  const lastOk = okChecks.map((c) => c.checkedAt.slice(0, 10)).sort().pop() ?? e.verified;
+  // the ET calendar date of the check: a check at 21:30 ET on Oct 4 is '2026-10-05T01:30Z' in UTC
+  const lastOk = okChecks.map((c) => etDate(c.checkedAt)).sort().pop() ?? e.verified;
   return {
     entryId: e.id, name: e.name, url, kind: useHelp || url === e.helpUrl ? 'help' : 'manage',
     badge: dayNum(today) - dayNum(lastOk) > STALE_DAYS ? 'stale' : 'verified',

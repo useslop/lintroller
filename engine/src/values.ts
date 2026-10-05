@@ -81,6 +81,15 @@ export function parseDateIso(raw: string | undefined, order: DateOrder = 'MDY'):
 }
 
 /** 'yyyy-mm-dd' → integer day number (days since 1970-01-01, UTC). */
+const ET_DATE = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit' });
+
+/** Calendar date (YYYY-MM-DD) of a timestamp in US Eastern time, where the links were checked; a plain date passes through. */
+export function etDate(timestamp: string): string {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(timestamp)) return timestamp;
+  const t = new Date(timestamp);
+  return Number.isNaN(t.getTime()) ? timestamp.slice(0, 10) : ET_DATE.format(t);
+}
+
 export function dayNum(isoDate: string): number {
   const y = Number(isoDate.slice(0, 4));
   const m = Number(isoDate.slice(5, 7));

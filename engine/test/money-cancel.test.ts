@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { lookupCancel, totals, yearlyCost, type CancelEntry, type Finding } from '../src/index';
+import { etDate, lookupCancel, totals, yearlyCost, type CancelEntry, type Finding } from '../src/index';
 import { fakeFinding } from './helpers';
 
 describe('yearlyCost', () => {
@@ -68,6 +68,13 @@ describe('lookupCancel', () => {
     expect(links.map((l) => [l.entryId, l.route, l.kind])).toEqual([['apple', 'apple', 'help'], ['netflix', 'merchant', 'help']]);
     expect(links[0]!.badge).toBe('verified');
     expect(links[0]!.checkedOn).toBe('2026-10-04');
+  });
+  it('checkedOn is the US Eastern date of the check, not the UTC date (F1: B3 checked at 21:27 ET on Oct 4)', () => {
+    const utc = entry({ check: { help: { status: 200, finalUrl: 'https://help.netflix.com/en/node/407', checkedAt: '2026-10-05T01:27:11.353Z', ok: true } } });
+    expect(lookupCancel({ aliasId: 'netflix', billedThrough: null }, [utc], '2026-10-05')[0]!.checkedOn).toBe('2026-10-04');
+    expect(etDate('2026-10-05T01:27:11.339Z')).toBe('2026-10-04');
+    expect(etDate('2026-10-05T12:00:00Z')).toBe('2026-10-05');
+    expect(etDate('2026-10-04')).toBe('2026-10-04');
   });
   it('unverified entries are never returned', () => {
     expect(lookupCancel({ aliasId: 'hulu', billedThrough: null }, dir, '2026-10-04')).toEqual([]);

@@ -210,9 +210,12 @@ describe('detectRecurring: confidence, evidence, coverage', () => {
     const short = run(charges('NETFLIX.COM', monthly('2026-01-02', 4), 1549));
     expect(short.coverage.showHistoryHint).toBe(true);
     expect(short.findings[0]!.reasons).toContain('short-history');
+    // "Your file is short, so this is a guess" never sits next to "High confidence" (F1)
+    expect(short.findings[0]!.confidenceLabel).toBe('medium');
     const long = run([...charges('NETFLIX.COM', monthly('2026-01-02', 7), 1549)]);
     expect(long.coverage.days).toBeGreaterThanOrEqual(180);
     expect(long.coverage.showHistoryHint).toBe(false);
+    expect(long.findings[0]!.confidenceLabel).toBe('high');
   });
   it('sorted by yearly cost, high to low; inputs not mutated', () => {
     const rows = [...charges('NETFLIX.COM', monthly('2026-01-02', 4), 1549), ...charges('SPOTIFY USA', monthly('2026-01-05', 4), 1199), ...charges('HULU', monthly('2026-01-08', 4), 1799)];

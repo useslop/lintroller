@@ -23,9 +23,11 @@ export function groupOf(f: Finding): Group {
   return f.aliasId ? 'subs' : 'other';
 }
 
-const IGNORED_LABEL: Record<RowClass, string> = {
-  transfer: 'transfers', 'card-payment': 'card payments', income: 'paychecks and deposits', atm: 'ATM withdrawals',
-  interest: 'interest', purchase: 'purchases', fee: 'fees', refund: 'refunds',
+const IGNORED_LABEL: Record<RowClass, [one: string, many: string]> = {
+  transfer: ['transfer', 'transfers'], 'card-payment': ['card payment', 'card payments'],
+  income: ['paycheck or deposit', 'paychecks and deposits'], atm: ['ATM withdrawal', 'ATM withdrawals'],
+  interest: ['interest charge', 'interest charges'], purchase: ['purchase', 'purchases'], fee: ['fee', 'fees'],
+  refund: ['refund', 'refunds'],
 };
 
 function joinList(parts: string[]): string {
@@ -166,7 +168,7 @@ function FindingCard({ finding: f, status, onStatus }: {
 }
 
 function LeftOut({ detect }: { detect: DetectResult }) {
-  const parts = detect.ignored.filter((i) => i.count > 0).map((i) => `${i.count} ${IGNORED_LABEL[i.rowClass]}`);
+  const parts = detect.ignored.filter((i) => i.count > 0).map((i) => `${i.count} ${IGNORED_LABEL[i.rowClass][i.count === 1 ? 0 : 1]}`);
   const shops = detect.suppressed.filter((s) => s.reason === 'variable-merchant');
   const n = shops.length;
   return (

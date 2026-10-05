@@ -15,3 +15,4 @@ export { FORMATS } from './sniff';
 export { CADENCE_WORDS } from './export';
 export { PERIODS_PER_YEAR } from './money';
 export { readCsv } from './csv';
+export { etDate } from './values';
