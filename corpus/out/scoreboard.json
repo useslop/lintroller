@@ -4,19 +4,19 @@
     {
       "id": "G1",
       "name": "corpus precision >= 0.90",
-      "value": 0.9585,
+      "value": 0.9595,
       "pass": true
     },
     {
       "id": "G2",
       "name": "corpus recall >= 0.90",
-      "value": 0.9729,
+      "value": 1,
       "pass": true
     },
     {
       "id": "G3",
       "name": "precision at confidence >= medium >= 0.95",
-      "value": 0.9969,
+      "value": 0.997,
       "pass": true
     },
     {
@@ -28,26 +28,26 @@
     {
       "id": "G5",
       "name": "performance: 50k-row parse + detect < 2 s",
-      "value": 822.7459,
+      "value": 842.1233,
       "pass": true
     }
   ],
   "corpus": {
     "cases": 40,
-    "tp": 323,
+    "tp": 332,
     "fp": 14,
-    "fn": 9,
-    "precision": 0.9584569732937686,
-    "recall": 0.9728915662650602,
-    "f1": 0.9656203288490284,
-    "precisionAtMedium": 0.9969135802469136,
+    "fn": 0,
+    "precision": 0.9595375722543352,
+    "recall": 1,
+    "f1": 0.9793510324483776,
+    "precisionAtMedium": 0.996996996996997,
     "cadenceAccuracy": 1,
     "yearlyCostMaxErrorPct": 11.833333333333334,
     "perFormat": {
       "amex": {
-        "tp": 21,
+        "tp": 22,
         "fp": 2,
-        "fn": 1
+        "fn": 0
       },
       "apple-card": {
         "tp": 18,
@@ -55,14 +55,14 @@
         "fn": 0
       },
       "boa-card": {
-        "tp": 18,
+        "tp": 19,
         "fp": 1,
-        "fn": 1
+        "fn": 0
       },
       "boa-checking": {
-        "tp": 22,
+        "tp": 23,
         "fp": 2,
-        "fn": 1
+        "fn": 0
       },
       "capitalone-card": {
         "tp": 14,
@@ -70,9 +70,9 @@
         "fn": 0
       },
       "cashapp": {
-        "tp": 17,
+        "tp": 19,
         "fp": 2,
-        "fn": 2
+        "fn": 0
       },
       "chase-card": {
         "tp": 25,
@@ -90,9 +90,9 @@
         "fn": 0
       },
       "discover": {
-        "tp": 10,
+        "tp": 11,
         "fp": 0,
-        "fn": 1
+        "fn": 0
       },
       "generic": {
         "tp": 23,
@@ -100,14 +100,14 @@
         "fn": 0
       },
       "mint": {
-        "tp": 16,
+        "tp": 18,
         "fp": 0,
-        "fn": 2
+        "fn": 0
       },
       "monarch": {
-        "tp": 12,
+        "tp": 13,
         "fp": 0,
-        "fn": 1
+        "fn": 0
       },
       "paypal": {
         "tp": 36,
@@ -145,12 +145,7 @@
         1
       ]
     ],
-    "worstFnCadences": [
-      [
-        "semimonthly",
-        9
-      ]
-    ]
+    "worstFnCadences": []
   },
   "fixtures": [
     {
@@ -319,23 +314,23 @@
     {
       "name": "chase-card-9001",
       "lines": 50002,
-      "ms": 560.7172499999999,
-      "parseMs": 371.7648750000001,
-      "detectMs": 188.95237499999985
+      "ms": 569.107,
+      "parseMs": 369.94108299999994,
+      "detectMs": 199.16591700000004
     },
     {
       "name": "boa-checking-9002",
       "lines": 50008,
-      "ms": 822.7458749999998,
-      "parseMs": 440.765625,
-      "detectMs": 381.98024999999984
+      "ms": 842.123292,
+      "parseMs": 458.148334,
+      "detectMs": 383.974958
     },
     {
       "name": "amex-9003",
       "lines": 50002,
-      "ms": 397.043083,
-      "parseMs": 94.5625,
-      "detectMs": 302.480583
+      "ms": 391.45216600000003,
+      "parseMs": 103.21545800000013,
+      "detectMs": 288.2367079999999
     }
   ],
   "falsePositives": [
@@ -424,51 +419,5 @@
       "why": "restaurant"
     }
   ],
-  "falseNegatives": [
-    {
-      "caseId": "amex-4070",
-      "merchantKey": "raw:maple daycare",
-      "cadence": "semimonthly"
-    },
-    {
-      "caseId": "boa-card-4011",
-      "merchantKey": "raw:city bike",
-      "cadence": "semimonthly"
-    },
-    {
-      "caseId": "boa-checking-4938",
-      "merchantKey": "raw:rooftop storage",
-      "cadence": "semimonthly"
-    },
-    {
-      "caseId": "cashapp-4130",
-      "merchantKey": "raw:northside parking",
-      "cadence": "semimonthly"
-    },
-    {
-      "caseId": "cashapp-4130",
-      "merchantKey": "raw:harbor swim",
-      "cadence": "semimonthly"
-    },
-    {
-      "caseId": "discover-4080",
-      "merchantKey": "raw:green leaf",
-      "cadence": "semimonthly"
-    },
-    {
-      "caseId": "mint-4160",
-      "merchantKey": "raw:maple daycare",
-      "cadence": "semimonthly"
-    },
-    {
-      "caseId": "mint-4161",
-      "merchantKey": "raw:trivia night",
-      "cadence": "semimonthly"
-    },
-    {
-      "caseId": "monarch-4151",
-      "merchantKey": "raw:rooftop storage",
-      "cadence": "semimonthly"
-    }
-  ]
+  "falseNegatives": []
 }

@@ -92,7 +92,15 @@ function fitCadence(ch: Charge[], cad: FixedCadence, tol: number): Fit | null {
     let slotOf: (c: Charge) => { slot: number; err: number };
     let step = 1;
     if (cad === 'semimonthly') {
-      const lo = dom.filter((d) => d <= 15); const hi = dom.filter((d) => d > 15);
+      let cut = 15;
+      if (dom.every((d) => d <= 15) || dom.every((d) => d > 15)) {
+        // both halves on the same side of the 15th (the 1st and the 15th): split at the widest gap instead
+        const days = [...new Set(dom)].sort((a, b) => a - b);
+        let widest = 0;
+        for (let i = 1; i < days.length; i++) if (days[i]! - days[i - 1]! > widest) { widest = days[i]! - days[i - 1]!; cut = days[i - 1]!; }
+        if (widest < 8) return null;
+      }
+      const lo = dom.filter((d) => d <= cut); const hi = dom.filter((d) => d > cut);
       if (lo.length === 0 || hi.length === 0) return null;
       anchor = modeDay(lo, lo[0]!); anchor2 = modeDay(hi, hi[0]!);
       slotOf = (c) => {

@@ -12,6 +12,7 @@ describe('detectRecurring: cadences', () => {
     ['weekly', stepDays('2026-01-05', 8, 7), 'weekly'],
     ['biweekly', stepDays('2026-01-05', 6, 14), 'biweekly'],
     ['semimonthly', monthly('2026-01-01', 4).flatMap((d) => [d, d.slice(0, 8) + '16']), 'semimonthly'],
+    ['semimonthly, 1st and 15th', monthly('2026-01-01', 4).flatMap((d) => [d, d.slice(0, 8) + '15']), 'semimonthly'],
     ['monthly', monthly('2026-01-12', 6), 'monthly'],
     ['bimonthly', monthly('2026-01-12', 4, 2), 'bimonthly'],
     ['quarterly', monthly('2025-01-12', 4, 3), 'quarterly'],
