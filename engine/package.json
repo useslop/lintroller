@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "sideEffects": false,
   "description": "Subscription Sweep engine: CSV sniffing and parsing, merchant normalisation, recurrence detection, yearly cost, cancel lookup, exports. Pure TypeScript, no I/O.",
   "license": "MIT",
   "exports": {

@@ -1,6 +1,6 @@
 node_modules/
 dist/
-.vercel/
+.vercel
 *.log
 data/tmp/
 corpus/out/

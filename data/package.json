@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "sideEffects": false,
   "description": "Subscription Sweep bundled data: cancel directory, merchant aliases and export help. Official sources only; re-checked by scripts/check-links.mjs.",
   "license": "MIT",
   "exports": {
