@@ -16,7 +16,8 @@
   "dependencies": {
     "@subsweep/engine": "*",
     "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react-dom": "^19.3.0",
+    "@subsweep/data": "*"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.2",
